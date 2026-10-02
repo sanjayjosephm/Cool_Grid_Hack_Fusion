@@ -63,40 +63,42 @@ export default function Dashboard() {
     : `${n.name} is ready for standard electrification support.`;
 
   return (
-    <div className="dash">
-      <div className="mapbox">
-        <div id="map" ref={mapEl} aria-label="Map of sample Melbourne neighbourhoods coloured by CoolGrid priority" />
-        <div className="legend">
+    <div className="grid h-[calc(100vh-54px)] grid-cols-[minmax(0,1fr)_380px] max-[800px]:h-auto max-[800px]:grid-cols-1">
+      <div className="relative max-[800px]:h-[55vh]">
+        <div id="map" ref={mapEl} className="h-full w-full" aria-label="Map of sample Melbourne neighbourhoods coloured by CoolGrid priority" />
+        <div className="absolute bottom-3 left-3 z-[2] rounded bg-white px-3 py-2 text-[0.82rem] shadow-[0_1px_4px_rgba(0,0,0,0.2)]">
           {[["#3E8E6A", "Ready to electrify"], ["#E0A030", "Electrify, add support"], ["#C8402F", "Resilience first"], ["#8E1F1A", "Urgent"], ["#2B6CB0", "Backup-powered cooling hub"]].map(([c, l]) => (
-            <div key={l}><span style={{ background: c }} />{l}</div>
+            <div className="flex items-center gap-1.5" key={l}><span className="inline-block h-3 w-3 shrink-0" style={{ background: c }} />{l}</div>
           ))}
         </div>
       </div>
-      <aside className="panel">
-        <h2>{n.name}</h2>
-        <p className="muted">{n.council} · {n.population.toLocaleString()} residents · {n.homes.toLocaleString()} homes</p>
-        <span className="badge" style={{ background: before.category.color }}>{before.category.label}: {before.score}/100</span>
-        <p>{advice}</p>
-        {drivers.map(([l, v]) => (<div key={l}><div className="muted">{l}: {v}</div><div className="bar"><i style={{ width: v + "%" }} /></div></div>))}
+      <aside className="overflow-y-auto border-l border-line bg-white px-5 pb-8 pt-5 max-[800px]:border-l-0">
+        <h2 className="mb-2 text-2xl">{n.name}</h2>
+        <p className="mb-3 text-sm text-muted">{n.council} · {n.population.toLocaleString()} residents · {n.homes.toLocaleString()} homes</p>
+        <span className="inline-block rounded px-2.5 py-1 text-sm font-semibold text-white" style={{ background: before.category.color }}>{before.category.label}: {before.score}/100</span>
+        <p className="my-4">{advice}</p>
+        <div className="space-y-2">
+          {drivers.map(([l, v]) => (<div key={l}><div className="text-sm text-muted">{l}: {v}</div><div className="mt-1 h-1.5 rounded-full bg-line"><i className="block h-full rounded-full bg-ink" style={{ width: v + "%" }} /></div></div>))}
+        </div>
 
-        <h3 style={{ marginTop: "1.2rem" }}>Compare options</h3>
-        <p className="muted">Switch measures on to see how the plan changes. Costs assume 40% of homes take up each home-level measure.</p>
+        <h3 className="mb-2 mt-5 text-lg">Compare options</h3>
+        <p className="mb-3 text-sm text-muted">Switch measures on to see how the plan changes. Costs assume 40% of homes take up each home-level measure.</p>
         {(Object.keys(MEASURE_INFO) as (keyof Measures)[]).map((k) => (
-          <label className="toggle" key={k}>
-            <input type="checkbox" checked={m[k]} onChange={() => toggle(k)} />
-            <span>{MEASURE_INFO[k].label}<br /><span className="muted">{MEASURE_INFO[k].note}</span></span>
+          <label className="flex items-start gap-2.5 border-t border-line py-2" key={k}>
+            <input className="mt-1 accent-blue" type="checkbox" checked={m[k]} onChange={() => toggle(k)} />
+            <span>{MEASURE_INFO[k].label}<br /><span className="text-sm text-muted">{MEASURE_INFO[k].note}</span></span>
           </label>
         ))}
-        <div className="cards">
-          <div className="card"><span className="muted">Priority score</span><b>{after.score}</b><span className="delta">was {before.score}</span></div>
-          <div className="card"><span className="muted">Heat resilience</span><b>{after.heatResilience}</b><span className="delta">was {before.heatResilience}</span></div>
-          <div className="card"><span className="muted">Peak-demand pressure</span><b>{after.peakPressure}</b><span className="delta">was {before.peakPressure}</span></div>
-          <div className="card"><span className="muted">Emissions cut (relative)</span><b>{after.emissions}</b><span className="delta">was {before.emissions}</span></div>
-          <div className="card"><span className="muted">Vulnerable residents with hub access</span><b>{after.covered.toLocaleString()}</b><span className="delta">was {before.covered.toLocaleString()}</span></div>
-          <div className="card"><span className="muted">Estimated cost</span><b>{fmt(after.cost)}</b></div>
+        <div className="my-4 grid grid-cols-2 gap-2.5">
+          <div className="rounded border border-line px-3 py-2"><span className="text-sm text-muted">Priority score</span><b className="block font-serif text-2xl">{after.score}</b><span className="text-xs text-muted">was {before.score}</span></div>
+          <div className="rounded border border-line px-3 py-2"><span className="text-sm text-muted">Heat resilience</span><b className="block font-serif text-2xl">{after.heatResilience}</b><span className="text-xs text-muted">was {before.heatResilience}</span></div>
+          <div className="rounded border border-line px-3 py-2"><span className="text-sm text-muted">Peak-demand pressure</span><b className="block font-serif text-2xl">{after.peakPressure}</b><span className="text-xs text-muted">was {before.peakPressure}</span></div>
+          <div className="rounded border border-line px-3 py-2"><span className="text-sm text-muted">Emissions cut (relative)</span><b className="block font-serif text-2xl">{after.emissions}</b><span className="text-xs text-muted">was {before.emissions}</span></div>
+          <div className="rounded border border-line px-3 py-2"><span className="text-sm text-muted">Vulnerable residents with hub access</span><b className="block font-serif text-2xl">{after.covered.toLocaleString()}</b><span className="text-xs text-muted">was {before.covered.toLocaleString()}</span></div>
+          <div className="rounded border border-line px-3 py-2"><span className="text-sm text-muted">Estimated cost</span><b className="block font-serif text-2xl">{fmt(after.cost)}</b></div>
         </div>
-        <p className="note">Outcomes are modelled relative scores from stated assumptions, not predictions. Sample data only.</p>
-        <button className="btn" onClick={() => setM(NO_MEASURES)}>Reset measures</button>
+        <p className="my-6 border-l-4 border-amber bg-paper px-4 py-2 text-[0.92rem]">Outcomes are modelled relative scores from stated assumptions, not predictions. Sample data only.</p>
+        <button className="cursor-pointer rounded border-0 bg-ink px-5 py-3 font-semibold text-white hover:bg-[#344154]" onClick={() => setM(NO_MEASURES)}>Reset measures</button>
       </aside>
     </div>
   );
