@@ -159,7 +159,7 @@ export default function ContinuityLab({ initialConfig, initialOverrides = {}, in
               const rule = equipmentRule(sal);
               return (
                 <div key={sal} className="border-t border-line pt-2">
-                  <p className="font-semibold">{g.name} <span className="font-normal text-muted">· {g.population.toLocaleString()} residents · top languages {g.languages.join(", ")}</span></p>
+                  <p className="font-semibold">{g.name} <span className="font-normal text-muted">· {g.population.toLocaleString("en-AU")} residents · top languages {g.languages.join(", ")}</span></p>
                   <p className="text-muted">{g.groups.map((x) => `${x.pct}% ${x.label}`).join(" · ")}</p>
                   {rule && <p className="mt-1 text-xs text-[#1F5A9A]">Flood rule: {rule.message.split(": ").slice(1).join(": ")}</p>}
                 </div>

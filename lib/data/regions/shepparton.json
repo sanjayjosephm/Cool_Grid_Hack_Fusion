@@ -1,0 +1,2333 @@
+{
+  "generated": "2026-10-03",
+  "region": "Greater Shepparton",
+  "areas": [
+    {
+      "sal": "22275",
+      "name": "Shepparton",
+      "lga": "Greater Shepparton",
+      "irsdScore": {
+        "value": 896.8,
+        "status": "public",
+        "source": "ABS SEIFA 2021, IRSD, SAL",
+        "date": "2021",
+        "licence": "CC BY 4.0"
+      },
+      "irsdDecile": {
+        "value": 1,
+        "status": "public",
+        "source": "ABS SEIFA 2021, IRSD national decile, SAL",
+        "date": "2021",
+        "licence": "CC BY 4.0"
+      },
+      "population": {
+        "value": 32067,
+        "status": "public",
+        "source": "ABS Census 2021, G01 total persons, Suburbs and Localities",
+        "date": "2021",
+        "licence": "CC BY 4.0"
+      },
+      "pct65Plus": {
+        "value": 19.6,
+        "status": "public",
+        "source": "ABS Census 2021, G01 age 65+ / total persons, Suburbs and Localities",
+        "date": "2021",
+        "licence": "CC BY 4.0"
+      },
+      "pctNeedAssistance": {
+        "value": 8.4,
+        "status": "public",
+        "source": "ABS Census 2021, G18 core activity need for assistance, Suburbs and Localities",
+        "date": "2021",
+        "licence": "CC BY 4.0"
+      },
+      "pctNoCar": {
+        "value": 6.7,
+        "status": "public",
+        "source": "ABS Census 2021, G34 dwellings with no motor vehicle, Suburbs and Localities",
+        "date": "2021",
+        "licence": "CC BY 4.0"
+      },
+      "pctRiverine": {
+        "value": 37.6,
+        "status": "public",
+        "source": "Vicmap Planning, LSIO + FO area ÷ suburb area",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "sal": "21756",
+      "name": "Mooroopna",
+      "lga": "Greater Shepparton",
+      "irsdScore": {
+        "value": 889.8,
+        "status": "public",
+        "source": "ABS SEIFA 2021, IRSD, SAL",
+        "date": "2021",
+        "licence": "CC BY 4.0"
+      },
+      "irsdDecile": {
+        "value": 1,
+        "status": "public",
+        "source": "ABS SEIFA 2021, IRSD national decile, SAL",
+        "date": "2021",
+        "licence": "CC BY 4.0"
+      },
+      "population": {
+        "value": 8312,
+        "status": "public",
+        "source": "ABS Census 2021, G01 total persons, Suburbs and Localities",
+        "date": "2021",
+        "licence": "CC BY 4.0"
+      },
+      "pct65Plus": {
+        "value": 22.9,
+        "status": "public",
+        "source": "ABS Census 2021, G01 age 65+ / total persons, Suburbs and Localities",
+        "date": "2021",
+        "licence": "CC BY 4.0"
+      },
+      "pctNeedAssistance": {
+        "value": 8.9,
+        "status": "public",
+        "source": "ABS Census 2021, G18 core activity need for assistance, Suburbs and Localities",
+        "date": "2021",
+        "licence": "CC BY 4.0"
+      },
+      "pctNoCar": {
+        "value": 6.8,
+        "status": "public",
+        "source": "ABS Census 2021, G34 dwellings with no motor vehicle, Suburbs and Localities",
+        "date": "2021",
+        "licence": "CC BY 4.0"
+      },
+      "pctRiverine": {
+        "value": 34.7,
+        "status": "public",
+        "source": "Vicmap Planning, LSIO + FO area ÷ suburb area",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "sal": "21340",
+      "name": "Kialla",
+      "lga": "Greater Shepparton",
+      "irsdScore": {
+        "value": 1040.9,
+        "status": "public",
+        "source": "ABS SEIFA 2021, IRSD, SAL",
+        "date": "2021",
+        "licence": "CC BY 4.0"
+      },
+      "irsdDecile": {
+        "value": 7,
+        "status": "public",
+        "source": "ABS SEIFA 2021, IRSD national decile, SAL",
+        "date": "2021",
+        "licence": "CC BY 4.0"
+      },
+      "population": {
+        "value": 8667,
+        "status": "public",
+        "source": "ABS Census 2021, G01 total persons, Suburbs and Localities",
+        "date": "2021",
+        "licence": "CC BY 4.0"
+      },
+      "pct65Plus": {
+        "value": 16.7,
+        "status": "public",
+        "source": "ABS Census 2021, G01 age 65+ / total persons, Suburbs and Localities",
+        "date": "2021",
+        "licence": "CC BY 4.0"
+      },
+      "pctNeedAssistance": {
+        "value": 5.2,
+        "status": "public",
+        "source": "ABS Census 2021, G18 core activity need for assistance, Suburbs and Localities",
+        "date": "2021",
+        "licence": "CC BY 4.0"
+      },
+      "pctNoCar": {
+        "value": 1.5,
+        "status": "public",
+        "source": "ABS Census 2021, G34 dwellings with no motor vehicle, Suburbs and Localities",
+        "date": "2021",
+        "licence": "CC BY 4.0"
+      },
+      "pctRiverine": {
+        "value": 65.1,
+        "status": "public",
+        "source": "Vicmap Planning, LSIO + FO area ÷ suburb area",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "sal": "22277",
+      "name": "Shepparton North",
+      "lga": "Greater Shepparton",
+      "irsdScore": {
+        "value": 1044.7,
+        "status": "public",
+        "source": "ABS SEIFA 2021, IRSD, SAL",
+        "date": "2021",
+        "licence": "CC BY 4.0"
+      },
+      "irsdDecile": {
+        "value": 7,
+        "status": "public",
+        "source": "ABS SEIFA 2021, IRSD national decile, SAL",
+        "date": "2021",
+        "licence": "CC BY 4.0"
+      },
+      "population": {
+        "value": 2048,
+        "status": "public",
+        "source": "ABS Census 2021, G01 total persons, Suburbs and Localities",
+        "date": "2021",
+        "licence": "CC BY 4.0"
+      },
+      "pct65Plus": {
+        "value": 6.6,
+        "status": "public",
+        "source": "ABS Census 2021, G01 age 65+ / total persons, Suburbs and Localities",
+        "date": "2021",
+        "licence": "CC BY 4.0"
+      },
+      "pctNeedAssistance": {
+        "value": 3.5,
+        "status": "public",
+        "source": "ABS Census 2021, G18 core activity need for assistance, Suburbs and Localities",
+        "date": "2021",
+        "licence": "CC BY 4.0"
+      },
+      "pctNoCar": {
+        "value": 1.9,
+        "status": "public",
+        "source": "ABS Census 2021, G34 dwellings with no motor vehicle, Suburbs and Localities",
+        "date": "2021",
+        "licence": "CC BY 4.0"
+      },
+      "pctRiverine": {
+        "value": 62.9,
+        "status": "public",
+        "source": "Vicmap Planning, LSIO + FO area ÷ suburb area",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    }
+  ],
+  "facilities": [
+    {
+      "id": "reg-shepparton-library",
+      "name": "Shepparton Library",
+      "type": "library",
+      "sal": "22275",
+      "location": {
+        "value": [
+          145.39746,
+          -36.377
+        ],
+        "status": "public",
+        "source": "Vicmap Features of Interest (foi_point)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "floodOverlay": {
+        "value": "none",
+        "status": "public",
+        "source": "Vicmap Planning: facility point inside LSIO/FO",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "services": {
+        "coolingRespite": {
+          "places": {
+            "value": 150,
+            "status": "illustrative",
+            "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+            "date": "2026-10-03"
+          },
+          "hours": {
+            "value": "10:00-18:00",
+            "status": "illustrative",
+            "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+            "date": "2026-10-03"
+          }
+        },
+        "floodRelief": {
+          "places": {
+            "value": 80,
+            "status": "illustrative",
+            "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+            "date": "2026-10-03"
+          }
+        }
+      },
+      "crews": {
+        "value": 2,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "backup": {
+        "batteryKWh": {
+          "value": null,
+          "status": "unknown",
+          "source": "Not yet provided by the facility owner",
+          "date": "2026-10-03"
+        },
+        "reservePct": {
+          "value": null,
+          "status": "unknown",
+          "source": "Not yet provided by the facility owner",
+          "date": "2026-10-03"
+        },
+        "inverterKW": {
+          "value": null,
+          "status": "unknown",
+          "source": "Not yet provided by the facility owner",
+          "date": "2026-10-03"
+        },
+        "coolingKW": {
+          "value": null,
+          "status": "unknown",
+          "source": "Not yet provided by the facility owner",
+          "date": "2026-10-03"
+        },
+        "surgeKW": {
+          "value": null,
+          "status": "unknown",
+          "source": "Not yet provided by the facility owner",
+          "date": "2026-10-03"
+        },
+        "baseKW": {
+          "value": null,
+          "status": "unknown",
+          "source": "Not yet provided by the facility owner",
+          "date": "2026-10-03"
+        },
+        "coolingOnBackup": {
+          "value": null,
+          "status": "unknown",
+          "source": "Not yet provided by the facility owner",
+          "date": "2026-10-03"
+        }
+      }
+    },
+    {
+      "id": "reg-mooroopna-hall",
+      "name": "Mooroopna Scout And Guide Hall",
+      "type": "hall",
+      "sal": "21756",
+      "location": {
+        "value": [
+          145.35097,
+          -36.37817
+        ],
+        "status": "public",
+        "source": "Vicmap Features of Interest (foi_point)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "floodOverlay": {
+        "value": "none",
+        "status": "public",
+        "source": "Vicmap Planning: facility point inside LSIO/FO",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "services": {
+        "coolingRespite": {
+          "places": {
+            "value": 40,
+            "status": "illustrative",
+            "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+            "date": "2026-10-03"
+          },
+          "hours": {
+            "value": "10:00-18:00",
+            "status": "illustrative",
+            "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+            "date": "2026-10-03"
+          }
+        },
+        "floodRelief": {
+          "places": {
+            "value": 40,
+            "status": "illustrative",
+            "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+            "date": "2026-10-03"
+          }
+        }
+      },
+      "crews": {
+        "value": 1,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "backup": {
+        "batteryKWh": {
+          "value": null,
+          "status": "unknown",
+          "source": "Not yet provided by the facility owner",
+          "date": "2026-10-03"
+        },
+        "reservePct": {
+          "value": null,
+          "status": "unknown",
+          "source": "Not yet provided by the facility owner",
+          "date": "2026-10-03"
+        },
+        "inverterKW": {
+          "value": null,
+          "status": "unknown",
+          "source": "Not yet provided by the facility owner",
+          "date": "2026-10-03"
+        },
+        "coolingKW": {
+          "value": null,
+          "status": "unknown",
+          "source": "Not yet provided by the facility owner",
+          "date": "2026-10-03"
+        },
+        "surgeKW": {
+          "value": null,
+          "status": "unknown",
+          "source": "Not yet provided by the facility owner",
+          "date": "2026-10-03"
+        },
+        "baseKW": {
+          "value": null,
+          "status": "unknown",
+          "source": "Not yet provided by the facility owner",
+          "date": "2026-10-03"
+        },
+        "coolingOnBackup": {
+          "value": null,
+          "status": "unknown",
+          "source": "Not yet provided by the facility owner",
+          "date": "2026-10-03"
+        }
+      }
+    },
+    {
+      "id": "reg-kialla-hall",
+      "name": "Kialla Public Hall",
+      "type": "hall",
+      "sal": "21340",
+      "location": {
+        "value": [
+          145.43247,
+          -36.45327
+        ],
+        "status": "public",
+        "source": "Vicmap Features of Interest (foi_point)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "floodOverlay": {
+        "value": "none",
+        "status": "public",
+        "source": "Vicmap Planning: facility point inside LSIO/FO",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "services": {
+        "coolingRespite": {
+          "places": {
+            "value": 40,
+            "status": "illustrative",
+            "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+            "date": "2026-10-03"
+          },
+          "hours": {
+            "value": "10:00-18:00",
+            "status": "illustrative",
+            "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+            "date": "2026-10-03"
+          }
+        },
+        "floodRelief": {
+          "places": {
+            "value": 30,
+            "status": "illustrative",
+            "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+            "date": "2026-10-03"
+          }
+        }
+      },
+      "crews": {
+        "value": 1,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "backup": {
+        "batteryKWh": {
+          "value": null,
+          "status": "unknown",
+          "source": "Not yet provided by the facility owner",
+          "date": "2026-10-03"
+        },
+        "reservePct": {
+          "value": null,
+          "status": "unknown",
+          "source": "Not yet provided by the facility owner",
+          "date": "2026-10-03"
+        },
+        "inverterKW": {
+          "value": null,
+          "status": "unknown",
+          "source": "Not yet provided by the facility owner",
+          "date": "2026-10-03"
+        },
+        "coolingKW": {
+          "value": null,
+          "status": "unknown",
+          "source": "Not yet provided by the facility owner",
+          "date": "2026-10-03"
+        },
+        "surgeKW": {
+          "value": null,
+          "status": "unknown",
+          "source": "Not yet provided by the facility owner",
+          "date": "2026-10-03"
+        },
+        "baseKW": {
+          "value": null,
+          "status": "unknown",
+          "source": "Not yet provided by the facility owner",
+          "date": "2026-10-03"
+        },
+        "coolingOnBackup": {
+          "value": null,
+          "status": "unknown",
+          "source": "Not yet provided by the facility owner",
+          "date": "2026-10-03"
+        }
+      }
+    }
+  ],
+  "crossings": [
+    {
+      "id": "x-alexandra-street",
+      "road": "Alexandra Street",
+      "overlay": "FO",
+      "lga": "GREATER SHEPPARTON",
+      "roadUfis": [
+        11445537,
+        45560790,
+        45560791,
+        45561097,
+        45561098
+      ],
+      "location": {
+        "value": [
+          145.35825,
+          -36.3929
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road) × Vicmap Planning riverine overlays",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-archer-road",
+      "road": "Archer Road",
+      "overlay": "LSIO",
+      "lga": "GREATER SHEPPARTON",
+      "roadUfis": [
+        12640281,
+        56279101,
+        58051006,
+        58051008,
+        58051064,
+        58051066,
+        66367998,
+        66367999,
+        66490149,
+        66490150,
+        71147954,
+        71147954,
+        71147956,
+        71147957,
+        71147961,
+        71147962,
+        71147962,
+        71148303,
+        71148303,
+        71148304,
+        71148304,
+        71148891,
+        71148891,
+        71148891,
+        71148892,
+        71148894,
+        71149037,
+        71149037,
+        71149037,
+        71149038,
+        71149040,
+        71149042,
+        71149043,
+        71149216,
+        71149216
+      ],
+      "location": {
+        "value": [
+          145.40811,
+          -36.42765
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road) × Vicmap Planning riverine overlays",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-barmah-shepparton-road",
+      "road": "Barmah - Shepparton Road",
+      "overlay": "LSIO",
+      "lga": "GREATER SHEPPARTON",
+      "roadUfis": [
+        45156790,
+        45561706,
+        45561715,
+        45561715,
+        45561821,
+        45561829,
+        45561830,
+        45561830,
+        45561832,
+        45561834,
+        45561835,
+        45561873,
+        45614310,
+        55162138,
+        55162139,
+        71145790,
+        71145792,
+        71145793,
+        71145794,
+        71145795
+      ],
+      "location": {
+        "value": [
+          145.39896,
+          -36.33005
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road) × Vicmap Planning riverine overlays",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-buckworth-street",
+      "road": "Buckworth Street",
+      "overlay": "FO",
+      "lga": "GREATER SHEPPARTON",
+      "roadUfis": [
+        19089296,
+        60480787,
+        60480788,
+        60480788
+      ],
+      "location": {
+        "value": [
+          145.39114,
+          -36.41243
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road) × Vicmap Planning riverine overlays",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-central-kialla-road",
+      "road": "Central Kialla Road",
+      "overlay": "LSIO",
+      "lga": "GREATER SHEPPARTON",
+      "roadUfis": [
+        45087696,
+        45087699,
+        45087702,
+        45216032,
+        45216038,
+        45561332,
+        45561333,
+        45566836,
+        49123389,
+        55162131,
+        55162131,
+        55162131,
+        55162132,
+        55162133,
+        71149047,
+        71149047,
+        71149048,
+        71149049,
+        71149220,
+        71149411,
+        71149412,
+        71149412,
+        71149414,
+        71149506,
+        71149571,
+        71149573
+      ],
+      "location": {
+        "value": [
+          145.43183,
+          -36.45115
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road) × Vicmap Planning riverine overlays",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-doyles-road",
+      "road": "Doyles Road",
+      "overlay": "FO",
+      "lga": "GREATER SHEPPARTON",
+      "roadUfis": [
+        43810483,
+        43810484,
+        43810485,
+        43810486,
+        43810487,
+        48961333,
+        53955273,
+        53955274,
+        55162124,
+        65098179,
+        65098180,
+        65098186,
+        65098187,
+        65386942,
+        65386949,
+        65386950,
+        65386951,
+        65386958,
+        65386960,
+        65386961,
+        65386962,
+        65386963,
+        65386964,
+        65386966,
+        65386968,
+        65386969,
+        65386972,
+        65386974,
+        65386977,
+        71148104,
+        71148105,
+        71148105,
+        71148106,
+        71148107,
+        71148107,
+        71148309,
+        71148310,
+        71148310,
+        71148312,
+        71148549
+      ],
+      "location": {
+        "value": [
+          145.43182,
+          -36.42594
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road) × Vicmap Planning riverine overlays",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-echuca-road",
+      "road": "Echuca Road",
+      "overlay": "LSIO",
+      "lga": "GREATER SHEPPARTON",
+      "roadUfis": [
+        15429413,
+        15987743,
+        15987749,
+        15987749,
+        15987749,
+        15987755,
+        15987755,
+        15987755,
+        15987759,
+        15987759,
+        15987775,
+        15987777,
+        15987782,
+        15987783,
+        23168149,
+        23168149,
+        23168150,
+        23168151,
+        23168152,
+        23168152,
+        23168152,
+        23168153,
+        23168154,
+        23168156,
+        23168157,
+        23168159,
+        23168160,
+        23168160,
+        23168163,
+        23168163,
+        23168169,
+        23168172,
+        23168362,
+        23168362,
+        35779928,
+        45560548,
+        45560550,
+        45560553,
+        45560554,
+        45560645,
+        45560700,
+        45560700,
+        45560704,
+        45560704,
+        45560705,
+        45560705,
+        45560706,
+        45560706,
+        45560775,
+        45560775,
+        45560780,
+        45560783,
+        45560784,
+        45560785,
+        45560786,
+        45560789,
+        45560792,
+        45560793,
+        45560794,
+        45560795,
+        45560796,
+        45560799,
+        45560800,
+        45560802,
+        45560805,
+        45560805,
+        45560808,
+        45560808,
+        45560809,
+        45560810,
+        45560811,
+        45560812,
+        45560813,
+        45560814,
+        45561529,
+        45561529,
+        45561545,
+        45614144,
+        55162547,
+        56278797,
+        56278799,
+        56278949,
+        56279816,
+        56283807,
+        56283808,
+        71146527,
+        71146528,
+        71146528,
+        71146650,
+        71146651,
+        71146652,
+        71147044
+      ],
+      "location": {
+        "value": [
+          145.35461,
+          -36.38487
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road) × Vicmap Planning riverine overlays",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-elizabeth-street",
+      "road": "Elizabeth Street",
+      "overlay": "FO",
+      "lga": "GREATER SHEPPARTON",
+      "roadUfis": [
+        11445359,
+        15429517,
+        15429517,
+        15429539,
+        15429540,
+        45561101,
+        45561102,
+        45561105,
+        45561105,
+        45561591
+      ],
+      "location": {
+        "value": [
+          145.36182,
+          -36.39053
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road) × Vicmap Planning riverine overlays",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-goulburn-valley-highway",
+      "road": "Goulburn Valley Highway",
+      "overlay": "LSIO",
+      "lga": "GREATER SHEPPARTON",
+      "roadUfis": [
+        15363526,
+        15363527,
+        15363528,
+        15363529,
+        15363530,
+        15363534,
+        15363548,
+        15363549,
+        15363550,
+        15363551,
+        15363552,
+        15363553,
+        15363554,
+        15363555,
+        15363556,
+        18105809,
+        18105810,
+        18105811,
+        18105812,
+        35173156,
+        35173160,
+        35173161,
+        35173162,
+        35173162,
+        35173163,
+        35173164,
+        35173164,
+        35173165,
+        35173165,
+        35173166,
+        35173167,
+        35173167,
+        35173168,
+        35173172,
+        35173173,
+        35173174,
+        35173176,
+        35173178,
+        35173179,
+        35173180,
+        35173181,
+        35173184,
+        35173190,
+        35173193,
+        35173205,
+        35173206,
+        35173207,
+        35173208,
+        35173209,
+        35173210,
+        35173211,
+        45560949,
+        45560963,
+        45561001,
+        45561019,
+        45561020,
+        45561027,
+        45561028,
+        45561032,
+        45561033,
+        45561034,
+        45561040,
+        45561045,
+        45561046,
+        45561062,
+        45561063,
+        45561064,
+        45561065,
+        45561066,
+        45561070,
+        45561073,
+        45561075,
+        45561076,
+        45561077,
+        45561078,
+        45561079,
+        45561574,
+        45561575,
+        45561576,
+        45561734,
+        45561753,
+        45561754,
+        45561755,
+        45561760,
+        45561761,
+        45561854,
+        45566876,
+        45566877,
+        46056618,
+        46056619,
+        46056620,
+        46056621,
+        46056622,
+        46056623,
+        46056624,
+        46056625,
+        46290662,
+        46970112,
+        47407897,
+        48961366,
+        48961367,
+        48961368,
+        48961369,
+        48961370,
+        48961381,
+        50917817,
+        55162085,
+        55162263,
+        56283522,
+        56283524,
+        59916176,
+        59916177,
+        60686078,
+        60686079,
+        60803969,
+        60803972,
+        60803972,
+        60897387,
+        60897398,
+        60897399,
+        60897402,
+        60897403,
+        60897404,
+        60897404,
+        60897405,
+        60897407,
+        60897407,
+        60897407,
+        60897408,
+        60897408,
+        60897411,
+        60897439,
+        60897440,
+        60897440,
+        60897442,
+        60897444,
+        60897445,
+        60897445,
+        60897450,
+        60897451,
+        60897452,
+        60897453,
+        60897454,
+        60897455,
+        60897455,
+        60897456,
+        60897456,
+        60897457,
+        60897458,
+        60897506,
+        60897508,
+        60897509,
+        60897509,
+        60897510,
+        60897510,
+        60897513,
+        60897513,
+        60897515,
+        60897515,
+        60897516,
+        60897516,
+        60897516,
+        60897517,
+        60897518,
+        60897519,
+        60897524,
+        60897524,
+        60897525,
+        60897526,
+        60897526,
+        60897527,
+        60897533,
+        60897537,
+        60897537,
+        60897538,
+        60897539,
+        60897539,
+        60897540,
+        60897540,
+        60897541,
+        60897541,
+        60897550,
+        60897550,
+        60897551,
+        60897551,
+        60897552,
+        60897553,
+        60897554,
+        60897554,
+        60897555,
+        60897555,
+        60897558,
+        60897559,
+        60897565,
+        60897566,
+        60897567,
+        60897567,
+        60897568,
+        60897568,
+        60897569,
+        60897570,
+        60897571,
+        60897572,
+        60897573,
+        60897573,
+        60897576,
+        60897578,
+        60897578,
+        60897579,
+        60897581,
+        60897582,
+        60897583,
+        60897585,
+        60897591,
+        60897591,
+        60897591,
+        60897592,
+        60897592,
+        60897592,
+        60897593,
+        60897594,
+        60897595,
+        60897596,
+        60897600,
+        60897600,
+        60897601,
+        60897601,
+        60897603,
+        60897606,
+        60897606,
+        60897608,
+        60897616,
+        60897618,
+        60897622,
+        60897623,
+        60897624,
+        60897624,
+        60897625,
+        60897628,
+        60897636,
+        60897637,
+        60897637,
+        60897646,
+        60897647,
+        60897653,
+        60897655,
+        60897656,
+        66368271,
+        69898214,
+        69898216,
+        69920070,
+        69920071,
+        71145812,
+        71145907,
+        71145908,
+        71147327,
+        71147328,
+        71147542,
+        71147543,
+        71147923,
+        71147928,
+        71147929,
+        71147929,
+        71147930,
+        71147931,
+        71147931,
+        71148499,
+        71148870,
+        71148876,
+        71148879,
+        71149190,
+        71149378,
+        71149383,
+        71149384,
+        71149385,
+        71149386,
+        71149388,
+        71149388,
+        71149389,
+        71149390,
+        71151236,
+        71151257,
+        71151257,
+        71151257,
+        71151290,
+        71151291,
+        71151291,
+        71151292,
+        71151293,
+        71151294,
+        71151294,
+        71151294,
+        71151295,
+        71151296,
+        71151297,
+        71151302,
+        71151302,
+        71151303,
+        71151303,
+        71151304,
+        71151308,
+        71151308,
+        71151309,
+        71151309,
+        72693390,
+        72693391,
+        72693392,
+        72693393,
+        72693394,
+        72693395,
+        72693396,
+        72693397,
+        72693398,
+        74037759,
+        74037760,
+        74037761,
+        74037762,
+        76432214,
+        76432215
+      ],
+      "location": {
+        "value": [
+          145.39335,
+          -36.40873
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road) × Vicmap Planning riverine overlays",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-joyce-reid-drive",
+      "road": "Joyce Reid Drive",
+      "overlay": "LSIO",
+      "lga": "GREATER SHEPPARTON",
+      "roadUfis": [
+        44884885,
+        44884885,
+        45560777,
+        55162433,
+        55162434
+      ],
+      "location": {
+        "value": [
+          145.35403,
+          -36.39352
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road) × Vicmap Planning riverine overlays",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-kialla-lakes-drive",
+      "road": "Kialla Lakes Drive",
+      "overlay": "LSIO",
+      "lga": "GREATER SHEPPARTON",
+      "roadUfis": [
+        66490096,
+        66490098,
+        66490104,
+        66490109,
+        66490112,
+        66490113,
+        66490117,
+        66490118,
+        66490119,
+        66490120,
+        66490121,
+        66490122,
+        66490123,
+        66490124,
+        66490125,
+        66490126,
+        66490127,
+        66490130,
+        66490131,
+        66490132,
+        66490133,
+        66490134,
+        66490135,
+        66490138,
+        66490147,
+        66490151,
+        66490154,
+        66490157,
+        66490161,
+        66490162,
+        66490164,
+        66490165,
+        66490167,
+        66490168,
+        66490169,
+        66490170,
+        66490171,
+        66490172,
+        66490177,
+        66490179,
+        66490194,
+        66490195,
+        66490196,
+        66490197,
+        66490198,
+        72693376,
+        72693377,
+        72693382,
+        72693383,
+        72693384,
+        72693385,
+        72693386,
+        72693387,
+        72693388,
+        72693389
+      ],
+      "location": {
+        "value": [
+          145.39783,
+          -36.41408
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road) × Vicmap Planning riverine overlays",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-kittles-road",
+      "road": "Kittles Road",
+      "overlay": "LSIO",
+      "lga": "GREATER SHEPPARTON",
+      "roadUfis": [
+        49120211,
+        55162387,
+        55162388,
+        56283472,
+        56283473,
+        56283479,
+        56283682,
+        59916194,
+        59916195,
+        59916197,
+        59916199,
+        71146661
+      ],
+      "location": {
+        "value": [
+          145.37537,
+          -36.35179
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road) × Vicmap Planning riverine overlays",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-knight-street",
+      "road": "Knight Street",
+      "overlay": "LSIO",
+      "lga": "GREATER SHEPPARTON",
+      "roadUfis": [
+        11442767,
+        12593761,
+        13692071,
+        13692073,
+        45560806,
+        45560806,
+        45560807,
+        45560828,
+        59916318,
+        59916319,
+        59916325,
+        59916326,
+        59916327,
+        60688951,
+        60688952,
+        60688953,
+        62028085,
+        66490440,
+        66490441,
+        66490442,
+        66490443
+      ],
+      "location": {
+        "value": [
+          145.39745,
+          -36.37359
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road) × Vicmap Planning riverine overlays",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-marungi-street",
+      "road": "Marungi Street",
+      "overlay": "LSIO",
+      "lga": "GREATER SHEPPARTON",
+      "roadUfis": [
+        66490341,
+        66490342,
+        66490342,
+        66490345,
+        66490349,
+        66490351,
+        73324353,
+        73324354
+      ],
+      "location": {
+        "value": [
+          145.39723,
+          -36.37686
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road) × Vicmap Planning riverine overlays",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-mccracken-road",
+      "road": "Mccracken Road",
+      "overlay": "LSIO",
+      "lga": "GREATER SHEPPARTON",
+      "roadUfis": [
+        56278531,
+        56278531,
+        59916447,
+        71146132,
+        71146132,
+        71146133
+      ],
+      "location": {
+        "value": [
+          145.3722,
+          -36.30884
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road) × Vicmap Planning riverine overlays",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-mckean-street",
+      "road": "Mckean Street",
+      "overlay": "LSIO",
+      "lga": "GREATER SHEPPARTON",
+      "roadUfis": [
+        11444469,
+        11444469,
+        11444581,
+        11444581,
+        45561104,
+        58704210,
+        58704211,
+        58704211,
+        66368015
+      ],
+      "location": {
+        "value": [
+          145.35646,
+          -36.3842
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road) × Vicmap Planning riverine overlays",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-mclennan-street",
+      "road": "Mclennan Street",
+      "overlay": "FO",
+      "lga": "GREATER SHEPPARTON",
+      "roadUfis": [
+        15429485,
+        15429492,
+        15429492,
+        15430398,
+        15430398,
+        15430416,
+        15430418,
+        15430419,
+        15430465,
+        15430467,
+        15430467,
+        15430468,
+        15616867,
+        15616867,
+        15616873,
+        15616874,
+        23065639,
+        35173212,
+        35173212,
+        35173213,
+        35173214,
+        35173214,
+        35173215,
+        40204689,
+        40204691,
+        40204691,
+        40204692,
+        40204692,
+        40204695,
+        40204698,
+        40204699,
+        40204700,
+        45560782,
+        45560782,
+        45561107,
+        55162429,
+        55162430,
+        55162435,
+        55162436,
+        55162512,
+        55162512,
+        55162513,
+        55162514,
+        56278948,
+        56278971,
+        56278974
+      ],
+      "location": {
+        "value": [
+          145.35387,
+          -36.39556
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road) × Vicmap Planning riverine overlays",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-midland-highway",
+      "road": "Midland Highway",
+      "overlay": "LSIO",
+      "lga": "GREATER SHEPPARTON",
+      "roadUfis": [
+        40204663,
+        40204713,
+        40204725,
+        45560715,
+        45561856,
+        45566490,
+        45566492,
+        45566699,
+        56283707,
+        65098176,
+        66490475,
+        71147709,
+        71147711
+      ],
+      "location": {
+        "value": [
+          145.326,
+          -36.39922
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road) × Vicmap Planning riverine overlays",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-nixon-street",
+      "road": "Nixon Street",
+      "overlay": "LSIO",
+      "lga": "GREATER SHEPPARTON",
+      "roadUfis": [
+        66490343,
+        66490344,
+        66490350,
+        66490361,
+        66490429,
+        73324355,
+        73324356,
+        73324357
+      ],
+      "location": {
+        "value": [
+          145.39661,
+          -36.37645
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road) × Vicmap Planning riverine overlays",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-numurkah-road",
+      "road": "Numurkah Road",
+      "overlay": "LSIO",
+      "lga": "GREATER SHEPPARTON",
+      "roadUfis": [
+        12933865,
+        18708785,
+        18708792,
+        18708793,
+        18708797,
+        18708798,
+        18708801,
+        18708802,
+        18708803,
+        18708804,
+        18708806,
+        18708808,
+        18708813,
+        35173105,
+        35173109,
+        35173275,
+        35173276,
+        38283957,
+        38283958,
+        38283959,
+        38283961,
+        38283962,
+        47776719,
+        50912651,
+        56283523,
+        56283526,
+        56283964,
+        56283965
+      ],
+      "location": {
+        "value": [
+          145.40229,
+          -36.35491
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road) × Vicmap Planning riverine overlays",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-obrien-street",
+      "road": "Obrien Street",
+      "overlay": "LSIO",
+      "lga": "GREATER SHEPPARTON",
+      "roadUfis": [
+        15429406,
+        15429406,
+        45491616,
+        45491805,
+        45561086,
+        45561087,
+        45561093,
+        45561095,
+        45561096
+      ],
+      "location": {
+        "value": [
+          145.35684,
+          -36.38764
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road) × Vicmap Planning riverine overlays",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-river-road",
+      "road": "River Road",
+      "overlay": "FO",
+      "lga": "GREATER SHEPPARTON",
+      "roadUfis": [
+        43810466,
+        43810490,
+        45216037,
+        45224040,
+        45224042,
+        45560983,
+        45560983,
+        45560999,
+        45560999,
+        45561000,
+        45561327,
+        45561557,
+        45561557,
+        45566928,
+        45566930,
+        49021907,
+        49021907,
+        49021909,
+        71148544,
+        71148545,
+        71148547,
+        71148548,
+        71148559,
+        71148565,
+        71148566,
+        71148570,
+        71148571,
+        71148571,
+        71148699,
+        71148700,
+        71148708,
+        71148709,
+        71148710,
+        71148712,
+        71148713,
+        71148716,
+        71148717,
+        71148718,
+        71151249,
+        71151249
+      ],
+      "location": {
+        "value": [
+          145.41263,
+          -36.44077
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road) × Vicmap Planning riverine overlays",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-riverview-drive",
+      "road": "Riverview Drive",
+      "overlay": "LSIO",
+      "lga": "GREATER SHEPPARTON",
+      "roadUfis": [
+        15430346,
+        15430352,
+        19189234,
+        21739628,
+        21739629,
+        23065792,
+        35173175,
+        55162123,
+        55162466,
+        56279033,
+        74037757,
+        74037758,
+        74037803
+      ],
+      "location": {
+        "value": [
+          145.38018,
+          -36.40784
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road) × Vicmap Planning riverine overlays",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-sanctuary-drive",
+      "road": "Sanctuary Drive",
+      "overlay": "LSIO",
+      "lga": "GREATER SHEPPARTON",
+      "roadUfis": [
+        47407902,
+        47407907,
+        47407908,
+        47407909,
+        47407917,
+        47407918,
+        47407919,
+        53750616,
+        53750617,
+        55162347,
+        55162348,
+        58051004,
+        58051007,
+        58051012,
+        58051014,
+        58051062,
+        58051065,
+        58051069,
+        71148542
+      ],
+      "location": {
+        "value": [
+          145.39542,
+          -36.4347
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road) × Vicmap Planning riverine overlays",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-sobraon-street",
+      "road": "Sobraon Street",
+      "overlay": "LSIO",
+      "lga": "GREATER SHEPPARTON",
+      "roadUfis": [
+        15429787,
+        45561117,
+        55162581,
+        55162581,
+        72688728
+      ],
+      "location": {
+        "value": [
+          145.4079,
+          -36.38646
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road) × Vicmap Planning riverine overlays",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-taig-avenue",
+      "road": "Taig Avenue",
+      "overlay": "FO",
+      "lga": "GREATER SHEPPARTON",
+      "roadUfis": [
+        15362592,
+        15362592,
+        18105615,
+        46639634,
+        46639636,
+        46639636
+      ],
+      "location": {
+        "value": [
+          145.39223,
+          -36.41257
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road) × Vicmap Planning riverine overlays",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-treacy-street",
+      "road": "Treacy Street",
+      "overlay": "LSIO",
+      "lga": "GREATER SHEPPARTON",
+      "roadUfis": [
+        15429404,
+        15429407,
+        15429407,
+        15429407
+      ],
+      "location": {
+        "value": [
+          145.35598,
+          -36.38618
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road) × Vicmap Planning riverine overlays",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-waranga-drive",
+      "road": "Waranga Drive",
+      "overlay": "LSIO",
+      "lga": "GREATER SHEPPARTON",
+      "roadUfis": [
+        15356472,
+        15356477,
+        15356482,
+        16293052,
+        16293702,
+        16293705,
+        18105609,
+        18105611,
+        18105617,
+        23065750,
+        37520192,
+        37520193,
+        37520197,
+        37520199,
+        37520200,
+        41836321,
+        41836322,
+        41836341,
+        45561047,
+        45561048,
+        55162301,
+        55162302,
+        55162455,
+        55162456,
+        66490103,
+        66490108,
+        66490111,
+        66490156,
+        72693372,
+        72693373,
+        72693374,
+        72693375,
+        72693406
+      ],
+      "location": {
+        "value": [
+          145.40182,
+          -36.42277
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road) × Vicmap Planning riverine overlays",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-watt-road",
+      "road": "Watt Road",
+      "overlay": "FO",
+      "lga": "GREATER SHEPPARTON",
+      "roadUfis": [
+        35173216,
+        56278947,
+        56278952,
+        56278953
+      ],
+      "location": {
+        "value": [
+          145.36301,
+          -36.39397
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road) × Vicmap Planning riverine overlays",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-welsford-street",
+      "road": "Welsford Street",
+      "overlay": "FO",
+      "lga": "GREATER SHEPPARTON",
+      "roadUfis": [
+        56283961,
+        56283962,
+        66490279,
+        66490279,
+        66490438,
+        66490445,
+        66490447,
+        66490448
+      ],
+      "location": {
+        "value": [
+          145.39709,
+          -36.3851
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road) × Vicmap Planning riverine overlays",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-wendouree-drive",
+      "road": "Wendouree Drive",
+      "overlay": "LSIO",
+      "lga": "GREATER SHEPPARTON",
+      "roadUfis": [
+        37520194,
+        44852736,
+        48738844,
+        50890148,
+        55965495,
+        55965497,
+        57401686,
+        58051013,
+        62526091
+      ],
+      "location": {
+        "value": [
+          145.40178,
+          -36.42781
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road) × Vicmap Planning riverine overlays",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-wyndham-street",
+      "road": "Wyndham Street",
+      "overlay": "FO",
+      "lga": "GREATER SHEPPARTON",
+      "roadUfis": [
+        13691938,
+        15363520,
+        15363520,
+        15363543,
+        15363544,
+        15363571,
+        15363572,
+        15363573,
+        15363573,
+        15363574,
+        15363575,
+        15363575,
+        15363576,
+        15363577,
+        15363578,
+        15363579,
+        15363580,
+        15363581,
+        15363582,
+        15363583,
+        15429658,
+        23065668,
+        23065675,
+        23065675,
+        35173146,
+        35173147,
+        35173149,
+        35173151,
+        35173151,
+        53955265,
+        55163375,
+        55163375,
+        66490244,
+        66490244,
+        66490245,
+        66490253,
+        66490254,
+        66490254,
+        66490255,
+        66490256,
+        66490256,
+        66490257,
+        66490258,
+        66490259,
+        66490259,
+        66490260,
+        66490261,
+        66490262,
+        66490262,
+        66490263,
+        66490264,
+        66490264,
+        66490289
+      ],
+      "location": {
+        "value": [
+          145.3966,
+          -36.39425
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road) × Vicmap Planning riverine overlays",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    }
+  ],
+  "links": [
+    {
+      "from": "22275",
+      "to": "reg-shepparton-library",
+      "distanceKm": {
+        "value": 1.39,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "22275",
+      "to": "reg-mooroopna-hall",
+      "distanceKm": {
+        "value": 5.04,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-echuca-road",
+          "x-elizabeth-street",
+          "x-mckean-street",
+          "x-mclennan-street",
+          "x-midland-highway",
+          "x-treacy-street"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "22275",
+      "to": "reg-kialla-hall",
+      "distanceKm": {
+        "value": 11.87,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-central-kialla-road",
+          "x-doyles-road",
+          "x-midland-highway",
+          "x-river-road"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "21756",
+      "to": "reg-shepparton-library",
+      "distanceKm": {
+        "value": 4.9,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-alexandra-street",
+          "x-echuca-road",
+          "x-joyce-reid-drive",
+          "x-mclennan-street",
+          "x-midland-highway",
+          "x-obrien-street"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "21756",
+      "to": "reg-mooroopna-hall",
+      "distanceKm": {
+        "value": 2.19,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-echuca-road",
+          "x-joyce-reid-drive"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "21756",
+      "to": "reg-kialla-hall",
+      "distanceKm": {
+        "value": 13.05,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-alexandra-street",
+          "x-archer-road",
+          "x-buckworth-street",
+          "x-central-kialla-road",
+          "x-echuca-road",
+          "x-goulburn-valley-highway",
+          "x-joyce-reid-drive",
+          "x-kialla-lakes-drive",
+          "x-obrien-street",
+          "x-river-road",
+          "x-riverview-drive",
+          "x-taig-avenue",
+          "x-watt-road"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "21340",
+      "to": "reg-shepparton-library",
+      "distanceKm": {
+        "value": 7.48,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-goulburn-valley-highway",
+          "x-kialla-lakes-drive",
+          "x-sobraon-street",
+          "x-waranga-drive",
+          "x-welsford-street",
+          "x-wendouree-drive",
+          "x-wyndham-street"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "21340",
+      "to": "reg-mooroopna-hall",
+      "distanceKm": {
+        "value": 9.65,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-buckworth-street",
+          "x-echuca-road",
+          "x-goulburn-valley-highway",
+          "x-kialla-lakes-drive",
+          "x-obrien-street",
+          "x-riverview-drive",
+          "x-taig-avenue",
+          "x-waranga-drive",
+          "x-watt-road",
+          "x-wendouree-drive"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "21340",
+      "to": "reg-kialla-hall",
+      "distanceKm": {
+        "value": 5.33,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-archer-road",
+          "x-central-kialla-road",
+          "x-river-road",
+          "x-sanctuary-drive"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "22277",
+      "to": "reg-shepparton-library",
+      "distanceKm": {
+        "value": 10.71,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-barmah-shepparton-road",
+          "x-knight-street",
+          "x-marungi-street",
+          "x-mccracken-road",
+          "x-nixon-street",
+          "x-numurkah-road",
+          "x-welsford-street"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "22277",
+      "to": "reg-mooroopna-hall",
+      "distanceKm": {
+        "value": 14.16,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-barmah-shepparton-road",
+          "x-echuca-road",
+          "x-goulburn-valley-highway",
+          "x-kittles-road",
+          "x-mccracken-road"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "22277",
+      "to": "reg-kialla-hall",
+      "distanceKm": {
+        "value": 21.2,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-barmah-shepparton-road",
+          "x-central-kialla-road",
+          "x-doyles-road",
+          "x-mccracken-road",
+          "x-numurkah-road",
+          "x-river-road"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    }
+  ]
+}

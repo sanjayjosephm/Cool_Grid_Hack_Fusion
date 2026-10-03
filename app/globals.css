@@ -82,3 +82,51 @@
     background-position: 100% 100%;
   }
 }
+
+/* ---------- Landing page animations ---------- */
+/* Paths use pathLength="1", so a dash of 1 draws the whole outline. */
+.draw-in { stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 2.2s cubic-bezier(0.6, 0.1, 0.2, 1) forwards; animation-delay: var(--d, 0ms); }
+.fill-in { fill-opacity: 0; animation: fill-in 1.2s ease forwards; animation-delay: var(--d, 0ms); }
+.pulse-ring { transform-box: fill-box; transform-origin: center; animation: pulse-ring 2.4s ease-out infinite; animation-delay: var(--d, 0ms); }
+.twinkle { animation: twinkle 3s ease-in-out infinite; animation-delay: var(--d, 0ms); }
+.flow { stroke-dasharray: 4 6; animation: flow 1.2s linear infinite; }
+.marquee { animation: marquee 40s linear infinite; }
+.shimmer-text { background: linear-gradient(90deg, #fff 0%, #F2C46B 25%, #fff 50%, #7FB2DD 75%, #fff 100%); background-size: 200% auto; -webkit-background-clip: text; background-clip: text; color: transparent; animation: shimmer 8s linear infinite; }
+.rise { transform-box: fill-box; transform-origin: bottom; animation: rise 2.4s ease-in-out infinite alternate; }
+.drain { transform-box: fill-box; transform-origin: left; animation: drain 5s ease-in forwards; }
+.wave { animation: wave 3s ease-in-out infinite; }
+.sun { transform-box: fill-box; transform-origin: center; animation: spin 18s linear infinite; }
+.blink { animation: blink 1s steps(2) infinite; }
+
+/* Hero map story: one 15 s cycle — heat (0-33%), outage (33-66%), flood (66-100%). */
+.story-heat { animation: story-heat 15s infinite; }
+.story-outage { animation: story-outage 15s infinite; }
+.story-flood { animation: story-flood 15s infinite; }
+.story-dim { animation: story-dim 15s infinite; }
+.story-cut { animation: story-cut 15s infinite; }
+.story-close { animation: story-close 15s infinite; }
+
+@keyframes draw { to { stroke-dashoffset: 0; } }
+@keyframes fill-in { to { fill-opacity: var(--fo, 0.55); } }
+@keyframes pulse-ring { 0% { transform: scale(1); opacity: 0.8; } 100% { transform: scale(3.2); opacity: 0; } }
+@keyframes twinkle { 0%, 100% { opacity: 0.35; } 50% { opacity: 1; } }
+@keyframes flow { to { stroke-dashoffset: -20; } }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@keyframes shimmer { to { background-position: 200% center; } }
+@keyframes rise { from { transform: scaleY(0.35); } to { transform: scaleY(1); } }
+@keyframes drain { from { transform: scaleX(1); } to { transform: scaleX(0); } }
+@keyframes wave { 0%, 100% { transform: translateY(6px); } 50% { transform: translateY(-4px); } }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes blink { 50% { opacity: 0; } }
+@keyframes story-heat { 0%, 30% { opacity: 1; } 36%, 97% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes story-outage { 0%, 30% { opacity: 0; } 36%, 63% { opacity: 1; } 69%, 100% { opacity: 0; } }
+@keyframes story-flood { 0%, 63% { opacity: 0; } 69%, 97% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes story-dim { 0%, 30% { opacity: 1; } 36%, 63% { opacity: 0.2; } 69%, 100% { opacity: 1; } }
+@keyframes story-cut { 0%, 63% { stroke: #7FD3A8; opacity: 0.9; } 69%, 97% { stroke: #F08A6B; opacity: 0.35; } 100% { stroke: #7FD3A8; opacity: 0.9; } }
+@keyframes story-close { 0%, 63% { fill: #E0A030; r: 3; } 69%, 97% { fill: #F08A6B; r: 5; } 100% { fill: #E0A030; r: 3; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .draw-in { stroke-dashoffset: 0; }
+  .fill-in { fill-opacity: var(--fo, 0.55); }
+  .story-outage, .story-flood { opacity: 0; }
+}

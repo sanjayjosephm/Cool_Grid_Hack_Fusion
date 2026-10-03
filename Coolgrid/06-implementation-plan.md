@@ -137,6 +137,23 @@ P2-U5 (resident card) and P2-U6 (landing page) were brought forward and are done
 | P2-U5 | C | Resident card | Plain language; English plus the top two Census languages; no "go to this hub" wording, instead "ask council what is open" | Languages come from D2 data |
 | P2-U6 | C | Landing page | Problem, user and flow, linking into the live tool | Every claim on it is supported by the app or a cited source |
 
+## P2 and P3 status (3 October 2026)
+
+| Item | Status | Where |
+|---|---|---|
+| P2-D6 real crossings and routing | Done: routes on the full Vicmap road network (69k points), 188 local-street crossings added | `scripts/build-p2.mjs`, `lib/data/access-links.json` |
+| P2-D7 rooftop solar, batteries, heat-pump water heaters | Done, postcode-level per 100 dwellings | `lib/data/energy.json` |
+| P2-D8 grid capacity | Not available: no open, machine-readable distributor data found (checked and recorded in SOURCES.md) | — |
+| P2-D9 heat proxy | Done: mapped urban trees per hectare, added to the area context score | `lib/data/heat.json` |
+| P2-E7 opening hours | Done | `lib/demo-review.ts` |
+| P2-E8 worksheet comparison | Done, with CSV download | `/validation` |
+| P2-E9 facility input form | Done; edits carried to the brief | `/continuity` |
+| P2-E10 recommended arrangement | Done | `/continuity` |
+| P3-1 Investment Gate | Done; effects from the engine, costs illustrative | `/investment` |
+| P3-2 Regional expansion | Done for Greater Shepparton | `/regional`, `scripts/build-region.mjs` |
+| P3-5 equity policy | Done: fair-share allocation option | `/continuity`, `/brief` |
+| P3-3, P3-4, P3-6, P3-7 | Roadmap: building them would need data we do not have (climate exports, generator/water/thermal records, fleet duty logs, gas network data) | — |
+
 ## P3 — Roadmap (do not build today)
 
 | ID | Item |

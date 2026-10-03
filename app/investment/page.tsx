@@ -6,7 +6,7 @@ import type { SearchParam } from "@/lib/planner-config";
 export const metadata = { title: "Investment Gate · CoolGrid" };
 
 const BUDGETS = [25_000, 50_000, 80_000, 125_000];
-const money = (n: number) => `$${n.toLocaleString()}`;
+const money = (n: number) => `$${n.toLocaleString("en-AU")}`;
 const first = (p: SearchParam) => (Array.isArray(p) ? p[0] : p);
 const th = "border-b border-line px-2 py-1.5 text-left font-semibold";
 const td = "border-b border-line px-2 py-1.5 align-top";

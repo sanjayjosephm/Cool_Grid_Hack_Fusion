@@ -123,7 +123,7 @@ export function formatSourcedValue(value: unknown): string {
     return value.map((item) => {
       if (typeof item === "object" && item !== null && "name" in item) {
         const language = item as { name: string; persons?: number };
-        return language.persons === undefined ? language.name : `${language.name} (${language.persons.toLocaleString()})`;
+        return language.persons === undefined ? language.name : `${language.name} (${language.persons.toLocaleString("en-AU")})`;
       }
       return String(item);
     }).join(", ");

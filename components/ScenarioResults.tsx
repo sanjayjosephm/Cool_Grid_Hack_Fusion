@@ -1,7 +1,7 @@
 // Engine output for one review, shown per scenario. Shared by the Continuity Lab and the review brief.
 import type { ReviewResult } from "@/lib/continuity";
-import { areaName, facilityName, SCENARIO_META } from "@/lib/demo-review";
-import { causes } from "@/lib/review-causes";
+import { SCENARIO_META } from "@/lib/demo-review";
+import { causes, MELBOURNE_NAMES, type Names } from "@/lib/review-causes";
 import { fairShare } from "@/lib/planning-tools";
 
 export { causes };
@@ -12,7 +12,10 @@ const demandOf = (result: ReviewResult, scenarioId: string) =>
 
 export type Policy = "max" | "fair";
 
-export default function ScenarioResults({ result, arrangement, compact = false, policy = "max" }: { result: ReviewResult; arrangement: Arrangement | null; compact?: boolean; policy?: Policy }) {
+type Props = { result: ReviewResult; arrangement: Arrangement | null; compact?: boolean; policy?: Policy; names?: Names; arrangements?: readonly Arrangement[] };
+
+export default function ScenarioResults({ result, arrangement, compact = false, policy = "max", names = MELBOURNE_NAMES, arrangements = ARRANGEMENTS }: Props) {
+  const areaName = names.area, facilityName = names.facility;
   const rowFor = (scenarioId: string, a: Arrangement) => result.rows.find((r) => r.scenarioId === scenarioId && r.arrangementId === a)!;
   return (
     <div className={`grid gap-4 ${compact ? "" : "lg:grid-cols-3"}`}>
@@ -22,7 +25,7 @@ export default function ScenarioResults({ result, arrangement, compact = false, 
         const fair = row && policy === "fair" ? fairShare(result, s.id, row.arrangementId) : null;
         const gaps = fair ? fair.allocated : row?.gapVectors?.[0] ?? null;
         const witness = row?.witnesses[0];
-        const rowCauses = row ? causes(row) : [];
+        const rowCauses = row ? causes(row, names) : [];
         return (
           <article key={s.id} className="rounded-2xl bg-white p-5 ring-1 ring-line print:break-inside-avoid print:ring-0">
             <p className="text-xs font-semibold uppercase tracking-widest text-blue">Scenario</p>
@@ -33,7 +36,7 @@ export default function ScenarioResults({ result, arrangement, compact = false, 
               <caption className="sr-only">Places counted by arrangement</caption>
               <thead><tr className="text-left text-xs uppercase tracking-wide text-muted"><th className="pb-1 font-semibold">Arrangement</th><th className="pb-1 text-right font-semibold">Places counted</th></tr></thead>
               <tbody>
-                {ARRANGEMENTS.map((a) => {
+                {arrangements.map((a) => {
                   const r = rowFor(s.id, a);
                   return (
                     <tr key={a} className={`border-t border-line ${a === arrangement ? "font-semibold" : ""}`}>

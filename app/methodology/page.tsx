@@ -48,9 +48,35 @@ export default function Methodology() {
 
       <h2 className={H2}>Access and flood</h2>
       <p className={P}>
-        A trip from a community to a facility depends on every flood-exposed crossing within 0.5 km of the straight line between the suburb
-        centre and the facility. This is an approximation, not a routed path or evacuation advice. In flood-exposed suburbs, homes that
+        Each trip from a community to a facility is the shortest route on the Vicmap road network (freeways to local streets), from the suburb
+        centre to the facility. The trip depends on every road crossing of a riverine flood overlay along that route; in the flood scenario those
+        crossings are closed. This is a planning approximation, not a travel-time model or evacuation advice. In flood-exposed suburbs, homes that
         electrify should have heat pumps, batteries and switchboards mounted above flood level.
+      </p>
+
+      <h2 className={H2}>Opening hours and planner inputs</h2>
+      <p className={P}>
+        A facility counts for cooling only if it is open for the whole heat window (12:00–18:00). Flood relief opens on activation, so ordinary
+        hours do not apply. Planners can replace any facility input in the Continuity Lab; their values are labelled declared and carried into the review brief.
+      </p>
+
+      <h2 className={H2}>Allocation policy</h2>
+      <p className={P}>
+        By default the engine counts the most places possible. The fair-share policy instead uses the same facilities and first guarantees every
+        reachable community the largest equal share of its places, then fills any remaining places. Communities no counted facility can reach are named.
+      </p>
+
+      <h2 className={H2}>Investment Gate</h2>
+      <p className={P}>
+        Upgrade packages (larger batteries, backed-up cooling, a larger inverter, longer opening hours) are applied as planner inputs and every affordable
+        combination is run through the engine. Places gained come from the engine; costs are illustrative placeholders. A combination is marked worth
+        checking if no cheaper-or-equal one does at least as well in every scenario. This shows which assessed quotes to request first, not value for money.
+      </p>
+
+      <h2 className={H2}>Regional review</h2>
+      <p className={P}>
+        The same pipeline and engine are applied to Greater Shepparton (Shepparton, Mooroopna, Kialla, Shepparton North). A first regional review mostly
+        produces questions, because facility backup facts are not yet known.
       </p>
 
       <h2 className={H2}>Area context score</h2>
@@ -63,7 +89,9 @@ export default function Methodology() {
       <h2 className={H2}>Limits</h2>
       <ul className="my-3 list-disc space-y-1 pl-6">
         <li>Results are conditional on illustrative inputs; they do not certify that any facility is ready, open or safe.</li>
-        <li>Opening hours, shared generators, water, indoor temperature and real road routing are not yet modelled.</li>
+        <li>Shared generators, water supply, indoor temperature and travel time are not yet modelled.</li>
+        <li>Grid capacity is not included: no open, machine-readable distributor data was found for these suburbs.</li>
+        <li>Small-scale energy figures are postcode-level and tree counts are a heat proxy, not temperatures; both are context only.</li>
         <li>No council has reviewed or endorsed these results; usefulness compared with current planning practice is untested.</li>
       </ul>
     </main>

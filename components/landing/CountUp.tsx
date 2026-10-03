@@ -24,5 +24,5 @@ export default function CountUp({ to }: { to: number }) {
     return () => { io.disconnect(); cancelAnimationFrame(raf); };
   }, [to]);
 
-  return <span ref={ref} className="tabular-nums">{v.toLocaleString()}</span>;
+  return <span ref={ref} className="tabular-nums">{v.toLocaleString("en-AU")}</span>;
 }
