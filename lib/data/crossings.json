@@ -1,0 +1,2237 @@
+{
+  "generated": "2026-10-03",
+  "crossings": [
+    {
+      "id": "x-albion-street-1850065",
+      "road": "Albion Street",
+      "overlay": "LSIO1",
+      "lga": "MOONEE VALLEY",
+      "at": [
+        144.93374,
+        -37.75726
+      ],
+      "roadUfis": [
+        45107316
+      ],
+      "location": {
+        "value": [
+          144.93374,
+          -37.75726
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-albion-street-1850068",
+      "road": "Albion Street",
+      "overlay": "LSIO",
+      "lga": "MERRI-BEK",
+      "at": [
+        144.93395,
+        -37.75731
+      ],
+      "roadUfis": [
+        45107315,
+        45107316
+      ],
+      "location": {
+        "value": [
+          144.93395,
+          -37.75731
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-anderson-road-1838196",
+      "road": "Anderson Road",
+      "overlay": "LSIO1",
+      "lga": "BRIMBANK",
+      "at": [
+        144.82674,
+        -37.78915
+      ],
+      "roadUfis": [
+        1372838,
+        7720204
+      ],
+      "location": {
+        "value": [
+          144.82674,
+          -37.78915
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-anderson-road-1838200",
+      "road": "Anderson Road",
+      "overlay": "LSIO1",
+      "lga": "BRIMBANK",
+      "at": [
+        144.82873,
+        -37.777
+      ],
+      "roadUfis": [
+        62714093,
+        62714102,
+        75868621,
+        75868623
+      ],
+      "location": {
+        "value": [
+          144.82873,
+          -37.777
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-arden-street-1756226",
+      "road": "Arden Street",
+      "overlay": "LSIO3",
+      "lga": "MELBOURNE",
+      "at": [
+        144.93867,
+        -37.79972
+      ],
+      "roadUfis": [
+        1378751,
+        16426792,
+        72071240
+      ],
+      "location": {
+        "value": [
+          144.93867,
+          -37.79972
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-ballarat-road-1838194",
+      "road": "Ballarat Road",
+      "overlay": "LSIO1",
+      "lga": "BRIMBANK",
+      "at": [
+        144.80701,
+        -37.77452
+      ],
+      "roadUfis": [
+        75868699,
+        75868700
+      ],
+      "location": {
+        "value": [
+          144.80701,
+          -37.77452
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-ballarat-road-1838200",
+      "road": "Ballarat Road",
+      "overlay": "LSIO1",
+      "lga": "BRIMBANK",
+      "at": [
+        144.82949,
+        -37.77701
+      ],
+      "roadUfis": [
+        75868617,
+        75868620,
+        75868622,
+        75868624
+      ],
+      "location": {
+        "value": [
+          144.82949,
+          -37.77701
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-ballarat-road-4209978",
+      "road": "Ballarat Road",
+      "overlay": "LSIO",
+      "lga": "MARIBYRNONG",
+      "at": [
+        144.91056,
+        -37.79548
+      ],
+      "roadUfis": [
+        52536771,
+        56419597,
+        56419686
+      ],
+      "location": {
+        "value": [
+          144.91056,
+          -37.79548
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-bell-street-1838156",
+      "road": "Bell Street",
+      "overlay": "LSIO1",
+      "lga": "MOONEE VALLEY",
+      "at": [
+        144.92863,
+        -37.73715
+      ],
+      "roadUfis": [
+        57850718
+      ],
+      "location": {
+        "value": [
+          144.92863,
+          -37.73715
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-boundary-road-1756226",
+      "road": "Boundary Road",
+      "overlay": "LSIO3",
+      "lga": "MELBOURNE",
+      "at": [
+        144.9391,
+        -37.79425
+      ],
+      "roadUfis": [
+        1376047
+      ],
+      "location": {
+        "value": [
+          144.9391,
+          -37.79425
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-box-forest-road-4250093",
+      "road": "Box Forest Road",
+      "overlay": "LSIO",
+      "lga": "MERRI-BEK",
+      "at": [
+        144.95783,
+        -37.70423
+      ],
+      "roadUfis": [
+        61953078,
+        62395805,
+        62395806,
+        62395807
+      ],
+      "location": {
+        "value": [
+          144.95783,
+          -37.70423
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-broadmeadows-road-dv-4208083",
+      "road": "Broadmeadows Road Dv",
+      "overlay": "LSIO",
+      "lga": "HUME",
+      "at": [
+        144.89555,
+        -37.68098
+      ],
+      "roadUfis": [
+        45155873,
+        45155883
+      ],
+      "location": {
+        "value": [
+          144.89555,
+          -37.68098
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-calder-freeway-1838191",
+      "road": "Calder Freeway",
+      "overlay": "LSIO1",
+      "lga": "BRIMBANK",
+      "at": [
+        144.83711,
+        -37.71659
+      ],
+      "roadUfis": [
+        1339711,
+        1339813,
+        64958275,
+        64958278,
+        64958280,
+        64958281,
+        64958282,
+        64958283,
+        65359901
+      ],
+      "location": {
+        "value": [
+          144.83711,
+          -37.71659
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-canning-street-1838143",
+      "road": "Canning Street",
+      "overlay": "LSIO1",
+      "lga": "MOONEE VALLEY",
+      "at": [
+        144.87387,
+        -37.76912
+      ],
+      "roadUfis": [
+        45155908,
+        54472793
+      ],
+      "location": {
+        "value": [
+          144.87387,
+          -37.76912
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-canning-street-4209978",
+      "road": "Canning Street",
+      "overlay": "LSIO",
+      "lga": "MARIBYRNONG",
+      "at": [
+        144.87456,
+        -37.76899
+      ],
+      "roadUfis": [
+        54472792,
+        54472793
+      ],
+      "location": {
+        "value": [
+          144.87456,
+          -37.76899
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-citylink-1838152",
+      "road": "Citylink",
+      "overlay": "LSIO1",
+      "lga": "MOONEE VALLEY",
+      "at": [
+        144.9342,
+        -37.7445
+      ],
+      "roadUfis": [
+        45113944,
+        45503894,
+        61952970,
+        65976142
+      ],
+      "location": {
+        "value": [
+          144.9342,
+          -37.7445
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-citylink-1838154",
+      "road": "Citylink",
+      "overlay": "LSIO1",
+      "lga": "MOONEE VALLEY",
+      "at": [
+        144.93888,
+        -37.78756
+      ],
+      "roadUfis": [
+        45113574,
+        45113801,
+        45155225,
+        45155227,
+        45157779,
+        45157782
+      ],
+      "location": {
+        "value": [
+          144.93888,
+          -37.78756
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-citylink-1838158",
+      "road": "Citylink",
+      "overlay": "LSIO1",
+      "lga": "MOONEE VALLEY",
+      "at": [
+        144.93968,
+        -37.78467
+      ],
+      "roadUfis": [
+        39155350,
+        39155351,
+        45155150,
+        45155222,
+        45155869,
+        45155878
+      ],
+      "location": {
+        "value": [
+          144.93968,
+          -37.78467
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-citylink-1838492",
+      "road": "Citylink",
+      "overlay": "LSIO",
+      "lga": "MERRI-BEK",
+      "at": [
+        144.93288,
+        -37.74232
+      ],
+      "roadUfis": [
+        45503700,
+        45503894
+      ],
+      "location": {
+        "value": [
+          144.93288,
+          -37.74232
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-citylink-1850065",
+      "road": "Citylink",
+      "overlay": "LSIO1",
+      "lga": "MOONEE VALLEY",
+      "at": [
+        144.93785,
+        -37.76059
+      ],
+      "roadUfis": [
+        39155249,
+        39155254,
+        39155291,
+        45155781,
+        45155818,
+        45155833
+      ],
+      "location": {
+        "value": [
+          144.93785,
+          -37.76059
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-citylink-1850068",
+      "road": "Citylink",
+      "overlay": "LSIO",
+      "lga": "MERRI-BEK",
+      "at": [
+        144.93785,
+        -37.76053
+      ],
+      "roadUfis": [
+        39155249,
+        39155254,
+        39155291
+      ],
+      "location": {
+        "value": [
+          144.93785,
+          -37.76053
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-citylink-in-bell-ramp-of-1838163",
+      "road": "Citylink In - Bell Ramp Of",
+      "overlay": "LSIO1",
+      "lga": "MOONEE VALLEY",
+      "at": [
+        144.92848,
+        -37.7354
+      ],
+      "roadUfis": [
+        45503879,
+        45503897,
+        60007380
+      ],
+      "location": {
+        "value": [
+          144.92848,
+          -37.7354
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-citylink-in-brunswick-ramp-of-4267449",
+      "road": "Citylink In - Brunswick Ramp Of",
+      "overlay": "LSIO",
+      "lga": "MERRI-BEK",
+      "at": [
+        144.93743,
+        -37.77093
+      ],
+      "roadUfis": [
+        39155311,
+        46255193
+      ],
+      "location": {
+        "value": [
+          144.93743,
+          -37.77093
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-citylink-in-brunswick-ramp-of-4362259",
+      "road": "Citylink In - Brunswick Ramp Of",
+      "overlay": "LSIO1",
+      "lga": "MOONEE VALLEY",
+      "at": [
+        144.93743,
+        -37.77106
+      ],
+      "roadUfis": [
+        46255193
+      ],
+      "location": {
+        "value": [
+          144.93743,
+          -37.77106
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-citylink-in-dynon-ramp-of-1756227",
+      "road": "Citylink In - Dynon Ramp Of",
+      "overlay": "LSIO3",
+      "lga": "MELBOURNE",
+      "at": [
+        144.93729,
+        -37.80518
+      ],
+      "roadUfis": [
+        74046530
+      ],
+      "location": {
+        "value": [
+          144.93729,
+          -37.80518
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-citylink-out-racecourse-ramp-of-1756225",
+      "road": "Citylink Out - Racecourse Ramp Of",
+      "overlay": "LSIO3",
+      "lga": "MELBOURNE",
+      "at": [
+        144.93705,
+        -37.78884
+      ],
+      "roadUfis": [
+        39155370,
+        63371969
+      ],
+      "location": {
+        "value": [
+          144.93705,
+          -37.78884
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-dawson-street-1850068",
+      "road": "Dawson Street",
+      "overlay": "LSIO",
+      "lga": "MERRI-BEK",
+      "at": [
+        144.93794,
+        -37.76867
+      ],
+      "roadUfis": [
+        39155289
+      ],
+      "location": {
+        "value": [
+          144.93794,
+          -37.76867
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-dean-street-1850065",
+      "road": "Dean Street",
+      "overlay": "LSIO1",
+      "lga": "MOONEE VALLEY",
+      "at": [
+        144.93776,
+        -37.76865
+      ],
+      "roadUfis": [
+        45155746
+      ],
+      "location": {
+        "value": [
+          144.93776,
+          -37.76865
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-dean-street-1850068",
+      "road": "Dean Street",
+      "overlay": "LSIO",
+      "lga": "MERRI-BEK",
+      "at": [
+        144.93785,
+        -37.76866
+      ],
+      "roadUfis": [
+        45155746
+      ],
+      "location": {
+        "value": [
+          144.93785,
+          -37.76866
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-dynon-citylink-out-ramp-on-1756227",
+      "road": "Dynon - Citylink Out Ramp On",
+      "overlay": "LSIO3",
+      "lga": "MELBOURNE",
+      "at": [
+        144.93494,
+        -37.80491
+      ],
+      "roadUfis": [
+        15605197
+      ],
+      "location": {
+        "value": [
+          144.93494,
+          -37.80491
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-dynon-road-1756227",
+      "road": "Dynon Road",
+      "overlay": "LSIO3",
+      "lga": "MELBOURNE",
+      "at": [
+        144.93682,
+        -37.80512
+      ],
+      "roadUfis": [
+        69253010,
+        73688785,
+        73688792,
+        74046435,
+        74046528,
+        74046529,
+        74480818
+      ],
+      "location": {
+        "value": [
+          144.93682,
+          -37.80512
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-dynon-road-1756235",
+      "road": "Dynon Road",
+      "overlay": "LSIO3",
+      "lga": "MELBOURNE",
+      "at": [
+        144.93273,
+        -37.80386
+      ],
+      "roadUfis": [
+        57785541,
+        57785542,
+        57850771,
+        74939494
+      ],
+      "location": {
+        "value": [
+          144.93273,
+          -37.80386
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-dynon-road-4209982",
+      "road": "Dynon Road",
+      "overlay": "LSIO1",
+      "lga": "MELBOURNE",
+      "at": [
+        144.91287,
+        -37.80124
+      ],
+      "roadUfis": [
+        1379686,
+        1379934,
+        12794823,
+        63673849,
+        64819952
+      ],
+      "location": {
+        "value": [
+          144.91287,
+          -37.80124
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-dynon-road-4209984",
+      "road": "Dynon Road",
+      "overlay": "LSIO1",
+      "lga": "MELBOURNE",
+      "at": [
+        144.91868,
+        -37.80192
+      ],
+      "roadUfis": [
+        1380146,
+        1380239,
+        13100013,
+        13100014,
+        64819960,
+        74939494
+      ],
+      "location": {
+        "value": [
+          144.91868,
+          -37.80192
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-farnsworth-avenue-4209978",
+      "road": "Farnsworth Avenue",
+      "overlay": "LSIO",
+      "lga": "MARIBYRNONG",
+      "at": [
+        144.90105,
+        -37.79022
+      ],
+      "roadUfis": [
+        56519065,
+        57003133
+      ],
+      "location": {
+        "value": [
+          144.90105,
+          -37.79022
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-forrest-street-1838194",
+      "road": "Forrest Street",
+      "overlay": "LSIO1",
+      "lga": "BRIMBANK",
+      "at": [
+        144.81564,
+        -37.78414
+      ],
+      "roadUfis": [
+        45156746,
+        54676478,
+        54676479
+      ],
+      "location": {
+        "value": [
+          144.81564,
+          -37.78414
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-furlong-road-1838201",
+      "road": "Furlong Road",
+      "overlay": "LSIO1",
+      "lga": "BRIMBANK",
+      "at": [
+        144.82176,
+        -37.76141
+      ],
+      "roadUfis": [
+        76184628,
+        76184811
+      ],
+      "location": {
+        "value": [
+          144.82176,
+          -37.76141
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-furlong-western-ring-in-ramp-on-1838201",
+      "road": "Furlong - Western Ring In Ramp On",
+      "overlay": "LSIO1",
+      "lga": "BRIMBANK",
+      "at": [
+        144.82174,
+        -37.76163
+      ],
+      "roadUfis": [
+        76184793
+      ],
+      "location": {
+        "value": [
+          144.82174,
+          -37.76163
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-furlong-western-ring-out-ramp-on-1838201",
+      "road": "Furlong - Western Ring Out Ramp On",
+      "overlay": "LSIO1",
+      "lga": "BRIMBANK",
+      "at": [
+        144.82125,
+        -37.75973
+      ],
+      "roadUfis": [
+        76184611
+      ],
+      "location": {
+        "value": [
+          144.82125,
+          -37.75973
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-geelong-road-4209977",
+      "road": "Geelong Road",
+      "overlay": "LSIO",
+      "lga": "MARIBYRNONG",
+      "at": [
+        144.87023,
+        -37.81067
+      ],
+      "roadUfis": [
+        76277255,
+        76277256,
+        76277257,
+        76278539,
+        76278544,
+        76278622,
+        76278624
+      ],
+      "location": {
+        "value": [
+          144.87023,
+          -37.81067
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-harbour-esplanade-1756228",
+      "road": "Harbour Esplanade",
+      "overlay": "LSIO3",
+      "lga": "MELBOURNE",
+      "at": [
+        144.94451,
+        -37.81415
+      ],
+      "roadUfis": [
+        65090516,
+        72811357
+      ],
+      "location": {
+        "value": [
+          144.94451,
+          -37.81415
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-johnstone-street-4208083",
+      "road": "Johnstone Street",
+      "overlay": "LSIO",
+      "lga": "HUME",
+      "at": [
+        144.9048,
+        -37.68116
+      ],
+      "roadUfis": [
+        39155010,
+        39155016,
+        45155751,
+        52820732,
+        52820738
+      ],
+      "location": {
+        "value": [
+          144.9048,
+          -37.68116
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-kensington-road-4209981",
+      "road": "Kensington Road",
+      "overlay": "LSIO1",
+      "lga": "MELBOURNE",
+      "at": [
+        144.92407,
+        -37.7962
+      ],
+      "roadUfis": [
+        1376639,
+        12499118,
+        12499119,
+        47612766,
+        47612767,
+        57913534,
+        65660708
+      ],
+      "location": {
+        "value": [
+          144.92407,
+          -37.7962
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-kensington-road-4209982",
+      "road": "Kensington Road",
+      "overlay": "LSIO1",
+      "lga": "MELBOURNE",
+      "at": [
+        144.91973,
+        -37.79871
+      ],
+      "roadUfis": [
+        57913535
+      ],
+      "location": {
+        "value": [
+          144.91973,
+          -37.79871
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-kings-road-1838207",
+      "road": "Kings Road",
+      "overlay": "LSIO1",
+      "lga": "BRIMBANK",
+      "at": [
+        144.78061,
+        -37.69974
+      ],
+      "roadUfis": [
+        47482158,
+        47482159,
+        47482235,
+        47482240
+      ],
+      "location": {
+        "value": [
+          144.78061,
+          -37.69974
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-la-trobe-street-1756228",
+      "road": "La Trobe Street",
+      "overlay": "LSIO3",
+      "lga": "MELBOURNE",
+      "at": [
+        144.94517,
+        -37.81494
+      ],
+      "roadUfis": [
+        65090514
+      ],
+      "location": {
+        "value": [
+          144.94517,
+          -37.81494
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-lloyd-street-4209984",
+      "road": "Lloyd Street",
+      "overlay": "LSIO1",
+      "lga": "MELBOURNE",
+      "at": [
+        144.93016,
+        -37.80236
+      ],
+      "roadUfis": [
+        74940170
+      ],
+      "location": {
+        "value": [
+          144.93016,
+          -37.80236
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-macaulay-road-1756225",
+      "road": "Macaulay Road",
+      "overlay": "LSIO3",
+      "lga": "MELBOURNE",
+      "at": [
+        144.93523,
+        -37.795
+      ],
+      "roadUfis": [
+        71144562,
+        71144564,
+        71144567,
+        71144571,
+        72159181,
+        72159183
+      ],
+      "location": {
+        "value": [
+          144.93523,
+          -37.795
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-macaulay-road-1756226",
+      "road": "Macaulay Road",
+      "overlay": "LSIO3",
+      "lga": "MELBOURNE",
+      "at": [
+        144.93775,
+        -37.79529
+      ],
+      "roadUfis": [
+        1376048,
+        1376643,
+        1377399,
+        39258085,
+        76819723
+      ],
+      "location": {
+        "value": [
+          144.93775,
+          -37.79529
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-mcintyre-road-1838200",
+      "road": "Mcintyre Road",
+      "overlay": "LSIO1",
+      "lga": "BRIMBANK",
+      "at": [
+        144.82877,
+        -37.7768
+      ],
+      "roadUfis": [
+        62714099
+      ],
+      "location": {
+        "value": [
+          144.82877,
+          -37.7768
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-mickleham-road-4208083",
+      "road": "Mickleham Road",
+      "overlay": "LSIO",
+      "lga": "HUME",
+      "at": [
+        144.88481,
+        -37.67489
+      ],
+      "roadUfis": [
+        53488408,
+        53488409,
+        53488410,
+        53488411,
+        53510341,
+        53510342
+      ],
+      "location": {
+        "value": [
+          144.88481,
+          -37.67489
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-mt-alexander-citylink-out-ramp-on-1838158",
+      "road": "Mt Alexander - Citylink Out Ramp On",
+      "overlay": "LSIO1",
+      "lga": "MOONEE VALLEY",
+      "at": [
+        144.93943,
+        -37.78395
+      ],
+      "roadUfis": [
+        43934938,
+        45157880,
+        45157881
+      ],
+      "location": {
+        "value": [
+          144.93943,
+          -37.78395
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-old-calder-highway-1838191",
+      "road": "Old Calder Highway",
+      "overlay": "LSIO1",
+      "lga": "BRIMBANK",
+      "at": [
+        144.8395,
+        -37.72268
+      ],
+      "roadUfis": [
+        39086951,
+        54992326,
+        54992327
+      ],
+      "location": {
+        "value": [
+          144.8395,
+          -37.72268
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-old-calder-highway-1838205",
+      "road": "Old Calder Highway",
+      "overlay": "LSIO1",
+      "lga": "BRIMBANK",
+      "at": [
+        144.80375,
+        -37.70299
+      ],
+      "roadUfis": [
+        63637887
+      ],
+      "location": {
+        "value": [
+          144.80375,
+          -37.70299
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-paramount-road-4209977",
+      "road": "Paramount Road",
+      "overlay": "LSIO",
+      "lga": "MARIBYRNONG",
+      "at": [
+        144.86165,
+        -37.80508
+      ],
+      "roadUfis": [
+        57497957,
+        57497958,
+        66662491
+      ],
+      "location": {
+        "value": [
+          144.86165,
+          -37.80508
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-pascoe-vale-road-1838163",
+      "road": "Pascoe Vale Road",
+      "overlay": "LSIO1",
+      "lga": "MOONEE VALLEY",
+      "at": [
+        144.92399,
+        -37.72911
+      ],
+      "roadUfis": [
+        45155786,
+        45181595
+      ],
+      "location": {
+        "value": [
+          144.92399,
+          -37.72911
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-pascoe-vale-western-ring-in-ramp-on-4208083",
+      "road": "Pascoe Vale - Western Ring In Ramp On",
+      "overlay": "LSIO",
+      "lga": "HUME",
+      "at": [
+        144.90814,
+        -37.69388
+      ],
+      "roadUfis": [
+        75880258,
+        75880259,
+        75880492,
+        75880513,
+        75880514
+      ],
+      "location": {
+        "value": [
+          144.90814,
+          -37.69388
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-racecourse-citylink-in-ramp-on-1756226",
+      "road": "Racecourse - Citylink In Ramp On",
+      "overlay": "LSIO3",
+      "lga": "MELBOURNE",
+      "at": [
+        144.93813,
+        -37.78933
+      ],
+      "roadUfis": [
+        1372655,
+        39155377
+      ],
+      "location": {
+        "value": [
+          144.93813,
+          -37.78933
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-racecourse-road-1756225",
+      "road": "Racecourse Road",
+      "overlay": "LSIO3",
+      "lga": "MELBOURNE",
+      "at": [
+        144.93705,
+        -37.78884
+      ],
+      "roadUfis": [
+        1372258,
+        15742392,
+        39155369,
+        43827373
+      ],
+      "location": {
+        "value": [
+          144.93705,
+          -37.78884
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-racecourse-road-1756226",
+      "road": "Racecourse Road",
+      "overlay": "LSIO3",
+      "lga": "MELBOURNE",
+      "at": [
+        144.93842,
+        -37.78899
+      ],
+      "roadUfis": [
+        1372381,
+        63674335
+      ],
+      "location": {
+        "value": [
+          144.93842,
+          -37.78899
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-raleigh-road-1838143",
+      "road": "Raleigh Road",
+      "overlay": "LSIO1",
+      "lga": "MOONEE VALLEY",
+      "at": [
+        144.90102,
+        -37.77002
+      ],
+      "roadUfis": [
+        54472788
+      ],
+      "location": {
+        "value": [
+          144.90102,
+          -37.77002
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-raleigh-road-4209978",
+      "road": "Raleigh Road",
+      "overlay": "LSIO",
+      "lga": "MARIBYRNONG",
+      "at": [
+        144.89349,
+        -37.76912
+      ],
+      "roadUfis": [
+        46335207,
+        46335209,
+        46335211,
+        46335213,
+        46335215,
+        46335217,
+        46335219,
+        46335221,
+        46335227
+      ],
+      "location": {
+        "value": [
+          144.89349,
+          -37.76912
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-smithfield-road-4209978",
+      "road": "Smithfield Road",
+      "overlay": "LSIO",
+      "lga": "MARIBYRNONG",
+      "at": [
+        144.91274,
+        -37.79504
+      ],
+      "roadUfis": [
+        56419685
+      ],
+      "location": {
+        "value": [
+          144.91274,
+          -37.79504
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-smithfield-road-4209979",
+      "road": "Smithfield Road",
+      "overlay": "LSIO2",
+      "lga": "MELBOURNE",
+      "at": [
+        144.91382,
+        -37.7946
+      ],
+      "roadUfis": [
+        47056207,
+        56419598,
+        56419685
+      ],
+      "location": {
+        "value": [
+          144.91382,
+          -37.7946
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-somerville-road-4209977",
+      "road": "Somerville Road",
+      "overlay": "LSIO",
+      "lga": "MARIBYRNONG",
+      "at": [
+        144.87086,
+        -37.81139
+      ],
+      "roadUfis": [
+        57498027,
+        57498029,
+        57498030,
+        76277138,
+        76277139,
+        76277366,
+        76277415,
+        76278632,
+        76290016
+      ],
+      "location": {
+        "value": [
+          144.87086,
+          -37.81139
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-st-albans-road-1838200",
+      "road": "St Albans Road",
+      "overlay": "LSIO1",
+      "lga": "BRIMBANK",
+      "at": [
+        144.82558,
+        -37.77625
+      ],
+      "roadUfis": [
+        43933619,
+        43939007,
+        45114682,
+        58129926,
+        62714098,
+        62714104,
+        75868619,
+        75868634
+      ],
+      "location": {
+        "value": [
+          144.82558,
+          -37.77625
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-station-road-1838198",
+      "road": "Station Road",
+      "overlay": "LSIO1",
+      "lga": "BRIMBANK",
+      "at": [
+        144.77586,
+        -37.76515
+      ],
+      "roadUfis": [
+        47539092,
+        47539093,
+        47539101,
+        47539102
+      ],
+      "location": {
+        "value": [
+          144.77586,
+          -37.76515
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-station-road-4267448",
+      "road": "Station Road",
+      "overlay": "LSIO1",
+      "lga": "BRIMBANK",
+      "at": [
+        144.77548,
+        -37.76522
+      ],
+      "roadUfis": [
+        47539090,
+        47539094,
+        47539098,
+        47539100,
+        47539103,
+        47539104
+      ],
+      "location": {
+        "value": [
+          144.77548,
+          -37.76522
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-stubbs-street-1756225",
+      "road": "Stubbs Street",
+      "overlay": "LSIO3",
+      "lga": "MELBOURNE",
+      "at": [
+        144.93606,
+        -37.78874
+      ],
+      "roadUfis": [
+        63674002,
+        66320465,
+        72159184,
+        76819672,
+        76819676,
+        76819708
+      ],
+      "location": {
+        "value": [
+          144.93606,
+          -37.78874
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-van-ness-avenue-4209978",
+      "road": "Van Ness Avenue",
+      "overlay": "LSIO",
+      "lga": "MARIBYRNONG",
+      "at": [
+        144.89571,
+        -37.7711
+      ],
+      "roadUfis": [
+        41186209,
+        41186210,
+        41187104,
+        41187105,
+        46335212,
+        58620371
+      ],
+      "location": {
+        "value": [
+          144.89571,
+          -37.7711
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-victoria-street-1850068",
+      "road": "Victoria Street",
+      "overlay": "LSIO",
+      "lga": "MERRI-BEK",
+      "at": [
+        144.93828,
+        -37.7642
+      ],
+      "roadUfis": [
+        76865935
+      ],
+      "location": {
+        "value": [
+          144.93828,
+          -37.7642
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-west-gate-tunnel-tollway-1756227",
+      "road": "West Gate Tunnel Tollway",
+      "overlay": "LSIO3",
+      "lga": "MELBOURNE",
+      "at": [
+        144.93827,
+        -37.80634
+      ],
+      "roadUfis": [
+        75586033,
+        75586034,
+        75586035,
+        75586036,
+        75586078,
+        75586098,
+        75586099,
+        75586100,
+        75586101,
+        75586113,
+        75586114,
+        75586115,
+        75586120,
+        75586121
+      ],
+      "location": {
+        "value": [
+          144.93827,
+          -37.80634
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-west-gate-tunnel-tollway-1756235",
+      "road": "West Gate Tunnel Tollway",
+      "overlay": "LSIO3",
+      "lga": "MELBOURNE",
+      "at": [
+        144.93303,
+        -37.80631
+      ],
+      "roadUfis": [
+        75586015,
+        75586020,
+        75586028,
+        75586030,
+        75586031
+      ],
+      "location": {
+        "value": [
+          144.93303,
+          -37.80631
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-west-gate-tunnel-tollway-1756241",
+      "road": "West Gate Tunnel Tollway",
+      "overlay": "LSIO3",
+      "lga": "MELBOURNE",
+      "at": [
+        144.93404,
+        -37.80562
+      ],
+      "roadUfis": [
+        75586023,
+        75586027,
+        75586140
+      ],
+      "location": {
+        "value": [
+          144.93404,
+          -37.80562
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-west-gate-tunnel-tollway-1756242",
+      "road": "West Gate Tunnel Tollway",
+      "overlay": "LSIO3",
+      "lga": "MELBOURNE",
+      "at": [
+        144.93324,
+        -37.80845
+      ],
+      "roadUfis": [
+        75586012,
+        75586013,
+        75586029,
+        75586032,
+        75586096,
+        75586097,
+        75586117,
+        75586119,
+        75586134,
+        75586135,
+        75586139,
+        75813492,
+        75813493
+      ],
+      "location": {
+        "value": [
+          144.93324,
+          -37.80845
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-west-gate-tunnel-tollway-1756244",
+      "road": "West Gate Tunnel Tollway",
+      "overlay": "LSIO3",
+      "lga": "MELBOURNE",
+      "at": [
+        144.93429,
+        -37.8078
+      ],
+      "roadUfis": [
+        75586074,
+        75586075,
+        75586076,
+        75586077,
+        75586079,
+        75586080,
+        75586081,
+        75586128,
+        75586129,
+        75586140,
+        75773188,
+        75773189,
+        75773190,
+        75773191
+      ],
+      "location": {
+        "value": [
+          144.93429,
+          -37.8078
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-western-ring-in-furlong-ramp-of-1838201",
+      "road": "Western Ring In - Furlong Ramp Of",
+      "overlay": "LSIO1",
+      "lga": "BRIMBANK",
+      "at": [
+        144.82158,
+        -37.76111
+      ],
+      "roadUfis": [
+        76184593,
+        76184594,
+        76184595
+      ],
+      "location": {
+        "value": [
+          144.82158,
+          -37.76111
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-western-ring-out-pascoe-vale-ramp-of-4208083",
+      "road": "Western Ring Out - Pascoe Vale Ramp Of",
+      "overlay": "LSIO",
+      "lga": "HUME",
+      "at": [
+        144.90487,
+        -37.69342
+      ],
+      "roadUfis": [
+        75880244,
+        75880260,
+        75880262,
+        75880263,
+        75880489,
+        75880497
+      ],
+      "location": {
+        "value": [
+          144.90487,
+          -37.69342
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-western-ring-road-1838191",
+      "road": "Western Ring Road",
+      "overlay": "LSIO1",
+      "lga": "BRIMBANK",
+      "at": [
+        144.83969,
+        -37.74614
+      ],
+      "roadUfis": [
+        76184498,
+        76184500,
+        76184502,
+        76184503,
+        76184818,
+        76184819
+      ],
+      "location": {
+        "value": [
+          144.83969,
+          -37.74614
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-western-ring-road-1838201",
+      "road": "Western Ring Road",
+      "overlay": "LSIO1",
+      "lga": "BRIMBANK",
+      "at": [
+        144.82134,
+        -37.76063
+      ],
+      "roadUfis": [
+        76184591,
+        76184592
+      ],
+      "location": {
+        "value": [
+          144.82134,
+          -37.76063
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-western-ring-road-4208083",
+      "road": "Western Ring Road",
+      "overlay": "LSIO",
+      "lga": "HUME",
+      "at": [
+        144.90508,
+        -37.69376
+      ],
+      "roadUfis": [
+        75880235,
+        75880236,
+        75880249,
+        75880250,
+        75880254,
+        75880255,
+        75880261,
+        75880426,
+        75880487,
+        75880488,
+        75880490,
+        75880491
+      ],
+      "location": {
+        "value": [
+          144.90508,
+          -37.69376
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-wilson-street-1850065",
+      "road": "Wilson Street",
+      "overlay": "LSIO1",
+      "lga": "MOONEE VALLEY",
+      "at": [
+        144.93811,
+        -37.76418
+      ],
+      "roadUfis": [
+        45155765
+      ],
+      "location": {
+        "value": [
+          144.93811,
+          -37.76418
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-wilson-street-1850068",
+      "road": "Wilson Street",
+      "overlay": "LSIO",
+      "lga": "MERRI-BEK",
+      "at": [
+        144.93817,
+        -37.76419
+      ],
+      "roadUfis": [
+        45155765
+      ],
+      "location": {
+        "value": [
+          144.93817,
+          -37.76419
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-wurundjeri-way-1756227",
+      "road": "Wurundjeri Way",
+      "overlay": "LSIO3",
+      "lga": "MELBOURNE",
+      "at": [
+        144.93708,
+        -37.80521
+      ],
+      "roadUfis": [
+        74675564,
+        74675565,
+        74675566,
+        74675567,
+        74675569,
+        74675570,
+        74675572,
+        74675573,
+        74675574,
+        74675575,
+        74675580,
+        75571080,
+        75571289,
+        75571290,
+        75571294,
+        75571295,
+        75571296,
+        75571297,
+        75571304
+      ],
+      "location": {
+        "value": [
+          144.93708,
+          -37.80521
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-wurundjeri-way-1756235",
+      "road": "Wurundjeri Way",
+      "overlay": "LSIO3",
+      "lga": "MELBOURNE",
+      "at": [
+        144.93384,
+        -37.80411
+      ],
+      "roadUfis": [
+        74675599,
+        75571303
+      ],
+      "location": {
+        "value": [
+          144.93384,
+          -37.80411
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "id": "x-wurundjeri-way-1756240",
+      "road": "Wurundjeri Way",
+      "overlay": "LSIO3",
+      "lga": "MELBOURNE",
+      "at": [
+        144.93438,
+        -37.80416
+      ],
+      "roadUfis": [
+        75571291
+      ],
+      "location": {
+        "value": [
+          144.93438,
+          -37.80416
+        ],
+        "status": "public",
+        "source": "Vicmap Transport (tr_road, class 0-3) × Vicmap Planning, planning scheme overlays (plan_overlay)",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    }
+  ]
+}

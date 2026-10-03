@@ -1,0 +1,12 @@
+[
+  { "sal": "22397", "name": "Sunshine West", "lga": "Brimbank" },
+  { "sal": "22395", "name": "Sunshine", "lga": "Brimbank" },
+  { "sal": "20021", "name": "Albion", "lga": "Brimbank" },
+  { "sal": "20729", "name": "Deer Park", "lga": "Brimbank" },
+  { "sal": "22330", "name": "St Albans", "lga": "Brimbank" },
+  { "sal": "20324", "name": "Braybrook", "lga": "Maribyrnong" },
+  { "sal": "21575", "name": "Maidstone", "lga": "Maribyrnong" },
+  { "sal": "20935", "name": "Footscray", "lga": "Maribyrnong" },
+  { "sal": "20363", "name": "Brunswick West", "lga": "Merri-bek" },
+  { "sal": "20346", "name": "Broadmeadows", "lga": "Hume" }
+]

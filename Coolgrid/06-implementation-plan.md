@@ -69,11 +69,11 @@ export type Sourced<T> = {
 | ID | Layer | Source | Output | Done when |
 |---|---|---|---|---|
 | P1-D0 | Suburb boundaries | ABS Suburbs and Localities 2021 (CC BY 4.0) | `suburbs.geo.json` | All study suburbs present; simplified below 50 KB |
-| P1-D1 | Social disadvantage | ABS SEIFA 2021, IRSD by suburb | `seifa.json` | All suburbs matched by code; 2 checked by hand against the ABS file |
-| P1-D2 | People | ABS Census 2021 by suburb: population, % aged 65+, % living alone, top languages | `census.json` | Population matches ABS QuickStats for 3 suburbs |
+| P1-D1 | Social disadvantage | ABS SEIFA 2021, IRSD by suburb | `areas.json` (combined with D2, one record per suburb) | All suburbs matched by code; 2 checked by hand against the ABS file |
+| P1-D2 | People | ABS Census 2021 by suburb: population, % aged 65+, % living alone, top languages | `areas.json` (combined with D1) | Population matches ABS QuickStats for 3 suburbs |
 | P1-D3 | Flood exposure | Vicmap Planning flood overlays (LSIO, Floodway Overlay) from data.vic | `flood.json`: % of suburb area in overlay; per-facility flag | % area hand-checked for 2 suburbs; a facility known to be in an overlay is flagged |
 | P1-D4 | Facilities | 6–8 real libraries / community centres / neighbourhood houses. Location **public**; capacity, staffing, backup **declared** | `facilities.json` | Each facility lies inside its suburb polygon; every field labelled |
-| P1-D5 | Access dependencies (declared) | 1–2 declared river/creek crossings with stable IDs, anchored by the October 2022 Maribyrnong flood | `crossings.json` | Each community's access route lists its crossing IDs |
+| P1-D5 | Access dependencies | Main roads (Vicmap Transport) crossing riverine flood overlays, with stable IDs; each community's link to each facility lists the crossings within 0.5 km of the straight line (illustrative; routing is P2) | `crossings.json`, `access-links.json` | Each community's access route lists its crossing IDs; distances re-checked independently |
 
 **Time box:** if a dataset takes more than 90 minutes, use a labelled `illustrative` value and move on.
 

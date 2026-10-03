@@ -1,0 +1,686 @@
+{
+  "fac-sunshine-library": {
+    "services": {
+      "coolingRespite": {
+        "places": {
+          "value": 120,
+          "status": "illustrative",
+          "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+          "date": "2026-10-03"
+        },
+        "hours": {
+          "value": "10:00-20:00",
+          "status": "illustrative",
+          "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+          "date": "2026-10-03"
+        }
+      },
+      "floodRelief": {
+        "places": {
+          "value": 60,
+          "status": "illustrative",
+          "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+          "date": "2026-10-03"
+        }
+      }
+    },
+    "crews": {
+      "value": 2,
+      "status": "illustrative",
+      "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+      "date": "2026-10-03"
+    },
+    "backup": {
+      "batteryKWh": {
+        "value": 40,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "reservePct": {
+        "value": 20,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "inverterKW": {
+        "value": 10,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "coolingKW": {
+        "value": 4,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "surgeKW": {
+        "value": 8,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "baseKW": {
+        "value": 1.5,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "coolingOnBackup": {
+        "value": true,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      }
+    }
+  },
+  "fac-st-albans-library": {
+    "services": {
+      "coolingRespite": {
+        "places": {
+          "value": 100,
+          "status": "illustrative",
+          "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+          "date": "2026-10-03"
+        },
+        "hours": {
+          "value": "10:00-20:00",
+          "status": "illustrative",
+          "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+          "date": "2026-10-03"
+        }
+      },
+      "floodRelief": {
+        "places": {
+          "value": 50,
+          "status": "illustrative",
+          "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+          "date": "2026-10-03"
+        }
+      }
+    },
+    "crews": {
+      "value": 2,
+      "status": "illustrative",
+      "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+      "date": "2026-10-03"
+    },
+    "backup": {
+      "batteryKWh": {
+        "value": 60,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "reservePct": {
+        "value": 20,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "inverterKW": {
+        "value": 15,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "coolingKW": {
+        "value": 5,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "surgeKW": {
+        "value": 12,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "baseKW": {
+        "value": 2,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "coolingOnBackup": {
+        "value": true,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      }
+    }
+  },
+  "fac-deer-park-library": {
+    "services": {
+      "coolingRespite": {
+        "places": {
+          "value": 60,
+          "status": "illustrative",
+          "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+          "date": "2026-10-03"
+        },
+        "hours": {
+          "value": "10:00-18:00",
+          "status": "illustrative",
+          "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+          "date": "2026-10-03"
+        }
+      },
+      "floodRelief": {
+        "places": {
+          "value": 30,
+          "status": "illustrative",
+          "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+          "date": "2026-10-03"
+        }
+      }
+    },
+    "crews": {
+      "value": 1,
+      "status": "illustrative",
+      "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+      "date": "2026-10-03"
+    },
+    "backup": {
+      "batteryKWh": {
+        "value": null,
+        "status": "unknown",
+        "source": "Not yet provided by the facility owner",
+        "date": "2026-10-03"
+      },
+      "reservePct": {
+        "value": null,
+        "status": "unknown",
+        "source": "Not yet provided by the facility owner",
+        "date": "2026-10-03"
+      },
+      "inverterKW": {
+        "value": null,
+        "status": "unknown",
+        "source": "Not yet provided by the facility owner",
+        "date": "2026-10-03"
+      },
+      "coolingKW": {
+        "value": 4,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "surgeKW": {
+        "value": 9,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "baseKW": {
+        "value": 1,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "coolingOnBackup": {
+        "value": null,
+        "status": "unknown",
+        "source": "Not yet provided by the facility owner",
+        "date": "2026-10-03"
+      }
+    }
+  },
+  "fac-footscray-library": {
+    "services": {
+      "coolingRespite": {
+        "places": {
+          "value": 100,
+          "status": "illustrative",
+          "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+          "date": "2026-10-03"
+        },
+        "hours": {
+          "value": "10:00-20:00",
+          "status": "illustrative",
+          "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+          "date": "2026-10-03"
+        }
+      },
+      "floodRelief": {
+        "places": {
+          "value": 50,
+          "status": "illustrative",
+          "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+          "date": "2026-10-03"
+        }
+      }
+    },
+    "crews": {
+      "value": 2,
+      "status": "illustrative",
+      "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+      "date": "2026-10-03"
+    },
+    "backup": {
+      "batteryKWh": {
+        "value": 100,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "reservePct": {
+        "value": 20,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "inverterKW": {
+        "value": 20,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "coolingKW": {
+        "value": 6,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "surgeKW": {
+        "value": 14,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "baseKW": {
+        "value": 2,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "coolingOnBackup": {
+        "value": null,
+        "status": "unknown",
+        "source": "Not yet provided by the facility owner",
+        "date": "2026-10-03"
+      }
+    }
+  },
+  "fac-broadmeadows-library": {
+    "services": {
+      "coolingRespite": {
+        "places": {
+          "value": 110,
+          "status": "illustrative",
+          "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+          "date": "2026-10-03"
+        },
+        "hours": {
+          "value": "10:00-20:00",
+          "status": "illustrative",
+          "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+          "date": "2026-10-03"
+        }
+      },
+      "floodRelief": {
+        "places": {
+          "value": 60,
+          "status": "illustrative",
+          "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+          "date": "2026-10-03"
+        }
+      }
+    },
+    "crews": {
+      "value": 2,
+      "status": "illustrative",
+      "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+      "date": "2026-10-03"
+    },
+    "backup": {
+      "batteryKWh": {
+        "value": 50,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "reservePct": {
+        "value": 20,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "inverterKW": {
+        "value": 10,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "coolingKW": {
+        "value": 3,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "surgeKW": {
+        "value": 7,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "baseKW": {
+        "value": 1,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "coolingOnBackup": {
+        "value": true,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      }
+    }
+  },
+  "fac-brunswick-west-library": {
+    "services": {
+      "coolingRespite": {
+        "places": {
+          "value": 50,
+          "status": "illustrative",
+          "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+          "date": "2026-10-03"
+        },
+        "hours": {
+          "value": "10:00-18:00",
+          "status": "illustrative",
+          "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+          "date": "2026-10-03"
+        }
+      },
+      "floodRelief": {
+        "places": {
+          "value": 20,
+          "status": "illustrative",
+          "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+          "date": "2026-10-03"
+        }
+      }
+    },
+    "crews": {
+      "value": 1,
+      "status": "illustrative",
+      "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+      "date": "2026-10-03"
+    },
+    "backup": {
+      "batteryKWh": {
+        "value": 50,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "reservePct": {
+        "value": 20,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "inverterKW": {
+        "value": 10,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "coolingKW": {
+        "value": 3,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "surgeKW": {
+        "value": 7,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "baseKW": {
+        "value": 1,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "coolingOnBackup": {
+        "value": true,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      }
+    }
+  },
+  "fac-braybrook-cc": {
+    "services": {
+      "coolingRespite": {
+        "places": {
+          "value": 60,
+          "status": "illustrative",
+          "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+          "date": "2026-10-03"
+        },
+        "hours": {
+          "value": "09:00-17:00",
+          "status": "illustrative",
+          "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+          "date": "2026-10-03"
+        }
+      },
+      "floodRelief": {
+        "places": {
+          "value": 40,
+          "status": "illustrative",
+          "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+          "date": "2026-10-03"
+        }
+      }
+    },
+    "crews": {
+      "value": 1,
+      "status": "illustrative",
+      "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+      "date": "2026-10-03"
+    },
+    "backup": {
+      "batteryKWh": {
+        "value": 30,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "reservePct": {
+        "value": 10,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "inverterKW": {
+        "value": 5,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "coolingKW": {
+        "value": 3.5,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "surgeKW": {
+        "value": 8,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "baseKW": {
+        "value": 1,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "coolingOnBackup": {
+        "value": true,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      }
+    }
+  },
+  "fac-maidstone-cc": {
+    "services": {
+      "coolingRespite": {
+        "places": {
+          "value": 50,
+          "status": "illustrative",
+          "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+          "date": "2026-10-03"
+        },
+        "hours": {
+          "value": "09:00-17:00",
+          "status": "illustrative",
+          "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+          "date": "2026-10-03"
+        }
+      },
+      "floodRelief": {
+        "places": {
+          "value": 30,
+          "status": "illustrative",
+          "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+          "date": "2026-10-03"
+        }
+      }
+    },
+    "crews": {
+      "value": 1,
+      "status": "illustrative",
+      "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+      "date": "2026-10-03"
+    },
+    "backup": {
+      "batteryKWh": {
+        "value": null,
+        "status": "unknown",
+        "source": "Not yet provided by the facility owner",
+        "date": "2026-10-03"
+      },
+      "reservePct": {
+        "value": null,
+        "status": "unknown",
+        "source": "Not yet provided by the facility owner",
+        "date": "2026-10-03"
+      },
+      "inverterKW": {
+        "value": null,
+        "status": "unknown",
+        "source": "Not yet provided by the facility owner",
+        "date": "2026-10-03"
+      },
+      "coolingKW": {
+        "value": null,
+        "status": "unknown",
+        "source": "Not yet provided by the facility owner",
+        "date": "2026-10-03"
+      },
+      "surgeKW": {
+        "value": null,
+        "status": "unknown",
+        "source": "Not yet provided by the facility owner",
+        "date": "2026-10-03"
+      },
+      "baseKW": {
+        "value": null,
+        "status": "unknown",
+        "source": "Not yet provided by the facility owner",
+        "date": "2026-10-03"
+      },
+      "coolingOnBackup": {
+        "value": null,
+        "status": "unknown",
+        "source": "Not yet provided by the facility owner",
+        "date": "2026-10-03"
+      }
+    }
+  },
+  "fac-west-sunshine-cc": {
+    "services": {
+      "coolingRespite": {
+        "places": {
+          "value": 70,
+          "status": "illustrative",
+          "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+          "date": "2026-10-03"
+        },
+        "hours": {
+          "value": "09:00-17:00",
+          "status": "illustrative",
+          "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+          "date": "2026-10-03"
+        }
+      },
+      "floodRelief": {
+        "places": {
+          "value": 40,
+          "status": "illustrative",
+          "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+          "date": "2026-10-03"
+        }
+      }
+    },
+    "crews": {
+      "value": 1,
+      "status": "illustrative",
+      "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+      "date": "2026-10-03"
+    },
+    "backup": {
+      "batteryKWh": {
+        "value": 0,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "reservePct": {
+        "value": null,
+        "status": "unknown",
+        "source": "Not yet provided by the facility owner",
+        "date": "2026-10-03"
+      },
+      "inverterKW": {
+        "value": null,
+        "status": "unknown",
+        "source": "Not yet provided by the facility owner",
+        "date": "2026-10-03"
+      },
+      "coolingKW": {
+        "value": 4,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "surgeKW": {
+        "value": 9,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "baseKW": {
+        "value": 1,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      },
+      "coolingOnBackup": {
+        "value": false,
+        "status": "illustrative",
+        "source": "CoolGrid demo placeholder: replace with council asset and emergency-management records",
+        "date": "2026-10-03"
+      }
+    }
+  }
+}

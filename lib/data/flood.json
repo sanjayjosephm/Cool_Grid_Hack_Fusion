@@ -1,0 +1,225 @@
+{
+  "generated": "2026-10-03",
+  "areas": [
+    {
+      "sal": "22397",
+      "name": "Sunshine West",
+      "pctRiverine": {
+        "value": 2.1,
+        "status": "public",
+        "source": "Vicmap Planning, planning scheme overlays (plan_overlay): LSIO + FO area ÷ suburb area",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctStormwater": {
+        "value": 5,
+        "status": "public",
+        "source": "Vicmap Planning, planning scheme overlays (plan_overlay): SBO area ÷ suburb area",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "check": {
+        "pctRiverineSampled": 2.2,
+        "pctStormwaterSampled": 5
+      }
+    },
+    {
+      "sal": "22395",
+      "name": "Sunshine",
+      "pctRiverine": {
+        "value": 5.4,
+        "status": "public",
+        "source": "Vicmap Planning, planning scheme overlays (plan_overlay): LSIO + FO area ÷ suburb area",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctStormwater": {
+        "value": 3.6,
+        "status": "public",
+        "source": "Vicmap Planning, planning scheme overlays (plan_overlay): SBO area ÷ suburb area",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "check": {
+        "pctRiverineSampled": 5.3,
+        "pctStormwaterSampled": 4
+      }
+    },
+    {
+      "sal": "20021",
+      "name": "Albion",
+      "pctRiverine": {
+        "value": 3.1,
+        "status": "public",
+        "source": "Vicmap Planning, planning scheme overlays (plan_overlay): LSIO + FO area ÷ suburb area",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctStormwater": {
+        "value": 0,
+        "status": "public",
+        "source": "Vicmap Planning, planning scheme overlays (plan_overlay): SBO area ÷ suburb area",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "check": {
+        "pctRiverineSampled": 2.9,
+        "pctStormwaterSampled": 0
+      }
+    },
+    {
+      "sal": "20729",
+      "name": "Deer Park",
+      "pctRiverine": {
+        "value": 3.6,
+        "status": "public",
+        "source": "Vicmap Planning, planning scheme overlays (plan_overlay): LSIO + FO area ÷ suburb area",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctStormwater": {
+        "value": 3,
+        "status": "public",
+        "source": "Vicmap Planning, planning scheme overlays (plan_overlay): SBO area ÷ suburb area",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "check": {
+        "pctRiverineSampled": 3.6,
+        "pctStormwaterSampled": 3
+      }
+    },
+    {
+      "sal": "22330",
+      "name": "St Albans",
+      "pctRiverine": {
+        "value": 0.2,
+        "status": "public",
+        "source": "Vicmap Planning, planning scheme overlays (plan_overlay): LSIO + FO area ÷ suburb area",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctStormwater": {
+        "value": 7,
+        "status": "public",
+        "source": "Vicmap Planning, planning scheme overlays (plan_overlay): SBO area ÷ suburb area",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "check": {
+        "pctRiverineSampled": 0.2,
+        "pctStormwaterSampled": 7
+      }
+    },
+    {
+      "sal": "20324",
+      "name": "Braybrook",
+      "pctRiverine": {
+        "value": 1.4,
+        "status": "public",
+        "source": "Vicmap Planning, planning scheme overlays (plan_overlay): LSIO + FO area ÷ suburb area",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctStormwater": {
+        "value": 1.9,
+        "status": "public",
+        "source": "Vicmap Planning, planning scheme overlays (plan_overlay): SBO area ÷ suburb area",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "check": {
+        "pctRiverineSampled": 1.5,
+        "pctStormwaterSampled": 1.9
+      }
+    },
+    {
+      "sal": "21575",
+      "name": "Maidstone",
+      "pctRiverine": {
+        "value": 1.3,
+        "status": "public",
+        "source": "Vicmap Planning, planning scheme overlays (plan_overlay): LSIO + FO area ÷ suburb area",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctStormwater": {
+        "value": 3.2,
+        "status": "public",
+        "source": "Vicmap Planning, planning scheme overlays (plan_overlay): SBO area ÷ suburb area",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "check": {
+        "pctRiverineSampled": 1.3,
+        "pctStormwaterSampled": 3.1
+      }
+    },
+    {
+      "sal": "20935",
+      "name": "Footscray",
+      "pctRiverine": {
+        "value": 9.9,
+        "status": "public",
+        "source": "Vicmap Planning, planning scheme overlays (plan_overlay): LSIO + FO area ÷ suburb area",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctStormwater": {
+        "value": 8.1,
+        "status": "public",
+        "source": "Vicmap Planning, planning scheme overlays (plan_overlay): SBO area ÷ suburb area",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "check": {
+        "pctRiverineSampled": 10,
+        "pctStormwaterSampled": 8.1
+      }
+    },
+    {
+      "sal": "20363",
+      "name": "Brunswick West",
+      "pctRiverine": {
+        "value": 0.9,
+        "status": "public",
+        "source": "Vicmap Planning, planning scheme overlays (plan_overlay): LSIO + FO area ÷ suburb area",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctStormwater": {
+        "value": 7.8,
+        "status": "public",
+        "source": "Vicmap Planning, planning scheme overlays (plan_overlay): SBO area ÷ suburb area",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "check": {
+        "pctRiverineSampled": 1.1,
+        "pctStormwaterSampled": 8.2
+      }
+    },
+    {
+      "sal": "20346",
+      "name": "Broadmeadows",
+      "pctRiverine": {
+        "value": 1,
+        "status": "public",
+        "source": "Vicmap Planning, planning scheme overlays (plan_overlay): LSIO + FO area ÷ suburb area",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctStormwater": {
+        "value": 3.3,
+        "status": "public",
+        "source": "Vicmap Planning, planning scheme overlays (plan_overlay): SBO area ÷ suburb area",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "check": {
+        "pctRiverineSampled": 1,
+        "pctStormwaterSampled": 3.4
+      }
+    }
+  ]
+}

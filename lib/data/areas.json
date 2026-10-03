@@ -1,0 +1,915 @@
+{
+  "generated": "2026-10-03",
+  "areas": [
+    {
+      "sal": "22397",
+      "name": "Sunshine West",
+      "lga": "Brimbank",
+      "irsdScore": {
+        "value": 884.4,
+        "status": "public",
+        "source": "ABS SEIFA 2021, Index of Relative Socio-economic Disadvantage (IRSD), SAL",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "irsdDecile": {
+        "value": 1,
+        "status": "public",
+        "source": "ABS SEIFA 2021, IRSD national decile (1 = most disadvantaged), SAL",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "seifaPopulation": {
+        "value": 18552,
+        "status": "public",
+        "source": "ABS SEIFA 2021, usual resident population, SAL",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "population": {
+        "value": 18552,
+        "status": "public",
+        "source": "ABS Census 2021, G01 total persons, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pct65Plus": {
+        "value": 18.2,
+        "status": "public",
+        "source": "ABS Census 2021, G01 age 65+ / total persons, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctNeedAssistance": {
+        "value": 8.8,
+        "status": "public",
+        "source": "ABS Census 2021, G18 core activity need for assistance, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctLowEnglish": {
+        "value": 15.6,
+        "status": "public",
+        "source": "ABS Census 2021, G13 speaks English not well or not at all, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctNoCar": {
+        "value": 7.7,
+        "status": "public",
+        "source": "ABS Census 2021, G34 occupied private dwellings with no motor vehicle, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctLivingAlone": {
+        "value": 21.5,
+        "status": "public",
+        "source": "ABS Census 2021, G35 one-person households / all households, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "topLanguages": {
+        "value": [
+          {
+            "code": "5107",
+            "name": "Vietnamese",
+            "persons": 3771
+          },
+          {
+            "code": "3205",
+            "name": "Greek",
+            "persons": 881
+          },
+          {
+            "code": "7101",
+            "name": "Cantonese",
+            "persons": 438
+          }
+        ],
+        "status": "public",
+        "source": "ABS Census 2021, G13 language used at home (excluding English), Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "sal": "22395",
+      "name": "Sunshine",
+      "lga": "Brimbank",
+      "irsdScore": {
+        "value": 931.1,
+        "status": "public",
+        "source": "ABS SEIFA 2021, Index of Relative Socio-economic Disadvantage (IRSD), SAL",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "irsdDecile": {
+        "value": 2,
+        "status": "public",
+        "source": "ABS SEIFA 2021, IRSD national decile (1 = most disadvantaged), SAL",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "seifaPopulation": {
+        "value": 9445,
+        "status": "public",
+        "source": "ABS SEIFA 2021, usual resident population, SAL",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "population": {
+        "value": 9445,
+        "status": "public",
+        "source": "ABS Census 2021, G01 total persons, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pct65Plus": {
+        "value": 13.2,
+        "status": "public",
+        "source": "ABS Census 2021, G01 age 65+ / total persons, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctNeedAssistance": {
+        "value": 7.2,
+        "status": "public",
+        "source": "ABS Census 2021, G18 core activity need for assistance, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctLowEnglish": {
+        "value": 12.4,
+        "status": "public",
+        "source": "ABS Census 2021, G13 speaks English not well or not at all, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctNoCar": {
+        "value": 12,
+        "status": "public",
+        "source": "ABS Census 2021, G34 occupied private dwellings with no motor vehicle, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctLivingAlone": {
+        "value": 25.5,
+        "status": "public",
+        "source": "ABS Census 2021, G35 one-person households / all households, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "topLanguages": {
+        "value": [
+          {
+            "code": "5107",
+            "name": "Vietnamese",
+            "persons": 1620
+          },
+          {
+            "code": "5206",
+            "name": "Nepali",
+            "persons": 335
+          },
+          {
+            "code": "7101",
+            "name": "Cantonese",
+            "persons": 236
+          }
+        ],
+        "status": "public",
+        "source": "ABS Census 2021, G13 language used at home (excluding English), Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "sal": "20021",
+      "name": "Albion",
+      "lga": "Brimbank",
+      "irsdScore": {
+        "value": 907,
+        "status": "public",
+        "source": "ABS SEIFA 2021, Index of Relative Socio-economic Disadvantage (IRSD), SAL",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "irsdDecile": {
+        "value": 1,
+        "status": "public",
+        "source": "ABS SEIFA 2021, IRSD national decile (1 = most disadvantaged), SAL",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "seifaPopulation": {
+        "value": 4334,
+        "status": "public",
+        "source": "ABS SEIFA 2021, usual resident population, SAL",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "population": {
+        "value": 4334,
+        "status": "public",
+        "source": "ABS Census 2021, G01 total persons, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pct65Plus": {
+        "value": 15.2,
+        "status": "public",
+        "source": "ABS Census 2021, G01 age 65+ / total persons, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctNeedAssistance": {
+        "value": 6.6,
+        "status": "public",
+        "source": "ABS Census 2021, G18 core activity need for assistance, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctLowEnglish": {
+        "value": 8.3,
+        "status": "public",
+        "source": "ABS Census 2021, G13 speaks English not well or not at all, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctNoCar": {
+        "value": 17.3,
+        "status": "public",
+        "source": "ABS Census 2021, G34 occupied private dwellings with no motor vehicle, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctLivingAlone": {
+        "value": 36.5,
+        "status": "public",
+        "source": "ABS Census 2021, G35 one-person households / all households, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "topLanguages": {
+        "value": [
+          {
+            "code": "5107",
+            "name": "Vietnamese",
+            "persons": 328
+          },
+          {
+            "code": "5206",
+            "name": "Nepali",
+            "persons": 135
+          },
+          {
+            "code": "5207",
+            "name": "Punjabi",
+            "persons": 109
+          }
+        ],
+        "status": "public",
+        "source": "ABS Census 2021, G13 language used at home (excluding English), Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "sal": "20729",
+      "name": "Deer Park",
+      "lga": "Brimbank",
+      "irsdScore": {
+        "value": 898.7,
+        "status": "public",
+        "source": "ABS SEIFA 2021, Index of Relative Socio-economic Disadvantage (IRSD), SAL",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "irsdDecile": {
+        "value": 1,
+        "status": "public",
+        "source": "ABS SEIFA 2021, IRSD national decile (1 = most disadvantaged), SAL",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "seifaPopulation": {
+        "value": 18145,
+        "status": "public",
+        "source": "ABS SEIFA 2021, usual resident population, SAL",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "population": {
+        "value": 18145,
+        "status": "public",
+        "source": "ABS Census 2021, G01 total persons, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pct65Plus": {
+        "value": 14.4,
+        "status": "public",
+        "source": "ABS Census 2021, G01 age 65+ / total persons, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctNeedAssistance": {
+        "value": 6.9,
+        "status": "public",
+        "source": "ABS Census 2021, G18 core activity need for assistance, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctLowEnglish": {
+        "value": 13.4,
+        "status": "public",
+        "source": "ABS Census 2021, G13 speaks English not well or not at all, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctNoCar": {
+        "value": 5.6,
+        "status": "public",
+        "source": "ABS Census 2021, G34 occupied private dwellings with no motor vehicle, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctLivingAlone": {
+        "value": 20.5,
+        "status": "public",
+        "source": "ABS Census 2021, G35 one-person households / all households, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "topLanguages": {
+        "value": [
+          {
+            "code": "5107",
+            "name": "Vietnamese",
+            "persons": 2674
+          },
+          {
+            "code": "5207",
+            "name": "Punjabi",
+            "persons": 451
+          },
+          {
+            "code": "6511",
+            "name": "Tagalog",
+            "persons": 399
+          }
+        ],
+        "status": "public",
+        "source": "ABS Census 2021, G13 language used at home (excluding English), Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "sal": "22330",
+      "name": "St Albans",
+      "lga": "Brimbank",
+      "irsdScore": {
+        "value": 823.5,
+        "status": "public",
+        "source": "ABS SEIFA 2021, Index of Relative Socio-economic Disadvantage (IRSD), SAL",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "irsdDecile": {
+        "value": 1,
+        "status": "public",
+        "source": "ABS SEIFA 2021, IRSD national decile (1 = most disadvantaged), SAL",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "seifaPopulation": {
+        "value": 38042,
+        "status": "public",
+        "source": "ABS SEIFA 2021, usual resident population, SAL",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "population": {
+        "value": 38042,
+        "status": "public",
+        "source": "ABS Census 2021, G01 total persons, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pct65Plus": {
+        "value": 17.8,
+        "status": "public",
+        "source": "ABS Census 2021, G01 age 65+ / total persons, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctNeedAssistance": {
+        "value": 8.5,
+        "status": "public",
+        "source": "ABS Census 2021, G18 core activity need for assistance, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctLowEnglish": {
+        "value": 19.9,
+        "status": "public",
+        "source": "ABS Census 2021, G13 speaks English not well or not at all, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctNoCar": {
+        "value": 10.2,
+        "status": "public",
+        "source": "ABS Census 2021, G34 occupied private dwellings with no motor vehicle, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctLivingAlone": {
+        "value": 23.4,
+        "status": "public",
+        "source": "ABS Census 2021, G35 one-person households / all households, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "topLanguages": {
+        "value": [
+          {
+            "code": "5107",
+            "name": "Vietnamese",
+            "persons": 11102
+          },
+          {
+            "code": "5207",
+            "name": "Punjabi",
+            "persons": 1592
+          },
+          {
+            "code": "7101",
+            "name": "Cantonese",
+            "persons": 906
+          }
+        ],
+        "status": "public",
+        "source": "ABS Census 2021, G13 language used at home (excluding English), Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "sal": "20324",
+      "name": "Braybrook",
+      "lga": "Maribyrnong",
+      "irsdScore": {
+        "value": 867.1,
+        "status": "public",
+        "source": "ABS SEIFA 2021, Index of Relative Socio-economic Disadvantage (IRSD), SAL",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "irsdDecile": {
+        "value": 1,
+        "status": "public",
+        "source": "ABS SEIFA 2021, IRSD national decile (1 = most disadvantaged), SAL",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "seifaPopulation": {
+        "value": 9682,
+        "status": "public",
+        "source": "ABS SEIFA 2021, usual resident population, SAL",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "population": {
+        "value": 9682,
+        "status": "public",
+        "source": "ABS Census 2021, G01 total persons, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pct65Plus": {
+        "value": 12.3,
+        "status": "public",
+        "source": "ABS Census 2021, G01 age 65+ / total persons, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctNeedAssistance": {
+        "value": 6.3,
+        "status": "public",
+        "source": "ABS Census 2021, G18 core activity need for assistance, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctLowEnglish": {
+        "value": 17.4,
+        "status": "public",
+        "source": "ABS Census 2021, G13 speaks English not well or not at all, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctNoCar": {
+        "value": 12.5,
+        "status": "public",
+        "source": "ABS Census 2021, G34 occupied private dwellings with no motor vehicle, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctLivingAlone": {
+        "value": 25.7,
+        "status": "public",
+        "source": "ABS Census 2021, G35 one-person households / all households, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "topLanguages": {
+        "value": [
+          {
+            "code": "5107",
+            "name": "Vietnamese",
+            "persons": 2849
+          },
+          {
+            "code": "7101",
+            "name": "Cantonese",
+            "persons": 583
+          },
+          {
+            "code": "7104",
+            "name": "Mandarin",
+            "persons": 247
+          }
+        ],
+        "status": "public",
+        "source": "ABS Census 2021, G13 language used at home (excluding English), Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "sal": "21575",
+      "name": "Maidstone",
+      "lga": "Maribyrnong",
+      "irsdScore": {
+        "value": 984.9,
+        "status": "public",
+        "source": "ABS SEIFA 2021, Index of Relative Socio-economic Disadvantage (IRSD), SAL",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "irsdDecile": {
+        "value": 4,
+        "status": "public",
+        "source": "ABS SEIFA 2021, IRSD national decile (1 = most disadvantaged), SAL",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "seifaPopulation": {
+        "value": 9389,
+        "status": "public",
+        "source": "ABS SEIFA 2021, usual resident population, SAL",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "population": {
+        "value": 9389,
+        "status": "public",
+        "source": "ABS Census 2021, G01 total persons, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pct65Plus": {
+        "value": 11.4,
+        "status": "public",
+        "source": "ABS Census 2021, G01 age 65+ / total persons, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctNeedAssistance": {
+        "value": 5.8,
+        "status": "public",
+        "source": "ABS Census 2021, G18 core activity need for assistance, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctLowEnglish": {
+        "value": 9.7,
+        "status": "public",
+        "source": "ABS Census 2021, G13 speaks English not well or not at all, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctNoCar": {
+        "value": 10,
+        "status": "public",
+        "source": "ABS Census 2021, G34 occupied private dwellings with no motor vehicle, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctLivingAlone": {
+        "value": 26.9,
+        "status": "public",
+        "source": "ABS Census 2021, G35 one-person households / all households, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "topLanguages": {
+        "value": [
+          {
+            "code": "5107",
+            "name": "Vietnamese",
+            "persons": 1695
+          },
+          {
+            "code": "7101",
+            "name": "Cantonese",
+            "persons": 358
+          },
+          {
+            "code": "7104",
+            "name": "Mandarin",
+            "persons": 312
+          }
+        ],
+        "status": "public",
+        "source": "ABS Census 2021, G13 language used at home (excluding English), Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "sal": "20935",
+      "name": "Footscray",
+      "lga": "Maribyrnong",
+      "irsdScore": {
+        "value": 986.6,
+        "status": "public",
+        "source": "ABS SEIFA 2021, Index of Relative Socio-economic Disadvantage (IRSD), SAL",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "irsdDecile": {
+        "value": 4,
+        "status": "public",
+        "source": "ABS SEIFA 2021, IRSD national decile (1 = most disadvantaged), SAL",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "seifaPopulation": {
+        "value": 17131,
+        "status": "public",
+        "source": "ABS SEIFA 2021, usual resident population, SAL",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "population": {
+        "value": 17131,
+        "status": "public",
+        "source": "ABS Census 2021, G01 total persons, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pct65Plus": {
+        "value": 11,
+        "status": "public",
+        "source": "ABS Census 2021, G01 age 65+ / total persons, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctNeedAssistance": {
+        "value": 6.4,
+        "status": "public",
+        "source": "ABS Census 2021, G18 core activity need for assistance, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctLowEnglish": {
+        "value": 7.9,
+        "status": "public",
+        "source": "ABS Census 2021, G13 speaks English not well or not at all, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctNoCar": {
+        "value": 21,
+        "status": "public",
+        "source": "ABS Census 2021, G34 occupied private dwellings with no motor vehicle, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctLivingAlone": {
+        "value": 37.6,
+        "status": "public",
+        "source": "ABS Census 2021, G35 one-person households / all households, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "topLanguages": {
+        "value": [
+          {
+            "code": "5107",
+            "name": "Vietnamese",
+            "persons": 1803
+          },
+          {
+            "code": "7104",
+            "name": "Mandarin",
+            "persons": 481
+          },
+          {
+            "code": "7101",
+            "name": "Cantonese",
+            "persons": 399
+          }
+        ],
+        "status": "public",
+        "source": "ABS Census 2021, G13 language used at home (excluding English), Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "sal": "20363",
+      "name": "Brunswick West",
+      "lga": "Merri-bek",
+      "irsdScore": {
+        "value": 1047.8,
+        "status": "public",
+        "source": "ABS SEIFA 2021, Index of Relative Socio-economic Disadvantage (IRSD), SAL",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "irsdDecile": {
+        "value": 8,
+        "status": "public",
+        "source": "ABS SEIFA 2021, IRSD national decile (1 = most disadvantaged), SAL",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "seifaPopulation": {
+        "value": 14746,
+        "status": "public",
+        "source": "ABS SEIFA 2021, usual resident population, SAL",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "population": {
+        "value": 14746,
+        "status": "public",
+        "source": "ABS Census 2021, G01 total persons, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pct65Plus": {
+        "value": 12.2,
+        "status": "public",
+        "source": "ABS Census 2021, G01 age 65+ / total persons, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctNeedAssistance": {
+        "value": 5.7,
+        "status": "public",
+        "source": "ABS Census 2021, G18 core activity need for assistance, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctLowEnglish": {
+        "value": 3.6,
+        "status": "public",
+        "source": "ABS Census 2021, G13 speaks English not well or not at all, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctNoCar": {
+        "value": 15,
+        "status": "public",
+        "source": "ABS Census 2021, G34 occupied private dwellings with no motor vehicle, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctLivingAlone": {
+        "value": 38.2,
+        "status": "public",
+        "source": "ABS Census 2021, G35 one-person households / all households, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "topLanguages": {
+        "value": [
+          {
+            "code": "3103",
+            "name": "Italian",
+            "persons": 669
+          },
+          {
+            "code": "3205",
+            "name": "Greek",
+            "persons": 650
+          },
+          {
+            "code": "7104",
+            "name": "Mandarin",
+            "persons": 287
+          }
+        ],
+        "status": "public",
+        "source": "ABS Census 2021, G13 language used at home (excluding English), Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "sal": "20346",
+      "name": "Broadmeadows",
+      "lga": "Hume",
+      "irsdScore": {
+        "value": 773.6,
+        "status": "public",
+        "source": "ABS SEIFA 2021, Index of Relative Socio-economic Disadvantage (IRSD), SAL",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "irsdDecile": {
+        "value": 1,
+        "status": "public",
+        "source": "ABS SEIFA 2021, IRSD national decile (1 = most disadvantaged), SAL",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "seifaPopulation": {
+        "value": 12524,
+        "status": "public",
+        "source": "ABS SEIFA 2021, usual resident population, SAL",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "population": {
+        "value": 12524,
+        "status": "public",
+        "source": "ABS Census 2021, G01 total persons, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pct65Plus": {
+        "value": 10.6,
+        "status": "public",
+        "source": "ABS Census 2021, G01 age 65+ / total persons, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctNeedAssistance": {
+        "value": 9,
+        "status": "public",
+        "source": "ABS Census 2021, G18 core activity need for assistance, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctLowEnglish": {
+        "value": 13.3,
+        "status": "public",
+        "source": "ABS Census 2021, G13 speaks English not well or not at all, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctNoCar": {
+        "value": 13.5,
+        "status": "public",
+        "source": "ABS Census 2021, G34 occupied private dwellings with no motor vehicle, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "pctLivingAlone": {
+        "value": 24.3,
+        "status": "public",
+        "source": "ABS Census 2021, G35 one-person households / all households, Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "topLanguages": {
+        "value": [
+          {
+            "code": "4202",
+            "name": "Arabic",
+            "persons": 2239
+          },
+          {
+            "code": "4301",
+            "name": "Turkish",
+            "persons": 927
+          },
+          {
+            "code": "5212",
+            "name": "Urdu",
+            "persons": 630
+          }
+        ],
+        "status": "public",
+        "source": "ABS Census 2021, G13 language used at home (excluding English), Suburbs and Localities",
+        "date": "2021 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    }
+  ]
+}
