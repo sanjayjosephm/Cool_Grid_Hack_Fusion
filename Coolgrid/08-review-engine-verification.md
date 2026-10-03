@@ -23,3 +23,9 @@ Two independent acceptance reviews also exercised 240 bounded cut-oracle cases a
 To reproduce, install the locked dependencies, run `npm test`, `npx tsc --noEmit` and `npm run build`, then start the production server on port 3215 and run `node scripts/exercise-review-api.mjs`. The endpoint URL can be passed as the script's first argument. See [integration documentation](07-review-engine.md) and [typed examples](../examples/review-integration.ts).
 
 AI assistance was used for implementation, test generation and independent review. All service examples are synthetic or explicitly sourced assumptions. These checks establish conditional software mechanics, without physical service certification, time scheduling, backup arithmetic integration or measured benefit claims.
+
+## Main integration
+
+Integrated the teammate screen and planning-helper changes from main commit `3787b29` on 3 October 2026. Git reported no file conflicts. The combined suite passed 115 tests in 10 files, TypeScript checking and a production build. Outdated messages saying the engine was absent were corrected to distinguish available engine tests from screen connections still awaiting service evidence. The existing screen layout and planner behaviour were preserved; this merge does not wire the screens to the review API or infer missing planning facts.
+
+The final production build also passed all four HTTP review exercises (calculable 200, unknown-heavy 200, invalid JSON 400 and invalid contract 422). The continuity, brief, validation and planning-map pages returned HTTP 200; their obsolete pre-merge engine-absence statements were absent.
