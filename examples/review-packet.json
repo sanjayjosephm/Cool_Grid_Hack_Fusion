@@ -1,0 +1,1817 @@
+{
+  "version": "coolgrid-review/v1",
+  "title": "Fictional continuity review",
+  "facilities": [
+    {
+      "id": "central",
+      "name": "Central"
+    },
+    {
+      "id": "west-local",
+      "name": "West local"
+    },
+    {
+      "id": "east-local",
+      "name": "East local"
+    }
+  ],
+  "communities": [
+    {
+      "id": "west",
+      "name": "West community"
+    },
+    {
+      "id": "east",
+      "name": "East community"
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "shared-crossing",
+      "name": "Shared fictional crossing"
+    }
+  ],
+  "arrangements": [
+    {
+      "id": "existing",
+      "label": "Existing central"
+    },
+    {
+      "id": "backup",
+      "label": "Entered central backup"
+    },
+    {
+      "id": "local",
+      "label": "Entered local"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "heat",
+      "label": "Heat cooling review",
+      "kind": "heat",
+      "service": "coolingRespite",
+      "window": "14:00-18:00 fictional heat window",
+      "units": "places",
+      "demand": [
+        {
+          "communityId": "west",
+          "amount": {
+            "value": 4,
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          }
+        },
+        {
+          "communityId": "east",
+          "amount": {
+            "value": 4,
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          }
+        }
+      ],
+      "crewCeiling": {
+        "value": 2,
+        "status": "illustrative",
+        "source": "Fictional review example; no operational evidence",
+        "date": "2026-10-03",
+        "licence": "CC0-1.0 synthetic example"
+      },
+      "arrangementFacts": [
+        {
+          "arrangementId": "existing",
+          "facilities": [
+            {
+              "facilityId": "central",
+              "nominated": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "capacity": {
+                "value": 8,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "crewsRequired": {
+                "value": 1,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "authorised": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "suitable": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "backup": {
+                "value": false,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              }
+            },
+            {
+              "facilityId": "west-local",
+              "nominated": {
+                "value": false,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "capacity": {
+                "value": 4,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "crewsRequired": {
+                "value": 1,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "authorised": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "suitable": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "backup": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              }
+            },
+            {
+              "facilityId": "east-local",
+              "nominated": {
+                "value": false,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "capacity": {
+                "value": 4,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "crewsRequired": {
+                "value": 1,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "authorised": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "suitable": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "backup": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              }
+            }
+          ]
+        },
+        {
+          "arrangementId": "backup",
+          "facilities": [
+            {
+              "facilityId": "central",
+              "nominated": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "capacity": {
+                "value": 8,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "crewsRequired": {
+                "value": 1,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "authorised": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "suitable": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "backup": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              }
+            },
+            {
+              "facilityId": "west-local",
+              "nominated": {
+                "value": false,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "capacity": {
+                "value": 4,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "crewsRequired": {
+                "value": 1,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "authorised": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "suitable": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "backup": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              }
+            },
+            {
+              "facilityId": "east-local",
+              "nominated": {
+                "value": false,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "capacity": {
+                "value": 4,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "crewsRequired": {
+                "value": 1,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "authorised": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "suitable": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "backup": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              }
+            }
+          ]
+        },
+        {
+          "arrangementId": "local",
+          "facilities": [
+            {
+              "facilityId": "central",
+              "nominated": {
+                "value": false,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "capacity": {
+                "value": 8,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "crewsRequired": {
+                "value": 1,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "authorised": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "suitable": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "backup": {
+                "value": false,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              }
+            },
+            {
+              "facilityId": "west-local",
+              "nominated": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "capacity": {
+                "value": 4,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "crewsRequired": {
+                "value": 1,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "authorised": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "suitable": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "backup": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              }
+            },
+            {
+              "facilityId": "east-local",
+              "nominated": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "capacity": {
+                "value": 4,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "crewsRequired": {
+                "value": 1,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "authorised": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "suitable": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "backup": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              }
+            }
+          ]
+        }
+      ],
+      "access": [
+        {
+          "id": "central-west",
+          "communityId": "west",
+          "facilityId": "central",
+          "available": {
+            "value": true,
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          },
+          "dependsOn": {
+            "value": [],
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          }
+        },
+        {
+          "id": "central-east",
+          "communityId": "east",
+          "facilityId": "central",
+          "available": {
+            "value": true,
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          },
+          "dependsOn": {
+            "value": [
+              "shared-crossing"
+            ],
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          }
+        },
+        {
+          "id": "west-local-west",
+          "communityId": "west",
+          "facilityId": "west-local",
+          "available": {
+            "value": true,
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          },
+          "dependsOn": {
+            "value": [],
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          }
+        },
+        {
+          "id": "east-local-east",
+          "communityId": "east",
+          "facilityId": "east-local",
+          "available": {
+            "value": true,
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          },
+          "dependsOn": {
+            "value": [],
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          }
+        },
+        {
+          "id": "west-local-east",
+          "communityId": "east",
+          "facilityId": "west-local",
+          "available": {
+            "value": false,
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          },
+          "dependsOn": {
+            "value": [],
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          }
+        },
+        {
+          "id": "east-local-west",
+          "communityId": "west",
+          "facilityId": "east-local",
+          "available": {
+            "value": false,
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          },
+          "dependsOn": {
+            "value": [],
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          }
+        }
+      ],
+      "dependencyStates": [
+        {
+          "dependencyId": "shared-crossing",
+          "open": {
+            "value": true,
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          }
+        }
+      ]
+    },
+    {
+      "id": "outage",
+      "label": "Heat with outage cooling review",
+      "kind": "heat-outage",
+      "service": "coolingRespite",
+      "window": "14:00-18:00 fictional outage window",
+      "units": "places",
+      "demand": [
+        {
+          "communityId": "west",
+          "amount": {
+            "value": 4,
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          }
+        },
+        {
+          "communityId": "east",
+          "amount": {
+            "value": 4,
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          }
+        }
+      ],
+      "crewCeiling": {
+        "value": 2,
+        "status": "illustrative",
+        "source": "Fictional review example; no operational evidence",
+        "date": "2026-10-03",
+        "licence": "CC0-1.0 synthetic example"
+      },
+      "arrangementFacts": [
+        {
+          "arrangementId": "existing",
+          "facilities": [
+            {
+              "facilityId": "central",
+              "nominated": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "capacity": {
+                "value": 8,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "crewsRequired": {
+                "value": 1,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "authorised": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "suitable": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "backup": {
+                "value": false,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              }
+            },
+            {
+              "facilityId": "west-local",
+              "nominated": {
+                "value": false,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "capacity": {
+                "value": 4,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "crewsRequired": {
+                "value": 1,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "authorised": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "suitable": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "backup": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              }
+            },
+            {
+              "facilityId": "east-local",
+              "nominated": {
+                "value": false,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "capacity": {
+                "value": 4,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "crewsRequired": {
+                "value": 1,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "authorised": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "suitable": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "backup": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              }
+            }
+          ]
+        },
+        {
+          "arrangementId": "backup",
+          "facilities": [
+            {
+              "facilityId": "central",
+              "nominated": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "capacity": {
+                "value": 8,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "crewsRequired": {
+                "value": 1,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "authorised": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "suitable": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "backup": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              }
+            },
+            {
+              "facilityId": "west-local",
+              "nominated": {
+                "value": false,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "capacity": {
+                "value": 4,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "crewsRequired": {
+                "value": 1,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "authorised": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "suitable": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "backup": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              }
+            },
+            {
+              "facilityId": "east-local",
+              "nominated": {
+                "value": false,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "capacity": {
+                "value": 4,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "crewsRequired": {
+                "value": 1,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "authorised": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "suitable": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "backup": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              }
+            }
+          ]
+        },
+        {
+          "arrangementId": "local",
+          "facilities": [
+            {
+              "facilityId": "central",
+              "nominated": {
+                "value": false,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "capacity": {
+                "value": 8,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "crewsRequired": {
+                "value": 1,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "authorised": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "suitable": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "backup": {
+                "value": false,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              }
+            },
+            {
+              "facilityId": "west-local",
+              "nominated": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "capacity": {
+                "value": 4,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "crewsRequired": {
+                "value": 1,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "authorised": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "suitable": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "backup": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              }
+            },
+            {
+              "facilityId": "east-local",
+              "nominated": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "capacity": {
+                "value": 4,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "crewsRequired": {
+                "value": 1,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "authorised": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "suitable": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "backup": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              }
+            }
+          ]
+        }
+      ],
+      "access": [
+        {
+          "id": "central-west",
+          "communityId": "west",
+          "facilityId": "central",
+          "available": {
+            "value": true,
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          },
+          "dependsOn": {
+            "value": [],
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          }
+        },
+        {
+          "id": "central-east",
+          "communityId": "east",
+          "facilityId": "central",
+          "available": {
+            "value": true,
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          },
+          "dependsOn": {
+            "value": [
+              "shared-crossing"
+            ],
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          }
+        },
+        {
+          "id": "west-local-west",
+          "communityId": "west",
+          "facilityId": "west-local",
+          "available": {
+            "value": true,
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          },
+          "dependsOn": {
+            "value": [],
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          }
+        },
+        {
+          "id": "east-local-east",
+          "communityId": "east",
+          "facilityId": "east-local",
+          "available": {
+            "value": true,
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          },
+          "dependsOn": {
+            "value": [],
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          }
+        },
+        {
+          "id": "west-local-east",
+          "communityId": "east",
+          "facilityId": "west-local",
+          "available": {
+            "value": false,
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          },
+          "dependsOn": {
+            "value": [],
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          }
+        },
+        {
+          "id": "east-local-west",
+          "communityId": "west",
+          "facilityId": "east-local",
+          "available": {
+            "value": false,
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          },
+          "dependsOn": {
+            "value": [],
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          }
+        }
+      ],
+      "dependencyStates": [
+        {
+          "dependencyId": "shared-crossing",
+          "open": {
+            "value": true,
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          }
+        }
+      ]
+    },
+    {
+      "id": "flood",
+      "label": "Flood relief access review",
+      "kind": "flood-access-loss",
+      "service": "floodRelief",
+      "window": "10:00-14:00 fictional flood window",
+      "units": "places",
+      "demand": [
+        {
+          "communityId": "west",
+          "amount": {
+            "value": 4,
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          }
+        },
+        {
+          "communityId": "east",
+          "amount": {
+            "value": 4,
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          }
+        }
+      ],
+      "crewCeiling": {
+        "value": 2,
+        "status": "illustrative",
+        "source": "Fictional review example; no operational evidence",
+        "date": "2026-10-03",
+        "licence": "CC0-1.0 synthetic example"
+      },
+      "arrangementFacts": [
+        {
+          "arrangementId": "existing",
+          "facilities": [
+            {
+              "facilityId": "central",
+              "nominated": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "capacity": {
+                "value": 8,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "crewsRequired": {
+                "value": 1,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "authorised": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "suitable": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "backup": {
+                "value": false,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              }
+            },
+            {
+              "facilityId": "west-local",
+              "nominated": {
+                "value": false,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "capacity": {
+                "value": 4,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "crewsRequired": {
+                "value": 1,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "authorised": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "suitable": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "backup": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              }
+            },
+            {
+              "facilityId": "east-local",
+              "nominated": {
+                "value": false,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "capacity": {
+                "value": 4,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "crewsRequired": {
+                "value": 1,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "authorised": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "suitable": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "backup": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              }
+            }
+          ]
+        },
+        {
+          "arrangementId": "backup",
+          "facilities": [
+            {
+              "facilityId": "central",
+              "nominated": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "capacity": {
+                "value": 8,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "crewsRequired": {
+                "value": 1,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "authorised": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "suitable": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "backup": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              }
+            },
+            {
+              "facilityId": "west-local",
+              "nominated": {
+                "value": false,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "capacity": {
+                "value": 4,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "crewsRequired": {
+                "value": 1,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "authorised": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "suitable": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "backup": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              }
+            },
+            {
+              "facilityId": "east-local",
+              "nominated": {
+                "value": false,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "capacity": {
+                "value": 4,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "crewsRequired": {
+                "value": 1,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "authorised": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "suitable": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "backup": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              }
+            }
+          ]
+        },
+        {
+          "arrangementId": "local",
+          "facilities": [
+            {
+              "facilityId": "central",
+              "nominated": {
+                "value": false,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "capacity": {
+                "value": 8,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "crewsRequired": {
+                "value": 1,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "authorised": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "suitable": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "backup": {
+                "value": false,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              }
+            },
+            {
+              "facilityId": "west-local",
+              "nominated": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "capacity": {
+                "value": 4,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "crewsRequired": {
+                "value": 1,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "authorised": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "suitable": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "backup": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              }
+            },
+            {
+              "facilityId": "east-local",
+              "nominated": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "capacity": {
+                "value": 4,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "crewsRequired": {
+                "value": 1,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "authorised": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "suitable": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              },
+              "backup": {
+                "value": true,
+                "status": "illustrative",
+                "source": "Fictional review example; no operational evidence",
+                "date": "2026-10-03",
+                "licence": "CC0-1.0 synthetic example"
+              }
+            }
+          ]
+        }
+      ],
+      "access": [
+        {
+          "id": "central-west",
+          "communityId": "west",
+          "facilityId": "central",
+          "available": {
+            "value": true,
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          },
+          "dependsOn": {
+            "value": [],
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          }
+        },
+        {
+          "id": "central-east",
+          "communityId": "east",
+          "facilityId": "central",
+          "available": {
+            "value": true,
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          },
+          "dependsOn": {
+            "value": [
+              "shared-crossing"
+            ],
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          }
+        },
+        {
+          "id": "west-local-west",
+          "communityId": "west",
+          "facilityId": "west-local",
+          "available": {
+            "value": true,
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          },
+          "dependsOn": {
+            "value": [],
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          }
+        },
+        {
+          "id": "east-local-east",
+          "communityId": "east",
+          "facilityId": "east-local",
+          "available": {
+            "value": true,
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          },
+          "dependsOn": {
+            "value": [],
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          }
+        },
+        {
+          "id": "west-local-east",
+          "communityId": "east",
+          "facilityId": "west-local",
+          "available": {
+            "value": false,
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          },
+          "dependsOn": {
+            "value": [],
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          }
+        },
+        {
+          "id": "east-local-west",
+          "communityId": "west",
+          "facilityId": "east-local",
+          "available": {
+            "value": false,
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          },
+          "dependsOn": {
+            "value": [],
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          }
+        }
+      ],
+      "dependencyStates": [
+        {
+          "dependencyId": "shared-crossing",
+          "open": {
+            "value": false,
+            "status": "illustrative",
+            "source": "Fictional review example; no operational evidence",
+            "date": "2026-10-03",
+            "licence": "CC0-1.0 synthetic example"
+          }
+        }
+      ]
+    }
+  ]
+}
