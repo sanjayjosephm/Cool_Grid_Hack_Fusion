@@ -1,7 +1,8 @@
 import Link from "next/link";
 import PrintButton from "@/components/PrintButton";
 import ScenarioResults, { causes } from "@/components/ScenarioResults";
-import { runDemoReview, SCENARIO_META } from "@/lib/demo-review";
+import { facilityName, runDemoReview, SCENARIO_META } from "@/lib/demo-review";
+import { parseOverrides } from "@/lib/overrides-url";
 import { FACILITIES, formatSourcedValue, sourcedRows } from "@/lib/planning-data";
 import { ARRANGEMENT_LABELS, parsePlannerConfig, plannerConfigUrl, type SearchParam } from "@/lib/planner-config";
 
@@ -16,7 +17,9 @@ const unresolved = FACILITIES.flatMap((facility) =>
 export default function BriefPage({ searchParams }: { searchParams?: Record<string, SearchParam> }) {
   const config = parsePlannerConfig(searchParams ?? {});
   const configured = config.arrangement !== null && config.crews !== null;
-  const review = configured ? runDemoReview(config.crews) : null;
+  const overrides = parseOverrides(searchParams?.o);
+  const policy = searchParams?.policy === "fair" ? "fair" : "max";
+  const review = configured ? runDemoReview(config.crews, overrides) : null;
   const rows = review ? SCENARIO_META.map((s) => ({ s, row: review.result.rows.find((r) => r.scenarioId === s.id && r.arrangementId === config.arrangement)! })) : [];
   // Scenario with the most places not counted, among those the engine could calculate.
   const largestGap = rows
@@ -43,6 +46,8 @@ export default function BriefPage({ searchParams }: { searchParams?: Record<stri
           <dl className="mt-3 grid gap-3 sm:grid-cols-2">
             <div><dt className="text-sm text-muted">Arrangement</dt><dd className="font-semibold">{ARRANGEMENT_LABELS[config.arrangement!]}</dd></div>
             <div><dt className="text-sm text-muted">Available crews</dt><dd className="font-semibold">{config.crews}</dd></div>
+            <div><dt className="text-sm text-muted">Allocation policy</dt><dd className="font-semibold">{policy === "fair" ? "Fair share between communities" : "Most places counted"}</dd></div>
+            <div><dt className="text-sm text-muted">Facility inputs entered by the planner</dt><dd className="font-semibold">{Object.keys(overrides).length ? Object.entries(overrides).map(([id, o]) => `${facilityName(id)} (${Object.entries(o).map(([k, v]) => `${k} ${v ?? "unknown"}`).join(", ")})`).join("; ") : "None: illustrative placeholders"}</dd></div>
           </dl>
         ) : (
           <>
@@ -77,7 +82,7 @@ export default function BriefPage({ searchParams }: { searchParams?: Record<stri
           <section className="my-6">
             <h2 className="text-2xl">Scenario findings</h2>
             <p className="mt-2 text-sm text-muted print:text-black">Each scenario is assessed separately; results are never added together. Places counted are conditional on the labelled inputs below and do not certify that any facility is ready or open.</p>
-            <div className="mt-4"><ScenarioResults result={review.result} arrangement={config.arrangement} compact /></div>
+            <div className="mt-4"><ScenarioResults result={review.result} arrangement={config.arrangement} compact policy={policy} /></div>
           </section>
 
           <section className="my-6">

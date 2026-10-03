@@ -145,5 +145,6 @@ const links = centres.flatMap(({ sal, centre }) => facilities.map((f) => {
   const dependsOn = crossingList.filter((c) => turf.pointToLineDistance(c.location.value, line, { units: "kilometers" }) <= BUFFER_KM).map((c) => c.id);
   return { from: sal, to: f.id, distanceKm: L(Math.round(turf.length(line) * 100) / 100), dependsOn: L(dependsOn) };
 }));
-writeFileSync("lib/data/access-links.json", JSON.stringify({ generated: TODAY, bufferKm: BUFFER_KM, centres, links }, null, 2) + "\n");
+// Straight-line links are kept for comparison; build-p2.mjs writes the routed access-links.json the engine uses.
+writeFileSync("lib/data/access-straight.json", JSON.stringify({ generated: TODAY, bufferKm: BUFFER_KM, centres, links }, null, 2) + "\n");
 console.log(`D5b ${links.length} community-to-facility links, ${links.filter((l) => l.dependsOn.value.length).length} depend on at least one crossing`);

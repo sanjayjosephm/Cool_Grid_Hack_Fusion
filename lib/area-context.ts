@@ -1,5 +1,6 @@
 // P1-E4 group context, P1-E5 flood rules and P1-E6 area context score, all from labelled public data.
 // The score is background context for choosing where to review first, never the planning decision itself.
+import heatData from "./data/heat.json";
 import { AREAS, FLOOD_AREAS, FACILITIES } from "./planning-data";
 
 // ---------- E6: area context score ----------
@@ -11,13 +12,16 @@ export const INDICATORS = [
   { key: "pctLivingAlone", label: "People living alone" },
   { key: "pctLowEnglish", label: "Low English proficiency" },
   { key: "pctRiverine", label: "Area in riverine flood overlay" },
+  { key: "treesPerHa", label: "Low urban tree cover (heat proxy, inverted)", invert: true },
 ] as const;
 export type IndicatorKey = (typeof INDICATORS)[number]["key"];
 export type Weights = Record<IndicatorKey, number>;
-export const WEIGHTS: Weights = { irsdScore: 0.25, pct65Plus: 0.2, pctNeedAssistance: 0.15, pctNoCar: 0.1, pctLivingAlone: 0.1, pctLowEnglish: 0.1, pctRiverine: 0.1 };
+export const WEIGHTS: Weights = { irsdScore: 0.25, pct65Plus: 0.2, pctNeedAssistance: 0.15, pctNoCar: 0.1, pctLivingAlone: 0.1, pctLowEnglish: 0.1, pctRiverine: 0.1, treesPerHa: 0.1 };
 
 const raw = (sal: string, key: IndicatorKey): number => {
-  const record = key === "pctRiverine" ? FLOOD_AREAS.find((a) => a.sal === sal)! : AREAS.find((a) => a.sal === sal)!;
+  const record = key === "pctRiverine" ? FLOOD_AREAS.find((a) => a.sal === sal)!
+    : key === "treesPerHa" ? heatData.areas.find((a) => a.sal === sal)!
+    : AREAS.find((a) => a.sal === sal)!;
   const v = (record as unknown as Record<string, { value: number | null }>)[key].value;
   if (v === null) throw new Error(`${key} unknown for ${sal}`);
   return v;

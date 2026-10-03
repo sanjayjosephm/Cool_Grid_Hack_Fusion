@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import acc from "../lib/data/access-links.json";
+import acc from "../lib/data/access-straight.json";
 import fac from "../lib/data/facilities.json";
 import cross from "../lib/data/crossings.json";
 import { SAL_CODES } from "../lib/ids";
@@ -18,7 +18,7 @@ const where = (id: string) => cross.crossings.find((c) => c.id === id)!.location
 const facAt = (id: string) => fac.facilities.find((f) => f.id === id)!.location.value;
 const centre = (sal: string) => acc.centres.find((c) => c.sal === sal)!.centre;
 
-describe("P1-D5b community-to-facility access links", () => {
+describe("P1-D5b straight-line access links (kept for comparison with routed links)", () => {
   it("has one link for every community and facility pair", () => {
     expect(acc.links.length).toBe(SAL_CODES.length * fac.facilities.length);
     expect(new Set(acc.links.map((l) => `${l.from}>${l.to}`)).size).toBe(acc.links.length);
@@ -40,7 +40,8 @@ describe("P1-D5b community-to-facility access links", () => {
   it("matches an independent distance calculation for every crossing (50 m tolerance at the 0.5 km edge)", () => {
     for (const l of acc.links) {
       const a = centre(l.from), b = facAt(l.to);
-      for (const c of cross.crossings) {
+      // Straight-line links were built from the main-road crossings only (local-street crossings are added in P2).
+      for (const c of cross.crossings.filter((x) => !(x as { local?: boolean }).local)) {
         const d = kmToSegment(c.location.value, a, b);
         if (l.dependsOn.value.includes(c.id)) expect(d, `${l.from}>${l.to} ${c.id}`).toBeLessThanOrEqual(acc.bufferKm + 0.05);
         else expect(d, `${l.from}>${l.to} ${c.id}`).toBeGreaterThan(acc.bufferKm - 0.05);

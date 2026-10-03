@@ -1,41 +1,26 @@
 // Engine output for one review, shown per scenario. Shared by the Continuity Lab and the review brief.
-import type { Blocker, ReviewResult, ReviewRow } from "@/lib/continuity";
-import { areaName, crossingName, facilityName, SCENARIO_META } from "@/lib/demo-review";
+import type { ReviewResult } from "@/lib/continuity";
+import { areaName, facilityName, SCENARIO_META } from "@/lib/demo-review";
+import { causes } from "@/lib/review-causes";
+import { fairShare } from "@/lib/planning-tools";
+
+export { causes };
 import { ARRANGEMENTS, ARRANGEMENT_LABELS, type Arrangement } from "@/lib/planner-config";
 
 const demandOf = (result: ReviewResult, scenarioId: string) =>
   result.factsUsed.scenarios.find((s) => s.id === scenarioId)!.demand.reduce((t, d) => t + (d.amount.value ?? 0), 0);
 
-/** Plain-language cause for a blocker, using names rather than IDs. */
-export function causeText(b: Blocker): string {
-  const fac = b.facilityId ? facilityName(b.facilityId) : "";
-  switch (b.category) {
-    case "backup": return b.kind === "false" ? `${fac}: backup fails the outage check. ${b.fact.source.split(": ").slice(1).join(": ")}` : `${fac}: backup not verified (${b.fact.source.split(": ").slice(1).join(": ") || "inputs unknown"})`;
-    case "dependency": return `${crossingName(b.dependencyId!)} crossing is ${b.kind === "false" ? "closed" : "of unknown status"}: routes that rely on it cannot be counted.`;
-    case "crew-ceiling": return "Crew count not entered, so no allocation can be calculated.";
-    case "demand": return `Demand for ${b.communityId ? areaName(b.communityId) : "a community"} is unknown.`;
-    default: return b.explanation;
-  }
-}
+export type Policy = "max" | "fair";
 
-/** One cause per distinct fact (a closed crossing blocks many paths but is one cause). */
-export function causes(row: ReviewRow): { text: string; owner: string; kind: Blocker["kind"] }[] {
-  const seen = new Map<string, { text: string; owner: string; kind: Blocker["kind"] }>();
-  for (const b of row.blockers) {
-    const key = b.category === "dependency" ? `dep:${b.dependencyId}` : `${b.category}:${b.facilityId ?? ""}:${b.communityId ?? ""}`;
-    if (!seen.has(key)) seen.set(key, { text: causeText(b), owner: b.roleHypothesis, kind: b.kind });
-  }
-  return [...seen.values()];
-}
-
-export default function ScenarioResults({ result, arrangement, compact = false }: { result: ReviewResult; arrangement: Arrangement | null; compact?: boolean }) {
+export default function ScenarioResults({ result, arrangement, compact = false, policy = "max" }: { result: ReviewResult; arrangement: Arrangement | null; compact?: boolean; policy?: Policy }) {
   const rowFor = (scenarioId: string, a: Arrangement) => result.rows.find((r) => r.scenarioId === scenarioId && r.arrangementId === a)!;
   return (
     <div className={`grid gap-4 ${compact ? "" : "lg:grid-cols-3"}`}>
       {SCENARIO_META.map((s) => {
         const demand = demandOf(result, s.id);
         const row = arrangement ? rowFor(s.id, arrangement) : null;
-        const gaps = row?.gapVectors?.[0] ?? null;
+        const fair = row && policy === "fair" ? fairShare(result, s.id, row.arrangementId) : null;
+        const gaps = fair ? fair.allocated : row?.gapVectors?.[0] ?? null;
         const witness = row?.witnesses[0];
         const rowCauses = row ? causes(row) : [];
         return (
@@ -68,7 +53,11 @@ export default function ScenarioResults({ result, arrangement, compact = false }
                 </div>
               ) : (
                 <>
-                  <h4 className="mt-4 text-sm font-semibold">Gap by community</h4>
+                  <h4 className="mt-4 text-sm font-semibold">Gap by community{fair ? " (fair share)" : ""}</h4>
+                  {fair && <p className="mt-1 text-xs text-muted">
+                    Every reachable community first gets at least {Math.round(fair.minShare * 100)}% of its places; remaining places are then filled. Total {fair.total} (most places possible: {fair.maxTotal}).
+                    {fair.unreachable.length > 0 && <> No counted facility can be reached from {fair.unreachable.map(areaName).join(", ")}.</>}
+                  </p>}
                   <ul className="mt-1 space-y-1 text-sm">
                     {gaps!.map((g) => (
                       <li key={g.communityId} className="flex justify-between gap-2">

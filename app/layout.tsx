@@ -23,6 +23,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <Link className="text-ink no-underline" href="/dashboard">Planning map</Link>
           <Link className="text-ink no-underline" href="/continuity">Continuity Lab</Link>
           <Link className="text-ink no-underline" href="/brief">Review brief</Link>
+          <Link className="text-ink no-underline" href="/investment">Investment</Link>
           <Link className="text-ink no-underline" href="/validation">Validation</Link>
           <Link className="text-ink no-underline" href="/methodology">Method and limits</Link>
         </nav>

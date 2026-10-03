@@ -3,7 +3,15 @@
 import { useEffect, useRef, useState } from "react";
 import type { Map as MLMap } from "maplibre-gl";
 import Link from "next/link";
-import { AREAS, AREA_GEOJSON, FACILITIES, FACILITY_GEOJSON, FLOOD_AREAS, formatSourcedValue, sourcedRows } from "@/lib/planning-data";
+import { AREAS, AREA_GEOJSON, CROSSINGS, FACILITIES, FACILITY_GEOJSON, FLOOD_AREAS, formatSourcedValue, sourcedRows } from "@/lib/planning-data";
+import energyData from "@/lib/data/energy.json";
+import heatData from "@/lib/data/heat.json";
+
+// P2-D6: road crossings inside riverine flood overlays (main roads and local streets).
+const CROSSING_GEOJSON = {
+  type: "FeatureCollection" as const,
+  features: CROSSINGS.map((c) => ({ type: "Feature" as const, geometry: { type: "Point" as const, coordinates: c.location.value }, properties: { id: c.id, road: c.road, local: Boolean((c as { local?: boolean }).local) } })),
+};
 
 type Layer = "context" | "flood";
 type Selection = { kind: "area"; id: string } | { kind: "facility"; id: string };
@@ -149,6 +157,13 @@ export default function PlanningMap() {
           source: "study-areas",
           layout: { "text-field": ["get", "name"], "text-size": 12, "text-allow-overlap": false },
           paint: { "text-color": "#1B2430", "text-halo-color": "#fff", "text-halo-width": 1.5 },
+        });
+        map.addSource("crossings", { type: "geojson", data: CROSSING_GEOJSON });
+        map.addLayer({
+          id: "crossing-points",
+          type: "circle",
+          source: "crossings",
+          paint: { "circle-radius": ["case", ["get", "local"], 3, 4.5], "circle-color": "#E0A030", "circle-stroke-color": "#7a4f00", "circle-stroke-width": 1 },
         });
         map.addSource("facilities", { type: "geojson", data: FACILITY_GEOJSON, promoteId: "id" });
         map.addLayer({
@@ -304,6 +319,7 @@ export default function PlanningMap() {
             </>
           )}
           <p className="mt-2"><span className="mr-1 inline-block h-2.5 w-2.5 rounded-full bg-blue-700 align-middle" /> Facility location</p>
+          <p className="mt-1"><span className="mr-1 inline-block h-2 w-2 rounded-full border border-[#7a4f00] bg-[#E0A030] align-middle" /> Road crossing in a flood overlay ({CROSSINGS.length})</p>
         </div>
       </section>
 
@@ -330,6 +346,14 @@ export default function PlanningMap() {
               <h2 className="mb-1 mt-5 text-lg">Flood exposure</h2>
               <SourceRows rows={sourcedRows(selectedFlood, ["sal", "name", "check"])} />
             </>}
+            {(() => {
+              const e = energyData.areas.find((a) => a.sal === selectedArea.sal);
+              const h = heatData.areas.find((a) => a.sal === selectedArea.sal);
+              return <>
+                {e && <><h2 className="mb-1 mt-5 text-lg">Small-scale energy (postcode {e.postcode})</h2><SourceRows rows={sourcedRows(e, ["sal", "name", "postcode", "postcodeAreaShare", "installations", "dwellings"])} /></>}
+                {h && <><h2 className="mb-1 mt-5 text-lg">Heat proxy</h2><SourceRows rows={sourcedRows(h, ["sal", "name", "treeCount"])} /></>}
+              </>;
+            })()}
             <h2 className="mb-2 mt-5 text-lg">Facilities in this area</h2>
             <div className="space-y-2">
               {FACILITIES.filter((facility) => facility.sal === selectedArea.sal).map((facility) => (

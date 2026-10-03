@@ -5,6 +5,7 @@ import { checkBackup } from "@/lib/backup";
 import { CASES, spec } from "@/lib/backup-cases";
 import { reviewPacket, validateReviewPacket } from "@/lib/continuity";
 import { runDemoReview } from "@/lib/demo-review";
+import { worksheetComparison, worksheetCsv } from "@/lib/planning-tools";
 import { AREAS } from "@/lib/planning-data";
 import fictional from "@/examples/review-packet.json";
 
@@ -51,6 +52,8 @@ export default function Validation() {
   const backupCases = backupCaseRows();
   const sens = sensitivity();
   const invariants = reviewInvariants();
+  const sheetResult = runDemoReview(3).result;
+  const sheet = worksheetComparison(sheetResult);
   const passed = checks.filter((check) => check.passed).length;
 
   return (
@@ -146,6 +149,18 @@ export default function Validation() {
           ))}
         </tbody>
       </table>
+
+      <h3 className="mt-8 text-lg">Compared with a simple worksheet</h3>
+      <p className="mt-1 text-sm">A competent spreadsheet adds up the places of every nominated facility (capped at demand). The engine also checks backup power, opening hours, crews and flooded crossings. Where they differ, the engine names why. 3 crews, illustrative inputs. {sheet.filter((x) => x.differs).length} of {sheet.length} results differ.</p>
+      <table className="mt-2 w-full border-collapse text-sm">
+        <thead><tr className="text-left"><th className="border-b border-line py-1.5">Scenario</th><th className="border-b border-line py-1.5">Arrangement</th><th className="border-b border-line py-1.5">Worksheet</th><th className="border-b border-line py-1.5">Engine</th><th className="border-b border-line py-1.5">Why they differ</th></tr></thead>
+        <tbody>
+          {sheet.map((x) => (
+            <tr key={x.scenario + x.arrangement} className="align-top"><td className="border-b border-line py-1.5 pr-2">{x.scenario}</td><td className="border-b border-line py-1.5 pr-2">{x.arrangement}</td><td className="border-b border-line py-1.5 tabular-nums">{x.worksheet}</td><td className="border-b border-line py-1.5 tabular-nums">{x.engine ?? "blocked"}</td><td className="border-b border-line py-1.5">{x.differs ? x.reasons.join(", ") : "Same"}</td></tr>
+          ))}
+        </tbody>
+      </table>
+      <a className="mt-2 inline-block text-sm" download="coolgrid-worksheet-comparison.csv" href={`data:text/csv;charset=utf-8,${encodeURIComponent(worksheetCsv(sheetResult))}`}>Download the worksheet comparison (CSV) →</a>
 
       <h3 className="mt-8 text-lg">Real-data review invariants</h3>
       <ul className="mt-2 list-disc space-y-1 pl-6 text-sm">

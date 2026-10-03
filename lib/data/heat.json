@@ -1,0 +1,125 @@
+{
+  "generated": "2026-10-03",
+  "areas": [
+    {
+      "sal": "22397",
+      "name": "Sunshine West",
+      "treesPerHa": {
+        "value": 23.4,
+        "status": "public",
+        "source": "Vicmap Vegetation urban trees (tree_urban) counted inside the suburb boundary ÷ suburb area; a heat proxy (fewer trees, hotter streets), not a temperature",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "treeCount": 22275
+    },
+    {
+      "sal": "22395",
+      "name": "Sunshine",
+      "treesPerHa": {
+        "value": 27.5,
+        "status": "public",
+        "source": "Vicmap Vegetation urban trees (tree_urban) counted inside the suburb boundary ÷ suburb area; a heat proxy (fewer trees, hotter streets), not a temperature",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "treeCount": 12997
+    },
+    {
+      "sal": "20021",
+      "name": "Albion",
+      "treesPerHa": {
+        "value": 22.4,
+        "status": "public",
+        "source": "Vicmap Vegetation urban trees (tree_urban) counted inside the suburb boundary ÷ suburb area; a heat proxy (fewer trees, hotter streets), not a temperature",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "treeCount": 5658
+    },
+    {
+      "sal": "20729",
+      "name": "Deer Park",
+      "treesPerHa": {
+        "value": 22.7,
+        "status": "public",
+        "source": "Vicmap Vegetation urban trees (tree_urban) counted inside the suburb boundary ÷ suburb area; a heat proxy (fewer trees, hotter streets), not a temperature",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "treeCount": 19435
+    },
+    {
+      "sal": "22330",
+      "name": "St Albans",
+      "treesPerHa": {
+        "value": 28.7,
+        "status": "public",
+        "source": "Vicmap Vegetation urban trees (tree_urban) counted inside the suburb boundary ÷ suburb area; a heat proxy (fewer trees, hotter streets), not a temperature",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "treeCount": 36804
+    },
+    {
+      "sal": "20324",
+      "name": "Braybrook",
+      "treesPerHa": {
+        "value": 24.4,
+        "status": "public",
+        "source": "Vicmap Vegetation urban trees (tree_urban) counted inside the suburb boundary ÷ suburb area; a heat proxy (fewer trees, hotter streets), not a temperature",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "treeCount": 10564
+    },
+    {
+      "sal": "21575",
+      "name": "Maidstone",
+      "treesPerHa": {
+        "value": 28.4,
+        "status": "public",
+        "source": "Vicmap Vegetation urban trees (tree_urban) counted inside the suburb boundary ÷ suburb area; a heat proxy (fewer trees, hotter streets), not a temperature",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "treeCount": 8993
+    },
+    {
+      "sal": "20935",
+      "name": "Footscray",
+      "treesPerHa": {
+        "value": 25.3,
+        "status": "public",
+        "source": "Vicmap Vegetation urban trees (tree_urban) counted inside the suburb boundary ÷ suburb area; a heat proxy (fewer trees, hotter streets), not a temperature",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "treeCount": 12871
+    },
+    {
+      "sal": "20363",
+      "name": "Brunswick West",
+      "treesPerHa": {
+        "value": 36.4,
+        "status": "public",
+        "source": "Vicmap Vegetation urban trees (tree_urban) counted inside the suburb boundary ÷ suburb area; a heat proxy (fewer trees, hotter streets), not a temperature",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "treeCount": 11655
+    },
+    {
+      "sal": "20346",
+      "name": "Broadmeadows",
+      "treesPerHa": {
+        "value": 21.2,
+        "status": "public",
+        "source": "Vicmap Vegetation urban trees (tree_urban) counted inside the suburb boundary ÷ suburb area; a heat proxy (fewer trees, hotter streets), not a temperature",
+        "date": "current Vicmap (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "treeCount": 17405
+    }
+  ]
+}

@@ -42,11 +42,11 @@ export function demandFor(sal: string, kind: "heat" | "flood"): Sourced<number> 
 }
 
 export type BackupRow = { facilityId: string; name: string; existing: BackupResult; proposed?: BackupResult };
-export function backupRows(): BackupRow[] {
+export function backupRows(overrides: Overrides = {}): BackupRow[] {
   return DEMO_FACILITIES.map((id) => {
-    const f = facility(id);
-    const spec = f.backup as BackupSpec;
-    return { facilityId: id, name: f.name, existing: checkBackup(spec), proposed: id === CENTRAL ? checkBackup(PROPOSED_BACKUP(spec)) : undefined };
+    const spec = facilityInputs(id, overrides).backup;
+    const proposed = id === CENTRAL && !overrides[id] ? checkBackup(PROPOSED_BACKUP(spec)) : undefined;
+    return { facilityId: id, name: facility(id).name, existing: checkBackup(spec), proposed };
   });
 }
 
@@ -56,19 +56,55 @@ const NOMINATED: Record<Arrangement, string[]> = {
   "local-facilities": DEMO_FACILITIES,
 };
 
-function facilityFacts(arrangement: Arrangement): PlannedFacilityFacts[] {
+/** Values a planner can enter in the Continuity Lab (P2-E9). null means "explicitly unknown". */
+export type FacilityOverride = Partial<{
+  coolingPlaces: number | null; floodPlaces: number | null; crews: number | null; hours: string | null;
+  batteryKWh: number | null; inverterKW: number | null; coolingOnBackup: boolean | null;
+}>;
+export type Overrides = Record<string, FacilityOverride>;
+const DECLARED = "Entered by the planner in the Continuity Lab";
+const declared = <T>(value: T | null): Sourced<T> => ({ value, status: value === null ? "unknown" : "declared", source: value === null ? `${DECLARED} as unknown` : DECLARED, date: DATE });
+const pick = <T>(o: FacilityOverride | undefined, k: keyof FacilityOverride, base: Sourced<T>): Sourced<T> =>
+  o && k in o ? declared(o[k] as T | null) : base;
+
+/** Facility inputs after any planner edits, in the labelled format. */
+export function facilityInputs(id: string, overrides: Overrides = {}) {
+  const f = facility(id), o = overrides[id];
+  const b = f.backup as BackupSpec;
+  return {
+    coolingPlaces: pick(o, "coolingPlaces", f.services.coolingRespite.places as Sourced<number>),
+    floodPlaces: pick(o, "floodPlaces", f.services.floodRelief.places as Sourced<number>),
+    hours: pick(o, "hours", f.services.coolingRespite.hours as Sourced<string>),
+    crews: pick(o, "crews", f.crews as Sourced<number>),
+    backup: { ...b, batteryKWh: pick(o, "batteryKWh", b.batteryKWh), inverterKW: pick(o, "inverterKW", b.inverterKW), coolingOnBackup: pick(o, "coolingOnBackup", b.coolingOnBackup) } as BackupSpec,
+  };
+}
+
+// P2-E7 opening hours: cooling respite counts only if the facility is open for the whole scenario window.
+export const HEAT_WINDOW = { from: "12:00", to: "18:00" };
+const minutes = (t: string) => { const [h, m] = t.split(":").map(Number); return h * 60 + m; };
+export function hoursCover(hours: Sourced<string>, window = HEAT_WINDOW): Sourced<boolean> {
+  if (hours.value === null || !/^\d{2}:\d{2}-\d{2}:\d{2}$/.test(hours.value))
+    return { value: null, status: "unknown", source: `Opening hours not known, so cover of ${window.from}–${window.to} cannot be checked`, date: DATE };
+  const [open, close] = hours.value.split("-");
+  const ok = minutes(open) <= minutes(window.from) && minutes(close) >= minutes(window.to);
+  const status = hours.status === "declared" ? "declared" : "illustrative";
+  return { value: ok, status, source: ok ? `Open ${hours.value}, covering the ${window.from}–${window.to} window` : `Open ${hours.value}: does not cover the ${window.from}–${window.to} window`, date: DATE };
+}
+
+function facilityFacts(arrangement: Arrangement, service: "coolingRespite" | "floodRelief", overrides: Overrides): PlannedFacilityFacts[] {
   return DEMO_FACILITIES.map((id) => {
-    const f = facility(id);
-    const spec = f.backup as BackupSpec;
-    const useProposed = arrangement === "backup-added" && id === CENTRAL;
+    const inputs = facilityInputs(id, overrides);
+    const useProposed = arrangement === "backup-added" && id === CENTRAL && !overrides[id];
     return {
       facilityId: id,
       nominated: ill(NOMINATED[arrangement].includes(id), `Arrangement "${arrangement}" nominates ${NOMINATED[arrangement].length === 1 ? "the central library only" : "the central library and local facilities"}`),
-      applyNominalCapacity: ill(true, "Planning assumption: apply the facility's declared places to this service and window"),
-      crewsRequired: f.crews as Sourced<number>,
+      capacity: service === "coolingRespite" ? inputs.coolingPlaces : inputs.floodPlaces,
+      crewsRequired: inputs.crews,
       authorised: ill(true, "Planning assumption: facility owner agreement assumed for this review; verify"),
-      suitable: ill(true, "Planning assumption: facility suitable for this service; verify"),
-      backup: backupFact(useProposed ? PROPOSED_BACKUP(spec) : spec),
+      // Flood relief opens on activation, so ordinary opening hours do not apply to it.
+      suitable: service === "coolingRespite" ? hoursCover(inputs.hours) : ill(true, "Planning assumption: facility suitable for flood relief; verify"),
+      backup: backupFact(useProposed ? PROPOSED_BACKUP(inputs.backup) : inputs.backup),
     };
   });
 }
@@ -79,12 +115,12 @@ export const DEMO_CROSSINGS = [...new Set(ACCESS_LINKS
   .flatMap((l) => l.dependsOn.value))].sort();
 
 export const SCENARIO_META = [
-  { id: "heat", title: "Heat", kind: "heat", service: "coolingRespite", window: "Heatwave afternoon, 12:00–18:00 (illustrative)", note: "Grid power available; all crossings open." },
-  { id: "outage", title: "Heat + outage", kind: "heat-outage", service: "coolingRespite", window: "Heatwave afternoon with a 6-hour power outage (illustrative)", note: "Only facilities whose backup passes the check can count." },
-  { id: "flood", title: "Flood + crossings closed", kind: "flood-access-loss", service: "floodRelief", window: "First 24 hours of a riverine flood (illustrative)", note: "Every main-road crossing in a riverine flood overlay is closed." },
+  { id: "heat", title: "Heat", kind: "heat", service: "coolingRespite", window: "Heatwave afternoon, 12:00–18:00 (illustrative)", note: "Grid power available; all crossings open. Facilities must be open for the whole window." },
+  { id: "outage", title: "Heat + outage", kind: "heat-outage", service: "coolingRespite", window: "Heatwave afternoon, 12:00–18:00, with a 6-hour power outage (illustrative)", note: "Only facilities whose backup passes the check can count." },
+  { id: "flood", title: "Flood + crossings closed", kind: "flood-access-loss", service: "floodRelief", window: "First 24 hours of a riverine flood (illustrative)", note: "Every road crossing inside a riverine flood overlay is closed." },
 ] as const;
 
-export function planningFacts(crews: number | null): PlanningFacts {
+export function planningFacts(crews: number | null, overrides: Overrides = {}): PlanningFacts {
   const crewCeiling: Sourced<number> = crews === null
     ? { value: null, status: "unknown", source: "Crew count not entered in the Continuity Lab", date: DATE }
     : { value: crews, status: "declared", source: "Entered by the planner in the Continuity Lab", date: DATE };
@@ -100,9 +136,9 @@ export function planningFacts(crews: number | null): PlanningFacts {
       id: s.id, label: s.title, kind: s.kind, service: s.service, window: s.window, units: "places",
       crewCeiling,
       demand: DEMO_COMMUNITIES.map((communityId) => ({ communityId, amount: demandFor(communityId, s.kind === "flood-access-loss" ? "flood" : "heat") })),
-      arrangementFacts: arrangements.map((arrangementId) => ({ arrangementId, facilities: facilityFacts(arrangementId) })),
+      arrangementFacts: arrangements.map((arrangementId) => ({ arrangementId, facilities: facilityFacts(arrangementId, s.service, overrides) })),
       access: DEMO_COMMUNITIES.flatMap((communityId) => DEMO_FACILITIES.map((facilityId) => ({
-        communityId, facilityId, available: ill(true, "Planning assumption: path usable when its crossings are open (straight-line approximation)"),
+        communityId, facilityId, available: ill(true, "Planning assumption: route usable when its crossings are open (routed on the Vicmap road network)"),
       }))),
       dependencyStates: DEMO_CROSSINGS.map((dependencyId) => ({
         dependencyId,
@@ -115,8 +151,8 @@ export function planningFacts(crews: number | null): PlanningFacts {
 }
 
 export type DemoReview = { result: ReviewResult; brief: string };
-export function runDemoReview(crews: number | null): DemoReview {
-  const packet = buildReviewPacket(processedCatalogue, { communityIds: DEMO_COMMUNITIES, facilityIds: DEMO_FACILITIES }, planningFacts(crews));
+export function runDemoReview(crews: number | null, overrides: Overrides = {}): DemoReview {
+  const packet = buildReviewPacket(processedCatalogue, { communityIds: DEMO_COMMUNITIES, facilityIds: DEMO_FACILITIES }, planningFacts(crews, overrides));
   const result = reviewPacket(packet);
   return { result, brief: renderReviewBrief(result) };
 }

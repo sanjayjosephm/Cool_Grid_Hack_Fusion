@@ -1,6 +1,6 @@
 {
   "generated": "2026-10-03",
-  "bufferKm": 0.5,
+  "method": "routed",
   "centres": [
     {
       "sal": "22397",
@@ -88,17 +88,15 @@
       "from": "22397",
       "to": "fac-sunshine-library",
       "distanceKm": {
-        "value": 2.12,
+        "value": 3.06,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
-        "value": [
-          "x-anderson-road-1838196"
-        ],
+        "value": [],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
@@ -106,1121 +104,1048 @@
       "from": "22397",
       "to": "fac-st-albans-library",
       "distanceKm": {
-        "value": 6.43,
+        "value": 8.09,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
         "value": [
-          "x-ballarat-road-1838194",
-          "x-forrest-street-1838194"
+          "x-anderson-road-1838200",
+          "x-st-albans-road-1838200"
         ],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
     {
       "from": "22397",
       "to": "fac-deer-park-library",
+      "distanceKm": {
+        "value": 8.74,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-station-road-4267448"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "22397",
+      "to": "fac-footscray-library",
+      "distanceKm": {
+        "value": 7.71,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "22397",
+      "to": "fac-broadmeadows-library",
+      "distanceKm": {
+        "value": 17.46,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-anderson-road-1838200",
+          "x-mcintyre-road-1838200",
+          "x-western-ring-out-pascoe-vale-ramp-of-4208083",
+          "x-western-ring-road-1838191"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "22397",
+      "to": "fac-brunswick-west-library",
+      "distanceKm": {
+        "value": 15.81,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-dawson-street-1850068",
+          "x-dean-street-1850065",
+          "x-dean-street-1850068",
+          "x-raleigh-road-1838143",
+          "x-raleigh-road-4209978"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "22397",
+      "to": "fac-braybrook-cc",
+      "distanceKm": {
+        "value": 4.79,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "22397",
+      "to": "fac-maidstone-cc",
       "distanceKm": {
         "value": 6.21,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
         "value": [],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
     {
       "from": "22397",
-      "to": "fac-footscray-library",
+      "to": "fac-west-sunshine-cc",
       "distanceKm": {
-        "value": 6.93,
+        "value": 0.6,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
         "value": [],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
     {
-      "from": "22397",
-      "to": "fac-broadmeadows-library",
+      "from": "22395",
+      "to": "fac-sunshine-library",
       "distanceKm": {
-        "value": 15.63,
+        "value": 1.67,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "22395",
+      "to": "fac-st-albans-library",
+      "distanceKm": {
+        "value": 6.81,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
         "value": [
           "x-anderson-road-1838196",
           "x-anderson-road-1838200",
-          "x-ballarat-road-1838200",
-          "x-mcintyre-road-1838200",
-          "x-pascoe-vale-western-ring-in-ramp-on-4208083",
-          "x-western-ring-out-pascoe-vale-ramp-of-4208083",
-          "x-western-ring-road-4208083"
+          "x-st-albans-road-1838200"
         ],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
     {
-      "from": "22397",
-      "to": "fac-brunswick-west-library",
+      "from": "22395",
+      "to": "fac-deer-park-library",
       "distanceKm": {
-        "value": 12.33,
+        "value": 7.9,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
         "value": [
-          "x-albion-street-1850065",
-          "x-albion-street-1850068",
-          "x-citylink-1850065",
-          "x-citylink-1850068",
+          "x-anderson-road-1838196",
+          "x-anderson-road-1838200",
+          "x-st-albans-road-1838200"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "22395",
+      "to": "fac-footscray-library",
+      "distanceKm": {
+        "value": 6.74,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "22395",
+      "to": "fac-broadmeadows-library",
+      "distanceKm": {
+        "value": 16.18,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-anderson-road-1838196",
+          "x-anderson-road-1838200",
+          "x-mcintyre-road-1838200",
+          "x-western-ring-out-pascoe-vale-ramp-of-4208083",
+          "x-western-ring-road-1838191"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "22395",
+      "to": "fac-brunswick-west-library",
+      "distanceKm": {
+        "value": 14.43,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-dawson-street-1850068",
+          "x-dean-street-1850065",
+          "x-dean-street-1850068",
           "x-raleigh-road-1838143",
-          "x-raleigh-road-4209978",
-          "x-van-ness-avenue-4209978"
+          "x-raleigh-road-4209978"
         ],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "22397",
-      "to": "fac-braybrook-cc",
-      "distanceKm": {
-        "value": 3.49,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "22397",
-      "to": "fac-maidstone-cc",
-      "distanceKm": {
-        "value": 4.66,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "22397",
-      "to": "fac-west-sunshine-cc",
-      "distanceKm": {
-        "value": 0.43,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "22395",
-      "to": "fac-sunshine-library",
-      "distanceKm": {
-        "value": 1.19,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-anderson-road-1838196"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "22395",
-      "to": "fac-st-albans-library",
-      "distanceKm": {
-        "value": 6.22,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-anderson-road-1838196"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "22395",
-      "to": "fac-deer-park-library",
-      "distanceKm": {
-        "value": 6.42,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-anderson-road-1838196",
-          "x-ballarat-road-1838194",
-          "x-forrest-street-1838194"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "22395",
-      "to": "fac-footscray-library",
-      "distanceKm": {
-        "value": 6.01,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-anderson-road-1838196"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "22395",
-      "to": "fac-broadmeadows-library",
-      "distanceKm": {
-        "value": 14.66,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-anderson-road-1838196",
-          "x-pascoe-vale-western-ring-in-ramp-on-4208083",
-          "x-western-ring-out-pascoe-vale-ramp-of-4208083",
-          "x-western-ring-road-4208083"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "22395",
-      "to": "fac-brunswick-west-library",
-      "distanceKm": {
-        "value": 11.25,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-albion-street-1850065",
-          "x-albion-street-1850068",
-          "x-anderson-road-1838196",
-          "x-citylink-1850065",
-          "x-citylink-1850068",
-          "x-raleigh-road-1838143",
-          "x-raleigh-road-4209978",
-          "x-van-ness-avenue-4209978"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
     {
       "from": "22395",
       "to": "fac-braybrook-cc",
-      "distanceKm": {
-        "value": 2.41,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-anderson-road-1838196"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "22395",
-      "to": "fac-maidstone-cc",
-      "distanceKm": {
-        "value": 3.63,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-anderson-road-1838196"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "22395",
-      "to": "fac-west-sunshine-cc",
-      "distanceKm": {
-        "value": 1.5,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-anderson-road-1838196"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "20021",
-      "to": "fac-sunshine-library",
-      "distanceKm": {
-        "value": 2.05,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-ballarat-road-1838194",
-          "x-st-albans-road-1838200"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "20021",
-      "to": "fac-st-albans-library",
-      "distanceKm": {
-        "value": 3.9,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-ballarat-road-1838194"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "20021",
-      "to": "fac-deer-park-library",
-      "distanceKm": {
-        "value": 3.99,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-ballarat-road-1838194"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "20021",
-      "to": "fac-footscray-library",
-      "distanceKm": {
-        "value": 7.95,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-anderson-road-1838200",
-          "x-ballarat-road-1838194",
-          "x-ballarat-road-1838200",
-          "x-mcintyre-road-1838200",
-          "x-st-albans-road-1838200"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "20021",
-      "to": "fac-broadmeadows-library",
-      "distanceKm": {
-        "value": 14.04,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-ballarat-road-1838194",
-          "x-furlong-road-1838201",
-          "x-furlong-western-ring-in-ramp-on-1838201",
-          "x-pascoe-vale-western-ring-in-ramp-on-4208083",
-          "x-western-ring-in-furlong-ramp-of-1838201",
-          "x-western-ring-out-pascoe-vale-ramp-of-4208083",
-          "x-western-ring-road-1838191",
-          "x-western-ring-road-1838201",
-          "x-western-ring-road-4208083"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "20021",
-      "to": "fac-brunswick-west-library",
-      "distanceKm": {
-        "value": 12.12,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-albion-street-1850065",
-          "x-albion-street-1850068",
-          "x-anderson-road-1838200",
-          "x-ballarat-road-1838194",
-          "x-ballarat-road-1838200",
-          "x-canning-street-1838143",
-          "x-canning-street-4209978",
-          "x-mcintyre-road-1838200",
-          "x-st-albans-road-1838200"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "20021",
-      "to": "fac-braybrook-cc",
-      "distanceKm": {
-        "value": 3.97,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-anderson-road-1838200",
-          "x-ballarat-road-1838194",
-          "x-ballarat-road-1838200",
-          "x-mcintyre-road-1838200",
-          "x-st-albans-road-1838200"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "20021",
-      "to": "fac-maidstone-cc",
-      "distanceKm": {
-        "value": 5.32,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-anderson-road-1838200",
-          "x-ballarat-road-1838194",
-          "x-ballarat-road-1838200",
-          "x-mcintyre-road-1838200",
-          "x-st-albans-road-1838200"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "20021",
-      "to": "fac-west-sunshine-cc",
-      "distanceKm": {
-        "value": 2.52,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-ballarat-road-1838194",
-          "x-forrest-street-1838194"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "20729",
-      "to": "fac-sunshine-library",
-      "distanceKm": {
-        "value": 5.39,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-ballarat-road-1838194",
-          "x-station-road-1838198",
-          "x-station-road-4267448"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "20729",
-      "to": "fac-st-albans-library",
-      "distanceKm": {
-        "value": 3.65,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-station-road-1838198",
-          "x-station-road-4267448"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "20729",
-      "to": "fac-deer-park-library",
-      "distanceKm": {
-        "value": 1.69,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-station-road-1838198",
-          "x-station-road-4267448"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "20729",
-      "to": "fac-footscray-library",
-      "distanceKm": {
-        "value": 11.29,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-ballarat-road-1838194",
-          "x-station-road-1838198",
-          "x-station-road-4267448"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "20729",
-      "to": "fac-broadmeadows-library",
-      "distanceKm": {
-        "value": 15.77,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-pascoe-vale-western-ring-in-ramp-on-4208083",
-          "x-station-road-1838198",
-          "x-station-road-4267448",
-          "x-western-ring-out-pascoe-vale-ramp-of-4208083",
-          "x-western-ring-road-4208083"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "20729",
-      "to": "fac-brunswick-west-library",
-      "distanceKm": {
-        "value": 15.15,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-albion-street-1850065",
-          "x-albion-street-1850068",
-          "x-furlong-road-1838201",
-          "x-furlong-western-ring-in-ramp-on-1838201",
-          "x-furlong-western-ring-out-ramp-on-1838201",
-          "x-station-road-1838198",
-          "x-station-road-4267448",
-          "x-western-ring-in-furlong-ramp-of-1838201",
-          "x-western-ring-road-1838201"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "20729",
-      "to": "fac-braybrook-cc",
-      "distanceKm": {
-        "value": 7.32,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-anderson-road-1838200",
-          "x-ballarat-road-1838194",
-          "x-ballarat-road-1838200",
-          "x-mcintyre-road-1838200",
-          "x-st-albans-road-1838200",
-          "x-station-road-1838198",
-          "x-station-road-4267448"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "20729",
-      "to": "fac-maidstone-cc",
-      "distanceKm": {
-        "value": 8.66,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-anderson-road-1838200",
-          "x-ballarat-road-1838194",
-          "x-ballarat-road-1838200",
-          "x-mcintyre-road-1838200",
-          "x-st-albans-road-1838200",
-          "x-station-road-1838198",
-          "x-station-road-4267448"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "20729",
-      "to": "fac-west-sunshine-cc",
-      "distanceKm": {
-        "value": 4.83,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-station-road-1838198",
-          "x-station-road-4267448"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "22330",
-      "to": "fac-sunshine-library",
-      "distanceKm": {
-        "value": 3.66,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-anderson-road-1838200",
-          "x-ballarat-road-1838200",
-          "x-mcintyre-road-1838200",
-          "x-st-albans-road-1838200"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "22330",
-      "to": "fac-st-albans-library",
-      "distanceKm": {
-        "value": 1.77,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "22330",
-      "to": "fac-deer-park-library",
-      "distanceKm": {
-        "value": 2.73,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "22330",
-      "to": "fac-footscray-library",
-      "distanceKm": {
-        "value": 9.15,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-furlong-road-1838201",
-          "x-furlong-western-ring-in-ramp-on-1838201",
-          "x-furlong-western-ring-out-ramp-on-1838201",
-          "x-western-ring-in-furlong-ramp-of-1838201",
-          "x-western-ring-road-1838201"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "22330",
-      "to": "fac-broadmeadows-library",
-      "distanceKm": {
-        "value": 12.77,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-pascoe-vale-western-ring-in-ramp-on-4208083",
-          "x-western-ring-out-pascoe-vale-ramp-of-4208083",
-          "x-western-ring-road-4208083"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "22330",
-      "to": "fac-brunswick-west-library",
-      "distanceKm": {
-        "value": 12.18,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-albion-street-1850065",
-          "x-albion-street-1850068",
-          "x-furlong-western-ring-out-ramp-on-1838201",
-          "x-western-ring-road-1838201"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "22330",
-      "to": "fac-braybrook-cc",
-      "distanceKm": {
-        "value": 5.26,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-furlong-road-1838201",
-          "x-furlong-western-ring-in-ramp-on-1838201",
-          "x-furlong-western-ring-out-ramp-on-1838201",
-          "x-western-ring-in-furlong-ramp-of-1838201",
-          "x-western-ring-road-1838201"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "22330",
-      "to": "fac-maidstone-cc",
-      "distanceKm": {
-        "value": 6.5,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-furlong-road-1838201",
-          "x-furlong-western-ring-in-ramp-on-1838201",
-          "x-furlong-western-ring-out-ramp-on-1838201",
-          "x-western-ring-in-furlong-ramp-of-1838201",
-          "x-western-ring-road-1838201"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "22330",
-      "to": "fac-west-sunshine-cc",
-      "distanceKm": {
-        "value": 4.68,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-ballarat-road-1838194",
-          "x-forrest-street-1838194"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "20324",
-      "to": "fac-sunshine-library",
-      "distanceKm": {
-        "value": 1.89,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "20324",
-      "to": "fac-st-albans-library",
-      "distanceKm": {
-        "value": 6.46,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-furlong-road-1838201",
-          "x-furlong-western-ring-in-ramp-on-1838201",
-          "x-furlong-western-ring-out-ramp-on-1838201",
-          "x-western-ring-in-furlong-ramp-of-1838201",
-          "x-western-ring-road-1838201"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "20324",
-      "to": "fac-deer-park-library",
-      "distanceKm": {
-        "value": 7.52,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-anderson-road-1838200",
-          "x-ballarat-road-1838200",
-          "x-mcintyre-road-1838200"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "20324",
-      "to": "fac-footscray-library",
-      "distanceKm": {
-        "value": 4.22,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "20324",
-      "to": "fac-broadmeadows-library",
-      "distanceKm": {
-        "value": 12.43,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-pascoe-vale-western-ring-in-ramp-on-4208083",
-          "x-western-ring-road-4208083"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "20324",
-      "to": "fac-brunswick-west-library",
-      "distanceKm": {
-        "value": 8.69,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-albion-street-1850065",
-          "x-albion-street-1850068",
-          "x-citylink-1850065",
-          "x-citylink-1850068",
-          "x-raleigh-road-1838143",
-          "x-raleigh-road-4209978",
-          "x-van-ness-avenue-4209978"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "20324",
-      "to": "fac-braybrook-cc",
-      "distanceKm": {
-        "value": 0.49,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "20324",
-      "to": "fac-maidstone-cc",
-      "distanceKm": {
-        "value": 1.56,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "20324",
-      "to": "fac-west-sunshine-cc",
-      "distanceKm": {
-        "value": 4.08,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-anderson-road-1838196"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "21575",
-      "to": "fac-sunshine-library",
-      "distanceKm": {
-        "value": 3.37,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "21575",
-      "to": "fac-st-albans-library",
-      "distanceKm": {
-        "value": 7.27,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "21575",
-      "to": "fac-deer-park-library",
-      "distanceKm": {
-        "value": 8.64,
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      },
-      "dependsOn": {
-        "value": [
-          "x-furlong-road-1838201",
-          "x-furlong-western-ring-in-ramp-on-1838201",
-          "x-furlong-western-ring-out-ramp-on-1838201",
-          "x-western-ring-in-furlong-ramp-of-1838201",
-          "x-western-ring-road-1838201"
-        ],
-        "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
-        "date": "2026-10-03"
-      }
-    },
-    {
-      "from": "21575",
-      "to": "fac-footscray-library",
       "distanceKm": {
         "value": 3.4,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
         "value": [],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "22395",
+      "to": "fac-maidstone-cc",
+      "distanceKm": {
+        "value": 4.9,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "22395",
+      "to": "fac-west-sunshine-cc",
+      "distanceKm": {
+        "value": 2.04,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "20021",
+      "to": "fac-sunshine-library",
+      "distanceKm": {
+        "value": 2.9,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-ballarat-road-1838200"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "20021",
+      "to": "fac-st-albans-library",
+      "distanceKm": {
+        "value": 6.2,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-st-albans-road-1838200"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "20021",
+      "to": "fac-deer-park-library",
+      "distanceKm": {
+        "value": 5.25,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-ballarat-road-1838194"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "20021",
+      "to": "fac-footscray-library",
+      "distanceKm": {
+        "value": 9.06,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-ballarat-road-1838200"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "20021",
+      "to": "fac-broadmeadows-library",
+      "distanceKm": {
+        "value": 16.14,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-ballarat-road-1838200",
+          "x-mcintyre-road-1838200",
+          "x-western-ring-out-pascoe-vale-ramp-of-4208083",
+          "x-western-ring-road-1838191"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "20021",
+      "to": "fac-brunswick-west-library",
+      "distanceKm": {
+        "value": 14.87,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-ballarat-road-1838200",
+          "x-dawson-street-1850068",
+          "x-dean-street-1850065",
+          "x-dean-street-1850068",
+          "x-raleigh-road-1838143",
+          "x-raleigh-road-4209978"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "20021",
+      "to": "fac-braybrook-cc",
+      "distanceKm": {
+        "value": 5.02,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-anderson-road-1838200",
+          "x-st-albans-road-1838200"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "20021",
+      "to": "fac-maidstone-cc",
+      "distanceKm": {
+        "value": 6.28,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-ballarat-road-1838200"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "20021",
+      "to": "fac-west-sunshine-cc",
+      "distanceKm": {
+        "value": 5.23,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "20729",
+      "to": "fac-sunshine-library",
+      "distanceKm": {
+        "value": 6.39,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-ballarat-road-1838194",
+          "x-ballarat-road-1838200"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "20729",
+      "to": "fac-st-albans-library",
+      "distanceKm": {
+        "value": 5.07,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-station-road-4267448"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "20729",
+      "to": "fac-deer-park-library",
+      "distanceKm": {
+        "value": 1.85,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-station-road-4267448"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "20729",
+      "to": "fac-footscray-library",
+      "distanceKm": {
+        "value": 12.55,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-ballarat-road-1838200"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "20729",
+      "to": "fac-broadmeadows-library",
+      "distanceKm": {
+        "value": 17.77,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-furlong-western-ring-out-ramp-on-1838201",
+          "x-irvine-street-1838198",
+          "x-irvine-street-4267448",
+          "x-station-road-1838198",
+          "x-station-road-4267448",
+          "x-western-ring-out-pascoe-vale-ramp-of-4208083",
+          "x-western-ring-road-1838191"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "20729",
+      "to": "fac-brunswick-west-library",
+      "distanceKm": {
+        "value": 17.98,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-furlong-western-ring-out-ramp-on-1838201",
+          "x-irvine-street-1838198",
+          "x-irvine-street-4267448",
+          "x-station-road-1838198",
+          "x-station-road-4267448",
+          "x-western-ring-road-1838191"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "20729",
+      "to": "fac-braybrook-cc",
+      "distanceKm": {
+        "value": 8.51,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-anderson-road-1838200",
+          "x-ballarat-road-1838194",
+          "x-st-albans-road-1838200"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "20729",
+      "to": "fac-maidstone-cc",
+      "distanceKm": {
+        "value": 9.77,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-ballarat-road-1838194",
+          "x-ballarat-road-1838200"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "20729",
+      "to": "fac-west-sunshine-cc",
+      "distanceKm": {
+        "value": 6.88,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "22330",
+      "to": "fac-sunshine-library",
+      "distanceKm": {
+        "value": 4.24,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-anderson-road-1838200",
+          "x-ballarat-road-1838200",
+          "x-st-albans-road-1838200"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "22330",
+      "to": "fac-st-albans-library",
+      "distanceKm": {
+        "value": 2.54,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "22330",
+      "to": "fac-deer-park-library",
+      "distanceKm": {
+        "value": 3.36,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "22330",
+      "to": "fac-footscray-library",
+      "distanceKm": {
+        "value": 10.39,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-ballarat-road-1838200",
+          "x-st-albans-road-1838200"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "22330",
+      "to": "fac-broadmeadows-library",
+      "distanceKm": {
+        "value": 14.4,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-furlong-western-ring-out-ramp-on-1838201",
+          "x-western-ring-out-pascoe-vale-ramp-of-4208083",
+          "x-western-ring-road-1838191"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "22330",
+      "to": "fac-brunswick-west-library",
+      "distanceKm": {
+        "value": 14.61,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-furlong-western-ring-out-ramp-on-1838201",
+          "x-western-ring-road-1838191"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "22330",
+      "to": "fac-braybrook-cc",
+      "distanceKm": {
+        "value": 6.36,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-anderson-road-1838200",
+          "x-st-albans-road-1838200"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "22330",
+      "to": "fac-maidstone-cc",
+      "distanceKm": {
+        "value": 7.62,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-anderson-road-1838200",
+          "x-ballarat-road-1838200",
+          "x-st-albans-road-1838200"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "22330",
+      "to": "fac-west-sunshine-cc",
+      "distanceKm": {
+        "value": 6.65,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-anderson-road-1838200",
+          "x-st-albans-road-1838200"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "20324",
+      "to": "fac-sunshine-library",
+      "distanceKm": {
+        "value": 2.15,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "20324",
+      "to": "fac-st-albans-library",
+      "distanceKm": {
+        "value": 7.41,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-ballarat-road-1838200",
+          "x-st-albans-road-1838200"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "20324",
+      "to": "fac-deer-park-library",
+      "distanceKm": {
+        "value": 8.5,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-ballarat-road-1838200",
+          "x-st-albans-road-1838200"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "20324",
+      "to": "fac-footscray-library",
+      "distanceKm": {
+        "value": 5.38,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "20324",
+      "to": "fac-broadmeadows-library",
+      "distanceKm": {
+        "value": 16.7,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-western-ring-out-pascoe-vale-ramp-of-4208083",
+          "x-western-ring-road-1838191"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "20324",
+      "to": "fac-brunswick-west-library",
+      "distanceKm": {
+        "value": 11.19,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-dawson-street-1850068",
+          "x-dean-street-1850065",
+          "x-dean-street-1850068",
+          "x-raleigh-road-1838143",
+          "x-raleigh-road-4209978"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "20324",
+      "to": "fac-braybrook-cc",
+      "distanceKm": {
+        "value": 1.03,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "20324",
+      "to": "fac-maidstone-cc",
+      "distanceKm": {
+        "value": 2.11,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "20324",
+      "to": "fac-west-sunshine-cc",
+      "distanceKm": {
+        "value": 5.34,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "21575",
+      "to": "fac-sunshine-library",
+      "distanceKm": {
+        "value": 4.48,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "21575",
+      "to": "fac-st-albans-library",
+      "distanceKm": {
+        "value": 9.24,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-ballarat-road-1838200",
+          "x-st-albans-road-1838200"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "21575",
+      "to": "fac-deer-park-library",
+      "distanceKm": {
+        "value": 10.34,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [
+          "x-ballarat-road-1838200",
+          "x-st-albans-road-1838200"
+        ],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "from": "21575",
+      "to": "fac-footscray-library",
+      "distanceKm": {
+        "value": 4.31,
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+        "date": "2026-10-03"
+      },
+      "dependsOn": {
+        "value": [],
+        "status": "illustrative",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
@@ -1228,19 +1153,19 @@
       "from": "21575",
       "to": "fac-broadmeadows-library",
       "distanceKm": {
-        "value": 11.38,
+        "value": 15.12,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
         "value": [
-          "x-canning-street-1838143",
-          "x-canning-street-4209978",
-          "x-pascoe-vale-western-ring-in-ramp-on-4208083"
+          "x-pascoe-vale-road-1838163",
+          "x-raleigh-road-1838143",
+          "x-raleigh-road-4209978"
         ],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
@@ -1248,23 +1173,21 @@
       "from": "21575",
       "to": "fac-brunswick-west-library",
       "distanceKm": {
-        "value": 7.18,
+        "value": 9.5,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
         "value": [
-          "x-albion-street-1850065",
-          "x-albion-street-1850068",
-          "x-citylink-1850065",
-          "x-citylink-1850068",
+          "x-dawson-street-1850068",
+          "x-dean-street-1850065",
+          "x-dean-street-1850068",
           "x-raleigh-road-1838143",
-          "x-raleigh-road-4209978",
-          "x-van-ness-avenue-4209978"
+          "x-raleigh-road-4209978"
         ],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
@@ -1272,15 +1195,15 @@
       "from": "21575",
       "to": "fac-braybrook-cc",
       "distanceKm": {
-        "value": 1.71,
+        "value": 2.47,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
         "value": [],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
@@ -1288,15 +1211,15 @@
       "from": "21575",
       "to": "fac-maidstone-cc",
       "distanceKm": {
-        "value": 1.3,
+        "value": 1.79,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
         "value": [],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
@@ -1304,17 +1227,15 @@
       "from": "21575",
       "to": "fac-west-sunshine-cc",
       "distanceKm": {
-        "value": 5.58,
+        "value": 7.44,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
-        "value": [
-          "x-anderson-road-1838196"
-        ],
+        "value": [],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
@@ -1322,15 +1243,15 @@
       "from": "20935",
       "to": "fac-sunshine-library",
       "distanceKm": {
-        "value": 6.32,
+        "value": 7.23,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
         "value": [],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
@@ -1338,15 +1259,18 @@
       "from": "20935",
       "to": "fac-st-albans-library",
       "distanceKm": {
-        "value": 10.96,
+        "value": 12.17,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
-        "value": [],
+        "value": [
+          "x-ballarat-road-1838200",
+          "x-st-albans-road-1838200"
+        ],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
@@ -1354,19 +1278,18 @@
       "from": "20935",
       "to": "fac-deer-park-library",
       "distanceKm": {
-        "value": 12.14,
+        "value": 13.27,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
         "value": [
-          "x-anderson-road-1838200",
           "x-ballarat-road-1838200",
-          "x-mcintyre-road-1838200"
+          "x-st-albans-road-1838200"
         ],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
@@ -1374,15 +1297,15 @@
       "from": "20935",
       "to": "fac-footscray-library",
       "distanceKm": {
-        "value": 0.43,
+        "value": 0.59,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
         "value": [],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
@@ -1390,18 +1313,17 @@
       "from": "20935",
       "to": "fac-broadmeadows-library",
       "distanceKm": {
-        "value": 13.2,
+        "value": 15.13,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
         "value": [
-          "x-farnsworth-avenue-4209978",
-          "x-raleigh-road-1838143"
+          "x-pascoe-vale-road-1838163"
         ],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
@@ -1409,26 +1331,19 @@
       "from": "20935",
       "to": "fac-brunswick-west-library",
       "distanceKm": {
-        "value": 6.51,
+        "value": 8.43,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
         "value": [
-          "x-ballarat-road-4209978",
-          "x-citylink-1850065",
-          "x-citylink-1850068",
           "x-dawson-street-1850068",
           "x-dean-street-1850065",
-          "x-dean-street-1850068",
-          "x-smithfield-road-4209978",
-          "x-victoria-street-1850068",
-          "x-wilson-street-1850065",
-          "x-wilson-street-1850068"
+          "x-dean-street-1850068"
         ],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
@@ -1436,15 +1351,15 @@
       "from": "20935",
       "to": "fac-braybrook-cc",
       "distanceKm": {
-        "value": 4.39,
+        "value": 5.1,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
         "value": [],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
@@ -1452,15 +1367,15 @@
       "from": "20935",
       "to": "fac-maidstone-cc",
       "distanceKm": {
-        "value": 3.07,
+        "value": 3.76,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
         "value": [],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
@@ -1468,15 +1383,15 @@
       "from": "20935",
       "to": "fac-west-sunshine-cc",
       "distanceKm": {
-        "value": 7.78,
+        "value": 8.49,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
         "value": [],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
@@ -1484,27 +1399,21 @@
       "from": "20363",
       "to": "fac-sunshine-library",
       "distanceKm": {
-        "value": 9.8,
+        "value": 11.77,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
         "value": [
-          "x-citylink-1850065",
-          "x-citylink-1850068",
-          "x-dawson-street-1850068",
-          "x-dean-street-1850065",
-          "x-dean-street-1850068",
           "x-raleigh-road-1838143",
           "x-raleigh-road-4209978",
-          "x-van-ness-avenue-4209978",
           "x-victoria-street-1850068",
           "x-wilson-street-1850065",
           "x-wilson-street-1850068"
         ],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
@@ -1512,22 +1421,20 @@
       "from": "20363",
       "to": "fac-st-albans-library",
       "distanceKm": {
-        "value": 12.56,
+        "value": 14.88,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
         "value": [
-          "x-citylink-1850065",
-          "x-citylink-1850068",
           "x-victoria-street-1850068",
           "x-western-ring-road-1838191",
           "x-wilson-street-1850065",
           "x-wilson-street-1850068"
         ],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
@@ -1535,21 +1442,21 @@
       "from": "20363",
       "to": "fac-deer-park-library",
       "distanceKm": {
-        "value": 14.46,
+        "value": 17.43,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
         "value": [
-          "x-citylink-1850065",
-          "x-citylink-1850068",
+          "x-furlong-western-ring-out-ramp-on-1838201",
           "x-victoria-street-1850068",
+          "x-western-ring-road-1838191",
           "x-wilson-street-1850065",
           "x-wilson-street-1850068"
         ],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
@@ -1557,27 +1464,19 @@
       "from": "20363",
       "to": "fac-footscray-library",
       "distanceKm": {
-        "value": 5.68,
+        "value": 7.52,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
         "value": [
-          "x-citylink-1850065",
-          "x-citylink-1850068",
-          "x-citylink-in-brunswick-ramp-of-4267449",
-          "x-citylink-in-brunswick-ramp-of-4362259",
-          "x-dawson-street-1850068",
-          "x-dean-street-1850065",
-          "x-dean-street-1850068",
-          "x-farnsworth-avenue-4209978",
           "x-victoria-street-1850068",
           "x-wilson-street-1850065",
           "x-wilson-street-1850068"
         ],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
@@ -1585,27 +1484,17 @@
       "from": "20363",
       "to": "fac-broadmeadows-library",
       "distanceKm": {
-        "value": 9.2,
+        "value": 9.8,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
         "value": [
-          "x-albion-street-1850065",
-          "x-albion-street-1850068",
-          "x-bell-street-1838156",
-          "x-citylink-1838152",
-          "x-citylink-1838492",
-          "x-citylink-1850065",
-          "x-citylink-1850068",
-          "x-citylink-in-bell-ramp-of-1838163",
-          "x-victoria-street-1850068",
-          "x-wilson-street-1850065",
-          "x-wilson-street-1850068"
+          "x-pascoe-vale-road-1838163"
         ],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
@@ -1613,21 +1502,15 @@
       "from": "20363",
       "to": "fac-brunswick-west-library",
       "distanceKm": {
-        "value": 1.13,
+        "value": 1.45,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
-        "value": [
-          "x-citylink-1850065",
-          "x-citylink-1850068",
-          "x-victoria-street-1850068",
-          "x-wilson-street-1850065",
-          "x-wilson-street-1850068"
-        ],
+        "value": [],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
@@ -1635,26 +1518,21 @@
       "from": "20363",
       "to": "fac-braybrook-cc",
       "distanceKm": {
-        "value": 8.05,
+        "value": 9.77,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
         "value": [
-          "x-citylink-1850065",
-          "x-citylink-1850068",
-          "x-dawson-street-1850068",
-          "x-dean-street-1850065",
-          "x-dean-street-1850068",
           "x-raleigh-road-1838143",
-          "x-van-ness-avenue-4209978",
+          "x-raleigh-road-4209978",
           "x-victoria-street-1850068",
           "x-wilson-street-1850065",
           "x-wilson-street-1850068"
         ],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
@@ -1662,24 +1540,20 @@
       "from": "20363",
       "to": "fac-maidstone-cc",
       "distanceKm": {
-        "value": 6.94,
+        "value": 9.06,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
         "value": [
-          "x-citylink-1850065",
-          "x-citylink-1850068",
-          "x-dawson-street-1850068",
-          "x-dean-street-1850065",
-          "x-dean-street-1850068",
+          "x-farnsworth-avenue-4209978",
           "x-victoria-street-1850068",
           "x-wilson-street-1850065",
           "x-wilson-street-1850068"
         ],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
@@ -1687,26 +1561,21 @@
       "from": "20363",
       "to": "fac-west-sunshine-cc",
       "distanceKm": {
-        "value": 11.96,
+        "value": 14.73,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
         "value": [
-          "x-citylink-1850065",
-          "x-citylink-1850068",
-          "x-dawson-street-1850068",
-          "x-dean-street-1850065",
-          "x-dean-street-1850068",
           "x-raleigh-road-1838143",
-          "x-van-ness-avenue-4209978",
+          "x-raleigh-road-4209978",
           "x-victoria-street-1850068",
           "x-wilson-street-1850065",
           "x-wilson-street-1850068"
         ],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
@@ -1714,17 +1583,21 @@
       "from": "20346",
       "to": "fac-sunshine-library",
       "distanceKm": {
-        "value": 14.4,
+        "value": 16.72,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
         "value": [
-          "x-pascoe-vale-western-ring-in-ramp-on-4208083"
+          "x-anderson-road-1838200",
+          "x-ballarat-road-1838200",
+          "x-mcintyre-road-1838200",
+          "x-western-ring-road-1838191",
+          "x-western-ring-road-4208083"
         ],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
@@ -1732,19 +1605,18 @@
       "from": "20346",
       "to": "fac-st-albans-library",
       "distanceKm": {
-        "value": 13.24,
+        "value": 15.95,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
         "value": [
-          "x-old-calder-highway-1838191",
-          "x-western-ring-out-pascoe-vale-ramp-of-4208083",
+          "x-western-ring-road-1838191",
           "x-western-ring-road-4208083"
         ],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
@@ -1752,19 +1624,19 @@
       "from": "20346",
       "to": "fac-deer-park-library",
       "distanceKm": {
-        "value": 15.62,
+        "value": 18.6,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
         "value": [
-          "x-old-calder-highway-1838191",
-          "x-western-ring-out-pascoe-vale-ramp-of-4208083",
+          "x-furlong-western-ring-out-ramp-on-1838201",
+          "x-western-ring-road-1838191",
           "x-western-ring-road-4208083"
         ],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
@@ -1772,18 +1644,17 @@
       "from": "20346",
       "to": "fac-footscray-library",
       "distanceKm": {
-        "value": 13.85,
+        "value": 16.59,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
         "value": [
-          "x-farnsworth-avenue-4209978",
-          "x-raleigh-road-1838143"
+          "x-pascoe-vale-road-1838163"
         ],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
@@ -1791,15 +1662,15 @@
       "from": "20346",
       "to": "fac-broadmeadows-library",
       "distanceKm": {
-        "value": 0.98,
+        "value": 1.9,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
         "value": [],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
@@ -1807,15 +1678,15 @@
       "from": "20346",
       "to": "fac-brunswick-west-library",
       "distanceKm": {
-        "value": 8.6,
+        "value": 10.09,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
         "value": [],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
@@ -1823,15 +1694,19 @@
       "from": "20346",
       "to": "fac-braybrook-cc",
       "distanceKm": {
-        "value": 13.69,
+        "value": 17.77,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
-        "value": [],
+        "value": [
+          "x-pascoe-vale-road-1838163",
+          "x-raleigh-road-1838143",
+          "x-raleigh-road-4209978"
+        ],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
@@ -1839,18 +1714,19 @@
       "from": "20346",
       "to": "fac-maidstone-cc",
       "distanceKm": {
-        "value": 13.4,
+        "value": 17.08,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
         "value": [
-          "x-canning-street-1838143",
-          "x-canning-street-4209978"
+          "x-pascoe-vale-road-1838163",
+          "x-raleigh-road-1838143",
+          "x-raleigh-road-4209978"
         ],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     },
@@ -1858,21 +1734,20 @@
       "from": "20346",
       "to": "fac-west-sunshine-cc",
       "distanceKm": {
-        "value": 16.82,
+        "value": 19.12,
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       },
       "dependsOn": {
         "value": [
-          "x-anderson-road-1838196",
           "x-anderson-road-1838200",
-          "x-ballarat-road-1838200",
           "x-mcintyre-road-1838200",
-          "x-pascoe-vale-western-ring-in-ramp-on-4208083"
+          "x-western-ring-road-1838191",
+          "x-western-ring-road-4208083"
         ],
         "status": "illustrative",
-        "source": "Straight-line approximation, not a routed path: crossings within 0.5 km of the line from suburb centre to facility",
+        "source": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
         "date": "2026-10-03"
       }
     }

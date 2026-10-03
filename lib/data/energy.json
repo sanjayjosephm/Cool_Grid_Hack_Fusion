@@ -1,0 +1,336 @@
+{
+  "generated": "2026-10-03",
+  "note": "Postcode-level: suburbs sharing a postcode show the same values.",
+  "areas": [
+    {
+      "sal": "22397",
+      "name": "Sunshine West",
+      "postcode": "3020",
+      "postcodeAreaShare": 100,
+      "installations": {
+        "solar": 4700,
+        "battery": 456,
+        "heatPump": 1640
+      },
+      "dwellings": 15211,
+      "solarPer100": {
+        "value": 30.9,
+        "status": "public",
+        "source": "Clean Energy Regulator small-scale installations by postcode, rooftop solar systems (2001 to Aug 2026) ÷ ABS Census 2021 occupied private dwellings (G34), postcode 3020",
+        "date": "Aug 2026 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "batteryPer100": {
+        "value": 3,
+        "status": "public",
+        "source": "Clean Energy Regulator small-scale installations by postcode, home batteries (Jul 2025 to Aug 2026) ÷ ABS Census 2021 occupied private dwellings (G34), postcode 3020",
+        "date": "Aug 2026 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "heatPumpPer100": {
+        "value": 10.8,
+        "status": "public",
+        "source": "Clean Energy Regulator small-scale installations by postcode, air-source heat-pump water heaters (2001 to Aug 2026) ÷ ABS Census 2021 occupied private dwellings (G34), postcode 3020",
+        "date": "Aug 2026 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "sal": "22395",
+      "name": "Sunshine",
+      "postcode": "3020",
+      "postcodeAreaShare": 100,
+      "installations": {
+        "solar": 4700,
+        "battery": 456,
+        "heatPump": 1640
+      },
+      "dwellings": 15211,
+      "solarPer100": {
+        "value": 30.9,
+        "status": "public",
+        "source": "Clean Energy Regulator small-scale installations by postcode, rooftop solar systems (2001 to Aug 2026) ÷ ABS Census 2021 occupied private dwellings (G34), postcode 3020",
+        "date": "Aug 2026 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "batteryPer100": {
+        "value": 3,
+        "status": "public",
+        "source": "Clean Energy Regulator small-scale installations by postcode, home batteries (Jul 2025 to Aug 2026) ÷ ABS Census 2021 occupied private dwellings (G34), postcode 3020",
+        "date": "Aug 2026 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "heatPumpPer100": {
+        "value": 10.8,
+        "status": "public",
+        "source": "Clean Energy Regulator small-scale installations by postcode, air-source heat-pump water heaters (2001 to Aug 2026) ÷ ABS Census 2021 occupied private dwellings (G34), postcode 3020",
+        "date": "Aug 2026 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "sal": "20021",
+      "name": "Albion",
+      "postcode": "3020",
+      "postcodeAreaShare": 100,
+      "installations": {
+        "solar": 4700,
+        "battery": 456,
+        "heatPump": 1640
+      },
+      "dwellings": 15211,
+      "solarPer100": {
+        "value": 30.9,
+        "status": "public",
+        "source": "Clean Energy Regulator small-scale installations by postcode, rooftop solar systems (2001 to Aug 2026) ÷ ABS Census 2021 occupied private dwellings (G34), postcode 3020",
+        "date": "Aug 2026 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "batteryPer100": {
+        "value": 3,
+        "status": "public",
+        "source": "Clean Energy Regulator small-scale installations by postcode, home batteries (Jul 2025 to Aug 2026) ÷ ABS Census 2021 occupied private dwellings (G34), postcode 3020",
+        "date": "Aug 2026 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "heatPumpPer100": {
+        "value": 10.8,
+        "status": "public",
+        "source": "Clean Energy Regulator small-scale installations by postcode, air-source heat-pump water heaters (2001 to Aug 2026) ÷ ABS Census 2021 occupied private dwellings (G34), postcode 3020",
+        "date": "Aug 2026 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "sal": "20729",
+      "name": "Deer Park",
+      "postcode": "3023",
+      "postcodeAreaShare": 100,
+      "installations": {
+        "solar": 8895,
+        "battery": 914,
+        "heatPump": 2188
+      },
+      "dwellings": 19696,
+      "solarPer100": {
+        "value": 45.2,
+        "status": "public",
+        "source": "Clean Energy Regulator small-scale installations by postcode, rooftop solar systems (2001 to Aug 2026) ÷ ABS Census 2021 occupied private dwellings (G34), postcode 3023",
+        "date": "Aug 2026 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "batteryPer100": {
+        "value": 4.6,
+        "status": "public",
+        "source": "Clean Energy Regulator small-scale installations by postcode, home batteries (Jul 2025 to Aug 2026) ÷ ABS Census 2021 occupied private dwellings (G34), postcode 3023",
+        "date": "Aug 2026 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "heatPumpPer100": {
+        "value": 11.1,
+        "status": "public",
+        "source": "Clean Energy Regulator small-scale installations by postcode, air-source heat-pump water heaters (2001 to Aug 2026) ÷ ABS Census 2021 occupied private dwellings (G34), postcode 3023",
+        "date": "Aug 2026 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "sal": "22330",
+      "name": "St Albans",
+      "postcode": "3021",
+      "postcodeAreaShare": 100,
+      "installations": {
+        "solar": 5315,
+        "battery": 443,
+        "heatPump": 1540
+      },
+      "dwellings": 17935,
+      "solarPer100": {
+        "value": 29.6,
+        "status": "public",
+        "source": "Clean Energy Regulator small-scale installations by postcode, rooftop solar systems (2001 to Aug 2026) ÷ ABS Census 2021 occupied private dwellings (G34), postcode 3021",
+        "date": "Aug 2026 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "batteryPer100": {
+        "value": 2.5,
+        "status": "public",
+        "source": "Clean Energy Regulator small-scale installations by postcode, home batteries (Jul 2025 to Aug 2026) ÷ ABS Census 2021 occupied private dwellings (G34), postcode 3021",
+        "date": "Aug 2026 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "heatPumpPer100": {
+        "value": 8.6,
+        "status": "public",
+        "source": "Clean Energy Regulator small-scale installations by postcode, air-source heat-pump water heaters (2001 to Aug 2026) ÷ ABS Census 2021 occupied private dwellings (G34), postcode 3021",
+        "date": "Aug 2026 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "sal": "20324",
+      "name": "Braybrook",
+      "postcode": "3019",
+      "postcodeAreaShare": 100,
+      "installations": {
+        "solar": 864,
+        "battery": 93,
+        "heatPump": 418
+      },
+      "dwellings": 3412,
+      "solarPer100": {
+        "value": 25.3,
+        "status": "public",
+        "source": "Clean Energy Regulator small-scale installations by postcode, rooftop solar systems (2001 to Aug 2026) ÷ ABS Census 2021 occupied private dwellings (G34), postcode 3019",
+        "date": "Aug 2026 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "batteryPer100": {
+        "value": 2.7,
+        "status": "public",
+        "source": "Clean Energy Regulator small-scale installations by postcode, home batteries (Jul 2025 to Aug 2026) ÷ ABS Census 2021 occupied private dwellings (G34), postcode 3019",
+        "date": "Aug 2026 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "heatPumpPer100": {
+        "value": 12.3,
+        "status": "public",
+        "source": "Clean Energy Regulator small-scale installations by postcode, air-source heat-pump water heaters (2001 to Aug 2026) ÷ ABS Census 2021 occupied private dwellings (G34), postcode 3019",
+        "date": "Aug 2026 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "sal": "21575",
+      "name": "Maidstone",
+      "postcode": "3012",
+      "postcodeAreaShare": 100,
+      "installations": {
+        "solar": 2153,
+        "battery": 239,
+        "heatPump": 865
+      },
+      "dwellings": 10550,
+      "solarPer100": {
+        "value": 20.4,
+        "status": "public",
+        "source": "Clean Energy Regulator small-scale installations by postcode, rooftop solar systems (2001 to Aug 2026) ÷ ABS Census 2021 occupied private dwellings (G34), postcode 3012",
+        "date": "Aug 2026 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "batteryPer100": {
+        "value": 2.3,
+        "status": "public",
+        "source": "Clean Energy Regulator small-scale installations by postcode, home batteries (Jul 2025 to Aug 2026) ÷ ABS Census 2021 occupied private dwellings (G34), postcode 3012",
+        "date": "Aug 2026 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "heatPumpPer100": {
+        "value": 8.2,
+        "status": "public",
+        "source": "Clean Energy Regulator small-scale installations by postcode, air-source heat-pump water heaters (2001 to Aug 2026) ÷ ABS Census 2021 occupied private dwellings (G34), postcode 3012",
+        "date": "Aug 2026 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "sal": "20935",
+      "name": "Footscray",
+      "postcode": "3011",
+      "postcodeAreaShare": 100,
+      "installations": {
+        "solar": 1338,
+        "battery": 135,
+        "heatPump": 476
+      },
+      "dwellings": 9450,
+      "solarPer100": {
+        "value": 14.2,
+        "status": "public",
+        "source": "Clean Energy Regulator small-scale installations by postcode, rooftop solar systems (2001 to Aug 2026) ÷ ABS Census 2021 occupied private dwellings (G34), postcode 3011",
+        "date": "Aug 2026 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "batteryPer100": {
+        "value": 1.4,
+        "status": "public",
+        "source": "Clean Energy Regulator small-scale installations by postcode, home batteries (Jul 2025 to Aug 2026) ÷ ABS Census 2021 occupied private dwellings (G34), postcode 3011",
+        "date": "Aug 2026 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "heatPumpPer100": {
+        "value": 5,
+        "status": "public",
+        "source": "Clean Energy Regulator small-scale installations by postcode, air-source heat-pump water heaters (2001 to Aug 2026) ÷ ABS Census 2021 occupied private dwellings (G34), postcode 3011",
+        "date": "Aug 2026 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "sal": "20363",
+      "name": "Brunswick West",
+      "postcode": "3055",
+      "postcodeAreaShare": 100,
+      "installations": {
+        "solar": 1013,
+        "battery": 123,
+        "heatPump": 402
+      },
+      "dwellings": 6612,
+      "solarPer100": {
+        "value": 15.3,
+        "status": "public",
+        "source": "Clean Energy Regulator small-scale installations by postcode, rooftop solar systems (2001 to Aug 2026) ÷ ABS Census 2021 occupied private dwellings (G34), postcode 3055",
+        "date": "Aug 2026 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "batteryPer100": {
+        "value": 1.9,
+        "status": "public",
+        "source": "Clean Energy Regulator small-scale installations by postcode, home batteries (Jul 2025 to Aug 2026) ÷ ABS Census 2021 occupied private dwellings (G34), postcode 3055",
+        "date": "Aug 2026 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "heatPumpPer100": {
+        "value": 6.1,
+        "status": "public",
+        "source": "Clean Energy Regulator small-scale installations by postcode, air-source heat-pump water heaters (2001 to Aug 2026) ÷ ABS Census 2021 occupied private dwellings (G34), postcode 3055",
+        "date": "Aug 2026 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    },
+    {
+      "sal": "20346",
+      "name": "Broadmeadows",
+      "postcode": "3047",
+      "postcodeAreaShare": 98,
+      "installations": {
+        "solar": 1886,
+        "battery": 115,
+        "heatPump": 562
+      },
+      "dwellings": 6533,
+      "solarPer100": {
+        "value": 28.9,
+        "status": "public",
+        "source": "Clean Energy Regulator small-scale installations by postcode, rooftop solar systems (2001 to Aug 2026) ÷ ABS Census 2021 occupied private dwellings (G34), postcode 3047",
+        "date": "Aug 2026 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "batteryPer100": {
+        "value": 1.8,
+        "status": "public",
+        "source": "Clean Energy Regulator small-scale installations by postcode, home batteries (Jul 2025 to Aug 2026) ÷ ABS Census 2021 occupied private dwellings (G34), postcode 3047",
+        "date": "Aug 2026 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      },
+      "heatPumpPer100": {
+        "value": 8.6,
+        "status": "public",
+        "source": "Clean Energy Regulator small-scale installations by postcode, air-source heat-pump water heaters (2001 to Aug 2026) ÷ ABS Census 2021 occupied private dwellings (G34), postcode 3047",
+        "date": "Aug 2026 (downloaded 2026-10-03)",
+        "licence": "CC BY 4.0"
+      }
+    }
+  ]
+}

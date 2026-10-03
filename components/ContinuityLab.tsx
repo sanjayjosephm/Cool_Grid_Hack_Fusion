@@ -3,25 +3,43 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useMemo, useState } from "react";
-import ScenarioResults from "@/components/ScenarioResults";
+import FacilityEditor from "@/components/FacilityEditor";
+import ScenarioResults, { type Policy } from "@/components/ScenarioResults";
 import { equipmentRule, facilityFloodWarnings, groupContext } from "@/lib/area-context";
 import { OUTAGE_HOURS } from "@/lib/backup";
-import { backupRows, DEMO_COMMUNITIES, DEMO_FACILITIES, FLOOD_SHARE, HEAT_SHARE, runDemoReview } from "@/lib/demo-review";
+import { backupRows, DEMO_COMMUNITIES, DEMO_FACILITIES, FLOOD_SHARE, HEAT_SHARE, runDemoReview, type Overrides } from "@/lib/demo-review";
+import { encodeOverrides } from "@/lib/overrides-url";
+import { recommendArrangement } from "@/lib/planning-tools";
 import { FACILITIES } from "@/lib/planning-data";
 import { ARRANGEMENTS, ARRANGEMENT_LABELS, type PlannerConfig, plannerConfigUrl } from "@/lib/planner-config";
 
 const BACKUP_TONE: Record<string, string> = { pass: "text-[#3E8E6A]", assessment: "text-[#B07A10]" };
 const BACKUP_LABEL: Record<string, string> = { pass: "Passes", "fail-energy": "Fails: battery", "fail-power": "Fails: inverter", "fail-circuit": "Fails: wiring", assessment: "Needs assessment" };
 
-export default function ContinuityLab({ initialConfig }: { initialConfig: PlannerConfig }) {
+export default function ContinuityLab({ initialConfig, initialOverrides = {}, initialPolicy = "max" }: { initialConfig: PlannerConfig; initialOverrides?: Overrides; initialPolicy?: Policy }) {
   const router = useRouter();
   const [config, setConfig] = useState(initialConfig);
   const [crewInput, setCrewInput] = useState(initialConfig.crews === null ? "" : String(initialConfig.crews));
+  const [overrides, setOverrides] = useState<Overrides>(initialOverrides);
+  const [policy, setPolicy] = useState<Policy>(initialPolicy);
+
+  // Arrangement and crews use the shared planner-config URL; planner edits and policy are appended so the brief matches.
+  const urlFor = (path: "/continuity" | "/brief", c: PlannerConfig, o = overrides, p = policy) => {
+    const base = plannerConfigUrl(path, c);
+    const extra = new URLSearchParams();
+    const enc = encodeOverrides(o);
+    if (enc) extra.set("o", enc);
+    if (p === "fair") extra.set("policy", "fair");
+    const q = extra.toString();
+    return q ? `${base}${base.includes("?") ? "&" : "?"}${q}` : base;
+  };
+  const changeOverrides = (o: Overrides) => { setOverrides(o); router.replace(urlFor("/continuity", config, o), { scroll: false }); };
+  const changePolicy = (p: Policy) => { setPolicy(p); router.replace(urlFor("/continuity", config, overrides, p), { scroll: false }); };
 
   const updateConfig = (next: PlannerConfig) => {
     const validConfig = { ...next, errors: [] };
     setConfig(validConfig);
-    router.replace(plannerConfigUrl("/continuity", validConfig), { scroll: false });
+    router.replace(urlFor("/continuity", validConfig), { scroll: false });
   };
 
   const setArrangement = (value: string) => {
@@ -37,17 +55,18 @@ export default function ContinuityLab({ initialConfig }: { initialConfig: Planne
     const errors = value !== "" && crews === null ? ["Crew count must be a non-negative whole number."] : [];
     const validConfig = { ...config, crews, errors };
     setConfig(validConfig);
-    router.replace(plannerConfigUrl("/continuity", validConfig), { scroll: false });
+    router.replace(urlFor("/continuity", validConfig), { scroll: false });
   };
 
   const canGenerateBrief = config.arrangement !== null && config.crews !== null;
-  const review = useMemo(() => runDemoReview(config.crews), [config.crews]);
-  const backups = useMemo(() => backupRows(), []);
+  const review = useMemo(() => runDemoReview(config.crews, overrides), [config.crews, overrides]);
+  const backups = useMemo(() => backupRows(overrides), [overrides]);
+  const rec = useMemo(() => recommendArrangement(review.result), [review]);
   const floodWarnings = facilityFloodWarnings(FACILITIES.filter((f) => DEMO_FACILITIES.includes(f.id)));
 
   return (
     <main className="mx-auto max-w-6xl px-6 pb-16 pt-10">
-      <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-muted">P1 · Continuity Lab</p>
+      <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-muted">Continuity Lab</p>
       <h1 className="text-4xl">Test the service arrangement</h1>
       <p className="mt-3 max-w-3xl text-muted">
         Compare separate disruption scenarios for council planning. Facility capacities and staffing remain labelled as illustrative or unknown; this screen does not designate public destinations or routes.
@@ -81,10 +100,35 @@ export default function ContinuityLab({ initialConfig }: { initialConfig: Planne
             <p className="text-sm text-muted">Scenarios are assessed separately and are not combined into a single score.</p>
           </div>
           {canGenerateBrief
-            ? <Link className="rounded-full bg-ink px-5 py-2.5 font-semibold text-white no-underline hover:bg-[#344154]" href={plannerConfigUrl("/brief", config)}>Prepare review brief →</Link>
+            ? <Link className="rounded-full bg-ink px-5 py-2.5 font-semibold text-white no-underline hover:bg-[#344154]" href={urlFor("/brief", config)}>Prepare review brief →</Link>
             : <span className="text-sm text-muted">Select an arrangement and enter a crew count to continue.</span>}
         </div>
-        <ScenarioResults result={review.result} arrangement={config.arrangement} />
+        <div className="mb-4 grid gap-4 md:grid-cols-[1fr_auto]">
+          <div className="rounded-xl border-l-4 border-blue bg-white px-4 py-3 text-sm ring-1 ring-line">
+            <p className="font-semibold">Recommended starting arrangement{rec.arrangement ? `: ${ARRANGEMENT_LABELS[rec.arrangement]}` : ""}</p>
+            <p className="text-muted">{rec.reason} Compared within each scenario only; a suggestion to review, not a decision.</p>
+            {rec.arrangement && rec.arrangement !== config.arrangement && (
+              <button className="mt-2 rounded-full bg-blue px-4 py-1.5 text-sm font-semibold text-white" onClick={() => setArrangement(rec.arrangement!)}>Apply recommendation</button>
+            )}
+          </div>
+          <fieldset className="rounded-xl bg-white px-4 py-3 text-sm ring-1 ring-line">
+            <legend className="sr-only">Allocation policy</legend>
+            <p className="mb-1 font-semibold">Allocation policy</p>
+            {([["max", "Most places counted"], ["fair", "Fair share between communities"]] as const).map(([p, l]) => (
+              <label key={p} className="mr-4 inline-flex items-center gap-1.5"><input type="radio" name="policy" checked={policy === p} onChange={() => changePolicy(p)} />{l}</label>
+            ))}
+          </fieldset>
+        </div>
+        <ScenarioResults result={review.result} arrangement={config.arrangement} policy={policy} />
+      </section>
+
+      <section className="mt-10 rounded-2xl bg-white p-5 ring-1 ring-line">
+        <div className="mb-3 flex flex-wrap items-baseline justify-between gap-2">
+          <h2 className="text-xl">Facility inputs</h2>
+          {Object.keys(overrides).length > 0 && <button className="text-sm text-blue underline" onClick={() => changeOverrides({})}>Reset to placeholders</button>}
+        </div>
+        <p className="mb-3 text-sm text-muted">Replace the illustrative placeholders with council records. Results above, the backup check and the review brief update immediately.</p>
+        <FacilityEditor overrides={overrides} onChange={changeOverrides} />
       </section>
       <section className="mt-10 grid gap-6 lg:grid-cols-2">
         <div className="rounded-2xl bg-white p-5 ring-1 ring-line">

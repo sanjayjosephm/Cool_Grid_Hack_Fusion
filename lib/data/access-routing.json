@@ -1,0 +1,727 @@
+{
+  "generated": "2026-10-03",
+  "method": "Shortest route on the Vicmap road network (freeway to local street), suburb centre and facility snapped to the nearest non-freeway road point; not a travel-time or accessibility model",
+  "roadPoints": 69152,
+  "routing": [
+    {
+      "from": "22397",
+      "to": "fac-sunshine-library",
+      "snapKm": {
+        "origin": 0,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "22397",
+      "to": "fac-st-albans-library",
+      "snapKm": {
+        "origin": 0,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "22397",
+      "to": "fac-deer-park-library",
+      "snapKm": {
+        "origin": 0,
+        "destination": 0.05
+      }
+    },
+    {
+      "from": "22397",
+      "to": "fac-footscray-library",
+      "snapKm": {
+        "origin": 0,
+        "destination": 0.06
+      }
+    },
+    {
+      "from": "22397",
+      "to": "fac-broadmeadows-library",
+      "snapKm": {
+        "origin": 0,
+        "destination": 0.05
+      }
+    },
+    {
+      "from": "22397",
+      "to": "fac-brunswick-west-library",
+      "snapKm": {
+        "origin": 0,
+        "destination": 0.02
+      }
+    },
+    {
+      "from": "22397",
+      "to": "fac-braybrook-cc",
+      "snapKm": {
+        "origin": 0,
+        "destination": 0.06
+      }
+    },
+    {
+      "from": "22397",
+      "to": "fac-maidstone-cc",
+      "snapKm": {
+        "origin": 0,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "22397",
+      "to": "fac-west-sunshine-cc",
+      "snapKm": {
+        "origin": 0,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "22395",
+      "to": "fac-sunshine-library",
+      "snapKm": {
+        "origin": 0.1,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "22395",
+      "to": "fac-st-albans-library",
+      "snapKm": {
+        "origin": 0.1,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "22395",
+      "to": "fac-deer-park-library",
+      "snapKm": {
+        "origin": 0.1,
+        "destination": 0.05
+      }
+    },
+    {
+      "from": "22395",
+      "to": "fac-footscray-library",
+      "snapKm": {
+        "origin": 0.1,
+        "destination": 0.06
+      }
+    },
+    {
+      "from": "22395",
+      "to": "fac-broadmeadows-library",
+      "snapKm": {
+        "origin": 0.1,
+        "destination": 0.05
+      }
+    },
+    {
+      "from": "22395",
+      "to": "fac-brunswick-west-library",
+      "snapKm": {
+        "origin": 0.1,
+        "destination": 0.02
+      }
+    },
+    {
+      "from": "22395",
+      "to": "fac-braybrook-cc",
+      "snapKm": {
+        "origin": 0.1,
+        "destination": 0.06
+      }
+    },
+    {
+      "from": "22395",
+      "to": "fac-maidstone-cc",
+      "snapKm": {
+        "origin": 0.1,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "22395",
+      "to": "fac-west-sunshine-cc",
+      "snapKm": {
+        "origin": 0.1,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "20021",
+      "to": "fac-sunshine-library",
+      "snapKm": {
+        "origin": 0.03,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "20021",
+      "to": "fac-st-albans-library",
+      "snapKm": {
+        "origin": 0.03,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "20021",
+      "to": "fac-deer-park-library",
+      "snapKm": {
+        "origin": 0.03,
+        "destination": 0.05
+      }
+    },
+    {
+      "from": "20021",
+      "to": "fac-footscray-library",
+      "snapKm": {
+        "origin": 0.03,
+        "destination": 0.06
+      }
+    },
+    {
+      "from": "20021",
+      "to": "fac-broadmeadows-library",
+      "snapKm": {
+        "origin": 0.03,
+        "destination": 0.05
+      }
+    },
+    {
+      "from": "20021",
+      "to": "fac-brunswick-west-library",
+      "snapKm": {
+        "origin": 0.03,
+        "destination": 0.02
+      }
+    },
+    {
+      "from": "20021",
+      "to": "fac-braybrook-cc",
+      "snapKm": {
+        "origin": 0.03,
+        "destination": 0.06
+      }
+    },
+    {
+      "from": "20021",
+      "to": "fac-maidstone-cc",
+      "snapKm": {
+        "origin": 0.03,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "20021",
+      "to": "fac-west-sunshine-cc",
+      "snapKm": {
+        "origin": 0.03,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "20729",
+      "to": "fac-sunshine-library",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "20729",
+      "to": "fac-st-albans-library",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "20729",
+      "to": "fac-deer-park-library",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.05
+      }
+    },
+    {
+      "from": "20729",
+      "to": "fac-footscray-library",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.06
+      }
+    },
+    {
+      "from": "20729",
+      "to": "fac-broadmeadows-library",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.05
+      }
+    },
+    {
+      "from": "20729",
+      "to": "fac-brunswick-west-library",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.02
+      }
+    },
+    {
+      "from": "20729",
+      "to": "fac-braybrook-cc",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.06
+      }
+    },
+    {
+      "from": "20729",
+      "to": "fac-maidstone-cc",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "20729",
+      "to": "fac-west-sunshine-cc",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "22330",
+      "to": "fac-sunshine-library",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "22330",
+      "to": "fac-st-albans-library",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "22330",
+      "to": "fac-deer-park-library",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.05
+      }
+    },
+    {
+      "from": "22330",
+      "to": "fac-footscray-library",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.06
+      }
+    },
+    {
+      "from": "22330",
+      "to": "fac-broadmeadows-library",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.05
+      }
+    },
+    {
+      "from": "22330",
+      "to": "fac-brunswick-west-library",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.02
+      }
+    },
+    {
+      "from": "22330",
+      "to": "fac-braybrook-cc",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.06
+      }
+    },
+    {
+      "from": "22330",
+      "to": "fac-maidstone-cc",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "22330",
+      "to": "fac-west-sunshine-cc",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "20324",
+      "to": "fac-sunshine-library",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "20324",
+      "to": "fac-st-albans-library",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "20324",
+      "to": "fac-deer-park-library",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.05
+      }
+    },
+    {
+      "from": "20324",
+      "to": "fac-footscray-library",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.06
+      }
+    },
+    {
+      "from": "20324",
+      "to": "fac-broadmeadows-library",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.05
+      }
+    },
+    {
+      "from": "20324",
+      "to": "fac-brunswick-west-library",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.02
+      }
+    },
+    {
+      "from": "20324",
+      "to": "fac-braybrook-cc",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.06
+      }
+    },
+    {
+      "from": "20324",
+      "to": "fac-maidstone-cc",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "20324",
+      "to": "fac-west-sunshine-cc",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "21575",
+      "to": "fac-sunshine-library",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "21575",
+      "to": "fac-st-albans-library",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "21575",
+      "to": "fac-deer-park-library",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.05
+      }
+    },
+    {
+      "from": "21575",
+      "to": "fac-footscray-library",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.06
+      }
+    },
+    {
+      "from": "21575",
+      "to": "fac-broadmeadows-library",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.05
+      }
+    },
+    {
+      "from": "21575",
+      "to": "fac-brunswick-west-library",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.02
+      }
+    },
+    {
+      "from": "21575",
+      "to": "fac-braybrook-cc",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.06
+      }
+    },
+    {
+      "from": "21575",
+      "to": "fac-maidstone-cc",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "21575",
+      "to": "fac-west-sunshine-cc",
+      "snapKm": {
+        "origin": 0.08,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "20935",
+      "to": "fac-sunshine-library",
+      "snapKm": {
+        "origin": 0.01,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "20935",
+      "to": "fac-st-albans-library",
+      "snapKm": {
+        "origin": 0.01,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "20935",
+      "to": "fac-deer-park-library",
+      "snapKm": {
+        "origin": 0.01,
+        "destination": 0.05
+      }
+    },
+    {
+      "from": "20935",
+      "to": "fac-footscray-library",
+      "snapKm": {
+        "origin": 0.01,
+        "destination": 0.06
+      }
+    },
+    {
+      "from": "20935",
+      "to": "fac-broadmeadows-library",
+      "snapKm": {
+        "origin": 0.01,
+        "destination": 0.05
+      }
+    },
+    {
+      "from": "20935",
+      "to": "fac-brunswick-west-library",
+      "snapKm": {
+        "origin": 0.01,
+        "destination": 0.02
+      }
+    },
+    {
+      "from": "20935",
+      "to": "fac-braybrook-cc",
+      "snapKm": {
+        "origin": 0.01,
+        "destination": 0.06
+      }
+    },
+    {
+      "from": "20935",
+      "to": "fac-maidstone-cc",
+      "snapKm": {
+        "origin": 0.01,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "20935",
+      "to": "fac-west-sunshine-cc",
+      "snapKm": {
+        "origin": 0.01,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "20363",
+      "to": "fac-sunshine-library",
+      "snapKm": {
+        "origin": 0.03,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "20363",
+      "to": "fac-st-albans-library",
+      "snapKm": {
+        "origin": 0.03,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "20363",
+      "to": "fac-deer-park-library",
+      "snapKm": {
+        "origin": 0.03,
+        "destination": 0.05
+      }
+    },
+    {
+      "from": "20363",
+      "to": "fac-footscray-library",
+      "snapKm": {
+        "origin": 0.03,
+        "destination": 0.06
+      }
+    },
+    {
+      "from": "20363",
+      "to": "fac-broadmeadows-library",
+      "snapKm": {
+        "origin": 0.03,
+        "destination": 0.05
+      }
+    },
+    {
+      "from": "20363",
+      "to": "fac-brunswick-west-library",
+      "snapKm": {
+        "origin": 0.03,
+        "destination": 0.02
+      }
+    },
+    {
+      "from": "20363",
+      "to": "fac-braybrook-cc",
+      "snapKm": {
+        "origin": 0.03,
+        "destination": 0.06
+      }
+    },
+    {
+      "from": "20363",
+      "to": "fac-maidstone-cc",
+      "snapKm": {
+        "origin": 0.03,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "20363",
+      "to": "fac-west-sunshine-cc",
+      "snapKm": {
+        "origin": 0.03,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "20346",
+      "to": "fac-sunshine-library",
+      "snapKm": {
+        "origin": 0.06,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "20346",
+      "to": "fac-st-albans-library",
+      "snapKm": {
+        "origin": 0.06,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "20346",
+      "to": "fac-deer-park-library",
+      "snapKm": {
+        "origin": 0.06,
+        "destination": 0.05
+      }
+    },
+    {
+      "from": "20346",
+      "to": "fac-footscray-library",
+      "snapKm": {
+        "origin": 0.06,
+        "destination": 0.06
+      }
+    },
+    {
+      "from": "20346",
+      "to": "fac-broadmeadows-library",
+      "snapKm": {
+        "origin": 0.06,
+        "destination": 0.05
+      }
+    },
+    {
+      "from": "20346",
+      "to": "fac-brunswick-west-library",
+      "snapKm": {
+        "origin": 0.06,
+        "destination": 0.02
+      }
+    },
+    {
+      "from": "20346",
+      "to": "fac-braybrook-cc",
+      "snapKm": {
+        "origin": 0.06,
+        "destination": 0.06
+      }
+    },
+    {
+      "from": "20346",
+      "to": "fac-maidstone-cc",
+      "snapKm": {
+        "origin": 0.06,
+        "destination": 0.03
+      }
+    },
+    {
+      "from": "20346",
+      "to": "fac-west-sunshine-cc",
+      "snapKm": {
+        "origin": 0.06,
+        "destination": 0.03
+      }
+    }
+  ]
+}
