@@ -1,5 +1,7 @@
 import Link from "next/link";
 import PrintButton from "@/components/PrintButton";
+import ScenarioResults, { causes } from "@/components/ScenarioResults";
+import { runDemoReview, SCENARIO_META } from "@/lib/demo-review";
 import { FACILITIES, formatSourcedValue, sourcedRows } from "@/lib/planning-data";
 import { ARRANGEMENT_LABELS, parsePlannerConfig, plannerConfigUrl, type SearchParam } from "@/lib/planner-config";
 
@@ -14,6 +16,13 @@ const unresolved = FACILITIES.flatMap((facility) =>
 export default function BriefPage({ searchParams }: { searchParams?: Record<string, SearchParam> }) {
   const config = parsePlannerConfig(searchParams ?? {});
   const configured = config.arrangement !== null && config.crews !== null;
+  const review = configured ? runDemoReview(config.crews) : null;
+  const rows = review ? SCENARIO_META.map((s) => ({ s, row: review.result.rows.find((r) => r.scenarioId === s.id && r.arrangementId === config.arrangement)! })) : [];
+  // Scenario with the most places not counted, among those the engine could calculate.
+  const largestGap = rows
+    .filter(({ row }) => row.gapVectors !== null)
+    .map(({ s, row }) => ({ title: s.title, gap: row.gapVectors![0].reduce((t, g) => t + g.gap, 0) }))
+    .sort((a, b) => b.gap - a.gap)[0];
 
   return (
     <main className="mx-auto max-w-4xl px-6 pb-16 pt-10 print:max-w-none print:px-0 print:py-0">
@@ -63,12 +72,40 @@ export default function BriefPage({ searchParams }: { searchParams?: Record<stri
         ) : <p className="mt-3 text-sm">There are no facility fields currently marked unknown.</p>}
       </section>
 
-      <section className="my-6 rounded-xl border-l-4 border-amber bg-white p-5 ring-1 ring-line print:break-inside-avoid print:ring-0 print:p-0">
-        <h2 className="text-xl">Scenario findings and recommended exercise</h2>
-        <p className="mt-2 text-sm">
-          Scenario allocations, shortfalls and engine-derived verification recommendations are not connected to this screen yet. No calculated findings are shown until the required service evidence is entered and reviewed.
-        </p>
-      </section>
+      {review && (
+        <>
+          <section className="my-6">
+            <h2 className="text-2xl">Scenario findings</h2>
+            <p className="mt-2 text-sm text-muted print:text-black">Each scenario is assessed separately; results are never added together. Places counted are conditional on the labelled inputs below and do not certify that any facility is ready or open.</p>
+            <div className="mt-4"><ScenarioResults result={review.result} arrangement={config.arrangement} compact /></div>
+          </section>
+
+          <section className="my-6">
+            <h2 className="text-2xl">Dependencies to verify, by owner</h2>
+            {rows.map(({ s, row }) => {
+              const list = causes(row);
+              return (
+                <div key={s.id} className="mt-4 rounded-xl bg-white p-4 ring-1 ring-line print:break-inside-avoid print:ring-0 print:p-0">
+                  <h3 className="font-semibold">{s.title}</h3>
+                  {list.length === 0 ? <p className="mt-1 text-sm">No blocking dependency in this scenario for the selected arrangement.</p> : (
+                    <ul className="mt-2 space-y-2 text-sm">{list.map((c) => <li key={c.text}>{c.text}<span className="block text-xs text-muted">Owner: {c.owner}</span></li>)}</ul>
+                  )}
+                </div>
+              );
+            })}
+          </section>
+
+          <section className="my-6 rounded-xl border-l-4 border-amber bg-white p-5 ring-1 ring-line print:break-inside-avoid print:ring-0 print:p-0">
+            <h2 className="text-xl">Recommended next exercise</h2>
+            <p className="mt-2 text-sm">
+              Run a tabletop exercise of the scenario with the largest gap for this arrangement
+              ({largestGap ? `${largestGap.title}: ${largestGap.gap} places not counted` : "no scenario could be calculated"}),
+              and verify the dependencies listed above with their owners before relying on the arrangement.
+            </p>
+            <a className="mt-3 inline-block text-sm print:hidden" download="coolgrid-review-brief.md" href={`data:text/markdown;charset=utf-8,${encodeURIComponent(review.brief)}`}>Download the full engine brief (Markdown) →</a>
+          </section>
+        </>
+      )}
 
       <p className="mt-8 border-t border-line pt-3 text-xs text-muted print:text-black">
         This brief reflects the inputs in its URL. Facility planning values may be illustrative or unknown; verify them with the named data owner before relying on an assessment.

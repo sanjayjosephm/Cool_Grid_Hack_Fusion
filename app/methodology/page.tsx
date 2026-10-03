@@ -1,44 +1,71 @@
 import Link from "next/link";
-import { INVERTER_EFFICIENCY, OUTAGE_HOURS } from "@/lib/hub";
-import { BUILDING_TARGET, END_USE, HEAT_PUMP_COP, UPTAKE } from "@/lib/model";
+import { INDICATORS, WEIGHTS } from "@/lib/area-context";
+import { INVERTER_EFFICIENCY, OUTAGE_HOURS } from "@/lib/backup";
+import { FLOOD_SHARE, HEAT_SHARE } from "@/lib/demo-review";
+
+export const metadata = { title: "Method and limits · CoolGrid" };
+
+const H2 = "mt-8 text-2xl";
+const P = "my-3";
 
 export default function Methodology() {
   return (
     <main className="mx-auto max-w-[760px] px-6 pb-16 pt-10">
-      <h1 className="mb-5 text-4xl">Method and limits</h1>
-      <h2 className="mt-6 text-2xl">Score</h2>
-      <p>Priority = (0.30 heat + 0.25 vulnerability + 0.20 building inefficiency + 0.15 grid stress − 0.10 existing resilience) ÷ 0.9, clamped to 0–100. The 0.9 divisor (the sum of the positive weights) lets scores use the full 0–100 range.</p>
-      <table className="w-full border-collapse text-sm">
-        <thead><tr><th className="border-b border-line px-2 py-1.5 text-left">Score</th><th className="border-b border-line px-2 py-1.5 text-left">Category</th></tr></thead>
-        <tbody>
-          <tr><td className="border-b border-line px-2 py-1.5">0–34</td><td className="border-b border-line px-2 py-1.5">Electrification-ready</td></tr>
-          <tr><td className="border-b border-line px-2 py-1.5">35–59</td><td className="border-b border-line px-2 py-1.5">Support required</td></tr>
-          <tr><td className="border-b border-line px-2 py-1.5">60–79</td><td className="border-b border-line px-2 py-1.5">High priority: resilience package first</td></tr>
-          <tr><td className="border-b border-line px-2 py-1.5">80–100</td><td className="border-b border-line px-2 py-1.5">Urgent resilience action</td></tr>
-        </tbody>
-      </table>
-      <h2 className="mt-6 text-2xl">Cooling-hub backup check</h2>
-      <p className="my-4">A hub only counts as protecting residents if its backup can run the cooling through a {OUTAGE_HOURS}-hour blackout: the air-conditioning must be on the backed-up circuit, the inverter must cover the compressor start-up surge plus other loads, and usable battery energy (capacity minus reserve, after {Math.round((1 - INVERTER_EFFICIENCY) * 100)}% inverter losses) must last the outage. No solar recharge is assumed. Any unknown input gives &ldquo;needs assessment&rdquo;, never a pass. Passing shows electrical endurance only, not a safe indoor temperature.</p>
-      <h2 className="mt-6 text-2xl">Energy saving</h2>
-      <p className="my-4">Final-energy saving for one upgraded home versus the same home on gas. Illustrative end-use split: heating {END_USE.heating * 100}%, hot water {END_USE.hotWater * 100}%, cooling {END_USE.cooling * 100}%, other {END_USE.other * 100}%. Heat pumps are assumed to deliver {HEAT_PUMP_COP} units of heat per unit of electricity. Insulation cuts heating and cooling by up to 35%, scaled by building inefficiency; shading cuts cooling by 30%. Solar and batteries change energy supply, not use, so they are excluded. The area figure multiplies by {UPTAKE * 100}% uptake and is compared with the COP31 goal of a {BUILDING_TARGET}% cut in building-sector energy use by 2035.</p>
-      <h2 className="mt-6 text-2xl">Flood exposure</h2>
-      <p className="my-4">Floods and heatwaves rarely happen at the same time, so flood exposure does not change the heat priority score. It changes how the package is installed: in high-exposure areas (50+), heat pumps, batteries and switchboards must be mounted above flood level, and hub sites are flagged for an equipment-height and access check. Current flood values are illustrative; replace them with the share of homes inside Melbourne Water flood extents or the Land Subject to Inundation Overlay.</p>
-      <h2 className="mt-6 text-2xl">Recommended package and resident card</h2>
-      <p className="my-4">The recommended package is a rule-based starting point from each area&apos;s main drivers (for example building inefficiency 60+ adds insulation, high flood exposure adds raised equipment), not an optimum. The resident card turns the same results into plain-language advice in English, Vietnamese and Arabic; the translations are drafts that need native-speaker review.</p>
-      <h2 className="mt-6 text-2xl">Data status</h2>
-      <p className="my-4"><b>Illustrative:</b> every neighbourhood score, population, hub location and cost in this prototype.</p>
-      <p className="my-4"><b>Real:</b> suburb boundaries from the ABS Suburbs and Localities (ASGS 2021, simplified), © Australian Bureau of Statistics, CC BY 4.0. Basemap © OpenStreetMap contributors via OpenFreeMap.</p>
-      <p className="my-4"><b>To replace with public data:</b> urban heat and canopy (DEECA / City of Melbourne), Census and SEIFA for vulnerability, building age proxies, Clean Energy Regulator postcode solar installs, council facility lists for hubs.</p>
-      <p className="my-4"><b>Needs partners:</b> feeder-level grid capacity (distribution networks) and verified retrofit costs.</p>
-      <h2 className="mt-6 text-2xl">Validation</h2>
-      <p className="my-4"><b>Done:</b> weight sensitivity (each weight ±20%) and hand-checked backup-check cases. <Link href="/validation">See the validation results</Link>.</p>
-      <p className="my-2"><b>Still to do:</b></p>
-      <ul className="list-disc space-y-1 pl-6">
-        <li>Council planners review the top 10 areas and say where they disagree.</li>
-        <li>Back-test against past heat-health or heatwave-impact data where available.</li>
-        <li>Hub coverage: count vulnerable residents within walking distance before and after.</li>
+      <h1 className="mb-3 text-4xl">Method and limits</h1>
+      <p className={P}>
+        CoolGrid helps a council emergency or relief planning officer check whether a service arrangement still works when heat,
+        a power outage or flood-related access loss disrupts facilities, and what to verify or exercise next.
+      </p>
+
+      <h2 className={H2}>Data</h2>
+      <p className={P}>Every value carries a label: <b>public</b> (official dataset), <b>declared</b> (entered by the planner), <b>illustrative</b> (a labelled placeholder) or <b>unknown</b> (missing; it blocks results and raises a question). Unknown values are never guessed.</p>
+      <ul className="my-3 list-disc space-y-1 pl-6">
+        <li><b>Public:</b> ABS Census 2021 and SEIFA 2021 by suburb; ABS suburb boundaries; Vicmap flood overlays (LSIO, Floodway, SBO), facility locations and main roads. All CC BY 4.0. See the <Link href="/validation">validation page</Link> for each source and its checks.</li>
+        <li><b>Illustrative:</b> facility places, opening hours, crews, backup power, authorisation and suitability; community demand. These must be replaced with council records.</li>
       </ul>
-      <p className="my-6 border-l-4 border-amber bg-white px-4 py-2 text-[0.92rem]">CoolGrid is a decision-support prototype, not a live electricity-network planning system.</p>
+
+      <h2 className={H2}>Continuity Lab</h2>
+      <p className={P}>
+        Three arrangements (existing central library; central library with a proposed backup upgrade; central library plus local facilities)
+        are tested against three <b>separate</b> scenarios: heat, heat with a {OUTAGE_HOURS}-hour power outage, and a riverine flood that closes every
+        main-road crossing inside a flood overlay. Scenario results are never added together.
+      </p>
+      <p className={P}>
+        For each scenario and arrangement, the engine finds the most places that can be counted within the entered crew limit, without
+        counting any facility&apos;s places or crews twice, and reports the gap for each community, the dependency causing it, and a question for its owner.
+      </p>
+      <p className={P}>
+        <b>Demand</b> is an illustrative planning requirement, not a count of residents: heat places for {HEAT_SHARE * 100}% of residents aged 65+;
+        flood relief places for {FLOOD_SHARE * 100}% of residents in the riverine flood-overlay share of each suburb.
+      </p>
+
+      <h2 className={H2}>Backup check</h2>
+      <p className={P}>
+        A facility counts in the outage scenario only if its cooling circuit is on the backed-up board, its inverter covers the compressor
+        start-up surge plus other loads, and its usable battery energy (capacity minus reserve, after {Math.round((1 - INVERTER_EFFICIENCY) * 100)}% inverter losses)
+        lasts the outage. No solar recharge is assumed. Any unknown input gives &ldquo;needs assessment&rdquo;. Passing shows electrical endurance only, not a safe indoor temperature.
+      </p>
+
+      <h2 className={H2}>Access and flood</h2>
+      <p className={P}>
+        A trip from a community to a facility depends on every flood-exposed crossing within 0.5 km of the straight line between the suburb
+        centre and the facility. This is an approximation, not a routed path or evacuation advice. In flood-exposed suburbs, homes that
+        electrify should have heat pumps, batteries and switchboards mounted above flood level.
+      </p>
+
+      <h2 className={H2}>Area context score</h2>
+      <p className={P}>
+        Background context for choosing where to review first, not a decision. Each indicator is scaled 0–100 across the study suburbs and weighted:
+      </p>
+      <ul className="my-3 list-disc space-y-1 pl-6">{INDICATORS.map((i) => <li key={i.key}>{i.label}: {Math.round(WEIGHTS[i.key] * 100)}%</li>)}</ul>
+      <p className={P}>Changing each weight by ±20% is tested on the validation page.</p>
+
+      <h2 className={H2}>Limits</h2>
+      <ul className="my-3 list-disc space-y-1 pl-6">
+        <li>Results are conditional on illustrative inputs; they do not certify that any facility is ready, open or safe.</li>
+        <li>Opening hours, shared generators, water, indoor temperature and real road routing are not yet modelled.</li>
+        <li>No council has reviewed or endorsed these results; usefulness compared with current planning practice is untested.</li>
+      </ul>
     </main>
   );
 }
