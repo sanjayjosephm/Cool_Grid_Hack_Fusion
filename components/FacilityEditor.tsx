@@ -6,7 +6,7 @@ import type { Sourced } from "@/lib/sourced";
 type NumField = "coolingPlaces" | "floodPlaces" | "crews" | "batteryKWh" | "inverterKW";
 const NUM_FIELDS: [NumField, string][] = [["coolingPlaces", "Cooling places"], ["floodPlaces", "Flood places"], ["crews", "Crews"], ["batteryKWh", "Battery kWh"], ["inverterKW", "Inverter kW"]];
 const cell = "border-b border-line px-1.5 py-1";
-const input = "w-20 rounded border px-1.5 py-1 text-sm";
+const input = "w-24 rounded border px-1.5 py-1 text-sm placeholder:text-[#B07A10]";
 const tone = (s: Sourced<unknown>) => (s.status === "declared" ? "border-blue bg-blue/5" : s.status === "unknown" ? "border-[#B07A10] bg-[#B07A10]/5" : "border-line");
 
 export default function FacilityEditor({ overrides, onChange }: { overrides: Overrides; onChange: (o: Overrides) => void }) {

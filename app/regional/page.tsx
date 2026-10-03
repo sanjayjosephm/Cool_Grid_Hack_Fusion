@@ -1,4 +1,5 @@
 import Link from "next/link";
+import PageHeader from "@/components/PageHeader";
 import ScenarioResults from "@/components/ScenarioResults";
 import type { SearchParam } from "@/lib/planner-config";
 import { ARRANGEMENT_LABELS } from "@/lib/planner-config";
@@ -18,9 +19,10 @@ export default function RegionalPage({ searchParams }: { searchParams?: Record<s
   const result = runRegionalReview(crews);
 
   return (
-    <main className="mx-auto max-w-6xl px-6 pb-16 pt-10">
-      <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-muted">Regional review</p>
-      <h1 className="text-4xl">{REGION.region}: same tool, regional council</h1>
+    <>
+    <PageHeader eyebrow="Regional review" title={<>{REGION.region}: same tool, regional council.</>}
+      stats={[{ value: REGION.areas.reduce((t, a) => t + (a.population.value ?? 0), 0).toLocaleString("en-AU"), label: "residents" }, { value: `${Math.round(Math.min(...REGION.areas.map((a) => a.pctRiverine.value ?? 0)))}–${Math.round(Math.max(...REGION.areas.map((a) => a.pctRiverine.value ?? 0)))}%`, label: "of each suburb in a river flood overlay" }, { value: REGION.crossings.length, label: "flood-exposed roads on routes" }]} />
+    <main className="mx-auto max-w-6xl px-6 pb-16 pt-8">
       <p className="mt-3 max-w-3xl text-muted">
         The same public-data pipeline (ABS Census and SEIFA, Vicmap flood overlays, facilities and roads), engine and rules, applied to a regional city on the Goulburn River.
         In the October 2022 flood, the Causeway between Shepparton and Mooroopna closed and cut Mooroopna off from Shepparton&apos;s services. The flood scenario below tests that kind of dependency.
@@ -59,5 +61,6 @@ export default function RegionalPage({ searchParams }: { searchParams?: Record<s
         That is the intended behaviour. Regional coordination across council boundaries is the next step. Melbourne study: <Link href="/continuity?arrangement=existing&crews=3">Continuity Lab</Link>.
       </p>
     </main>
+    </>
   );
 }

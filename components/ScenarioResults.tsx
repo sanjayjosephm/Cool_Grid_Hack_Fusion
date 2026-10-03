@@ -12,6 +12,12 @@ const demandOf = (result: ReviewResult, scenarioId: string) =>
 
 export type Policy = "max" | "fair";
 
+// Accent and icon per scenario, matching the landing page story.
+const LOOK: Record<string, { color: string; icon: string }> = {
+  heat: { color: "#E2562F", icon: "☀" }, outage: { color: "#B07A10", icon: "⚡" }, flood: { color: "#2B6CB0", icon: "≈" },
+};
+const barColor = (pct: number) => (pct >= 0.6 ? "#3E8E6A" : pct > 0 ? "#E0A030" : "#C8402F");
+
 type Props = { result: ReviewResult; arrangement: Arrangement | null; compact?: boolean; policy?: Policy; names?: Names; arrangements?: readonly Arrangement[] };
 
 export default function ScenarioResults({ result, arrangement, compact = false, policy = "max", names = MELBOURNE_NAMES, arrangements = ARRANGEMENTS }: Props) {
@@ -27,21 +33,34 @@ export default function ScenarioResults({ result, arrangement, compact = false, 
         const witness = row?.witnesses[0];
         const rowCauses = row ? causes(row, names) : [];
         return (
-          <article key={s.id} className="rounded-2xl bg-white p-5 ring-1 ring-line print:break-inside-avoid print:ring-0">
-            <p className="text-xs font-semibold uppercase tracking-widest text-blue">Scenario</p>
-            <h3 className="mt-1 text-xl">{s.title}</h3>
+          <article key={s.id} className="relative overflow-hidden rounded-2xl bg-white p-5 ring-1 ring-line transition-shadow hover:shadow-lg print:break-inside-avoid print:ring-0">
+            <span className="absolute inset-x-0 top-0 h-1" style={{ background: LOOK[s.id]?.color }} aria-hidden="true" />
+            <div className="flex items-center gap-3">
+              <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl text-xl text-white" style={{ background: LOOK[s.id]?.color }} aria-hidden="true">{LOOK[s.id]?.icon}</span>
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-widest" style={{ color: LOOK[s.id]?.color }}>Scenario</p>
+                <h3 className="text-xl leading-tight">{s.title}</h3>
+              </div>
+            </div>
             <p className="text-sm text-muted">{s.window}. {s.note}</p>
 
             <table className="mt-4 w-full text-sm">
               <caption className="sr-only">Places counted by arrangement</caption>
               <thead><tr className="text-left text-xs uppercase tracking-wide text-muted"><th className="pb-1 font-semibold">Arrangement</th><th className="pb-1 text-right font-semibold">Places counted</th></tr></thead>
               <tbody>
-                {arrangements.map((a) => {
+                {arrangements.map((a, i) => {
                   const r = rowFor(s.id, a);
+                  const pct = r.total === null ? 0 : r.total / Math.max(1, demand);
                   return (
                     <tr key={a} className={`border-t border-line ${a === arrangement ? "font-semibold" : ""}`}>
-                      <td className="py-1">{ARRANGEMENT_LABELS[a]}{a === arrangement && " ◀"}</td>
-                      <td className="py-1 text-right tabular-nums">{r.status === "blocked" ? "Blocked" : `${r.total} of ${demand}`}</td>
+                      <td className="py-1.5 pr-2">
+                        {ARRANGEMENT_LABELS[a]}{a === arrangement && " ◀"}
+                        {/* Share of demand counted; key re-mounts the bar so it re-animates when the value changes. */}
+                        <span className="mt-1 block h-1.5 overflow-hidden rounded-full bg-line/60" aria-hidden="true">
+                          <span key={`${r.total}`} className="grow-x block h-full rounded-full" style={{ width: `${pct * 100}%`, background: barColor(pct), ["--d" as string]: `${i * 120}ms` }} />
+                        </span>
+                      </td>
+                      <td className="py-1.5 text-right align-top tabular-nums">{r.status === "blocked" ? "Blocked" : `${r.total} of ${demand}`}</td>
                     </tr>
                   );
                 })}

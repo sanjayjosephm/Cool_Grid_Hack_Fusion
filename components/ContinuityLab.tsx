@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import PageHeader from "@/components/PageHeader";
 import { useRouter } from "next/navigation";
 import { useMemo, useState } from "react";
 import FacilityEditor from "@/components/FacilityEditor";
@@ -65,12 +66,13 @@ export default function ContinuityLab({ initialConfig, initialOverrides = {}, in
   const floodWarnings = facilityFloodWarnings(FACILITIES.filter((f) => DEMO_FACILITIES.includes(f.id)));
 
   return (
-    <main className="mx-auto max-w-6xl px-6 pb-16 pt-10">
-      <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-muted">Continuity Lab</p>
-      <h1 className="text-4xl">Test the service arrangement</h1>
-      <p className="mt-3 max-w-3xl text-muted">
-        Compare separate disruption scenarios for council planning. Facility capacities and staffing remain labelled as illustrative or unknown; this screen does not designate public destinations or routes.
-      </p>
+    <>
+    <PageHeader eyebrow="Continuity Lab" title="Test the arrangement against three failures."
+      stats={[{ value: 4, label: "communities" }, { value: DEMO_FACILITIES.length, label: "real facilities" }, { value: 3, label: "arrangements" }, { value: 3, label: "separate scenarios" }]}>
+      Pick an arrangement and a crew count, then see what still works in a heatwave, a power outage and a flood, why gaps appear, and who should verify what.
+      Facility inputs are labelled placeholders you can replace; this screen does not designate public destinations or routes.
+    </PageHeader>
+    <main className="mx-auto max-w-6xl px-6 pb-16 pt-8">
       {config.errors.map((error) => <p key={error} role="alert" className="mt-4 rounded-lg border border-red-300 bg-red-50 px-4 py-3 text-sm text-red-900">{error}</p>)}
 
       <section className="my-8 grid gap-6 rounded-2xl bg-white p-6 ring-1 ring-line md:grid-cols-[1fr_240px]">
@@ -172,8 +174,9 @@ export default function ContinuityLab({ initialConfig, initialOverrides = {}, in
       </section>
 
       <p className="mt-8 border-l-4 border-blue bg-white px-4 py-3 text-sm">
-        Places counted are conditional on the labelled inputs: facility places, crews, authorisation and suitability are illustrative planning assumptions, and demand is an illustrative requirement ({HEAT_SHARE * 100}% of residents aged 65+ for heat; {FLOOD_SHARE * 100}% of residents in the riverine flood-overlay share for flood). Routes are straight-line approximations. This screen does not designate public destinations or routes. See the <Link href="/dashboard">planning map</Link> and <Link href="/validation">validation</Link>.
+        Places counted are conditional on the labelled inputs: facility places, crews, authorisation and suitability are illustrative planning assumptions, and demand is an illustrative requirement ({HEAT_SHARE * 100}% of residents aged 65+ for heat; {FLOOD_SHARE * 100}% of residents in the riverine flood-overlay share for flood). Routes are shortest paths on the Vicmap road network, not travel-time or evacuation advice. This screen does not designate public destinations or routes. See the <Link href="/dashboard">planning map</Link> and <Link href="/validation">validation</Link>.
       </p>
     </main>
+    </>
   );
 }

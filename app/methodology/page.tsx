@@ -1,4 +1,5 @@
 import Link from "next/link";
+import PageHeader from "@/components/PageHeader";
 import { INDICATORS, WEIGHTS } from "@/lib/area-context";
 import { INVERTER_EFFICIENCY, OUTAGE_HOURS } from "@/lib/backup";
 import { FLOOD_SHARE, HEAT_SHARE } from "@/lib/demo-review";
@@ -10,12 +11,35 @@ const P = "my-3";
 
 export default function Methodology() {
   return (
-    <main className="mx-auto max-w-[760px] px-6 pb-16 pt-10">
-      <h1 className="mb-3 text-4xl">Method and limits</h1>
+    <>
+    <PageHeader eyebrow="Method and limits" title="How CoolGrid works, and what it does not claim." />
+    <main className="mx-auto max-w-[760px] px-6 pb-16 pt-8">
       <p className={P}>
         CoolGrid helps a council emergency or relief planning officer check whether a service arrangement still works when heat,
         a power outage or flood-related access loss disrupts facilities, and what to verify or exercise next.
       </p>
+
+      <h2 id="events" className={`${H2} scroll-mt-20`}>Events behind the scenarios</h2>
+      <p className={P}>The three scenarios are built on failure modes Victoria has already experienced:</p>
+      <ol className="my-3 list-decimal space-y-3 pl-6">
+        <li id="ref-1" className="scroll-mt-20">
+          <b>January 2009 heatwave.</b> Melbourne was above 43 °C for three consecutive days (28–30 January), peaking at 45.1 °C; in Victoria up to 500,000 homes and
+          businesses were left without electricity, and a Victorian Department of Human Services report found the heatwave contributed to 374 deaths.{" "}
+          <a href="https://knowledge.aidr.org.au/resources/health-heatwave-south-eastern-australia-2009/" target="_blank" rel="noreferrer">Australian Institute for Disaster Resilience, &ldquo;Health – south-eastern Australia heatwave&rdquo;</a>.
+        </li>
+        <li id="ref-2" className="scroll-mt-20">
+          <b>14 October 2022 Maribyrnong River flood.</b> Significant flooding in the urban Maribyrnong catchment in Melbourne&apos;s inner west, including Maribyrnong and Footscray;
+          an independent review led by Tony Pagone AM reported in October 2023.{" "}
+          <a href="https://letstalk.melbournewater.com.au/maribyrnong-river-flood-review" target="_blank" rel="noreferrer">Melbourne Water, &ldquo;Maribyrnong River flood review&rdquo;</a>.
+        </li>
+        <li id="ref-3" className="scroll-mt-20">
+          <b>15 October 2022 Goulburn River flood, Shepparton.</b> The Midland Highway (Mooroopna Causeway) between Mooroopna and Shepparton was closed on the evening of
+          Saturday 15 October 2022, cutting the main river crossing between the two towns.{" "}
+          <a href="https://www.countrynews.com.au/news/live-blog-october-15/" target="_blank" rel="noreferrer">Country News, live blog, 15 October 2022</a>; see also{" "}
+          <a href="https://greatershepparton.vic.gov.au/assets/files/documents/emergencies/flood/M25_34365_Greater_Shepparton_Recovery_and_Resilience_Plan_-_Progress_Report_-_June_2025.pdf" target="_blank" rel="noreferrer">Greater Shepparton City Council, Recovery and Resilience Plan progress report (June 2025)</a>.
+        </li>
+      </ol>
+      <p className={P}>These events motivate the scenarios; CoolGrid does not model or predict them.</p>
 
       <h2 className={H2}>Data</h2>
       <p className={P}>Every value carries a label: <b>public</b> (official dataset), <b>declared</b> (entered by the planner), <b>illustrative</b> (a labelled placeholder) or <b>unknown</b> (missing; it blocks results and raises a question). Unknown values are never guessed.</p>
@@ -95,5 +119,6 @@ export default function Methodology() {
         <li>No council has reviewed or endorsed these results; usefulness compared with current planning practice is untested.</li>
       </ul>
     </main>
+    </>
   );
 }

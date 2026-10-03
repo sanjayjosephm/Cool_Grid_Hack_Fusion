@@ -130,3 +130,10 @@
   .fill-in { fill-opacity: var(--fo, 0.55); }
   .story-outage, .story-flood { opacity: 0; }
 }
+
+/* Page header entrance (CSS only, so it shows even before JavaScript runs). */
+.fade-up { animation: fade-up 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+@keyframes fade-up { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+/* Bars that grow from zero when first rendered. */
+.grow-x { transform-origin: left; animation: grow-x 1s cubic-bezier(0.2, 0.7, 0.2, 1) both; animation-delay: var(--d, 0ms); }
+@keyframes grow-x { from { transform: scaleX(0); } to { transform: scaleX(1); } }

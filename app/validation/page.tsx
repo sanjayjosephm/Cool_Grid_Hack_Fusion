@@ -1,4 +1,5 @@
 import { DATA_SOURCE_ROWS, GENERATED_DATA_DATES } from "@/lib/planning-data";
+import PageHeader from "@/components/PageHeader";
 import { planningDataChecks } from "@/lib/planning-validation";
 import { sensitivity } from "@/lib/area-context";
 import { checkBackup } from "@/lib/backup";
@@ -57,12 +58,12 @@ export default function Validation() {
   const passed = checks.filter((check) => check.passed).length;
 
   return (
-    <main className="mx-auto max-w-6xl px-6 pb-16 pt-10">
-      <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-muted">P1 · Data provenance and checks</p>
-      <h1 className="mb-3 text-4xl">Validation</h1>
-      <p className="max-w-3xl text-muted">
-        Dataset labels and integrity checks are shown from the data used by the app. Passing these checks does not establish that planning assumptions or real-world operations are correct.
-      </p>
+    <>
+    <PageHeader eyebrow="Validation" title="Every number checked, every time the site is built."
+      stats={[{ value: `${passed}/${checks.length}`, label: "data checks pass" }, { value: `${golden.filter((g) => g.ok).length}/${golden.length}`, label: "golden comparisons match" }, { value: `${backupCases.filter((c) => c.ok).length}/${backupCases.length}`, label: "backup hand checks match" }, { value: `${invariants.filter((i) => i.ok).length}/${invariants.length}`, label: "review invariants hold" }]}>
+      Computed from the same data and code the app runs. Passing these checks does not establish that planning assumptions or real-world operations are correct.
+    </PageHeader>
+    <main className="mx-auto max-w-6xl px-6 pb-16 pt-8">
 
       <div className="my-8 grid gap-3 sm:grid-cols-3">
         <div className="rounded-xl bg-white p-4 ring-1 ring-line">
@@ -74,8 +75,8 @@ export default function Validation() {
           <p className="text-sm text-muted">distinct source/date/licence/status combinations in the loaded records</p>
         </div>
         <div className="rounded-xl bg-white p-4 ring-1 ring-line">
-          <p className="font-serif text-lg">Engine tests available</p>
-          <p className="text-sm text-muted">Scenario test outcomes are verified by the automated test suite. This page does not yet display those outcomes.</p>
+          <p className="font-serif text-3xl">{sheet.filter((x) => x.differs).length}/{sheet.length}</p>
+          <p className="text-sm text-muted">scenario results where the engine catches something a simple worksheet misses (below)</p>
         </div>
       </div>
 
@@ -170,9 +171,10 @@ export default function Validation() {
       <h2 className="mb-2 mt-10 text-2xl">Interpretation and limits</h2>
       <ul className="list-disc space-y-2 pl-6 text-sm text-muted">
         <li>Public dataset provenance does not make facility service capacity, staffing or backup values public; those remain illustrative or unknown as labelled.</li>
-        <li>Access links are illustrative straight-line approximations, not routed paths or evacuation advice.</li>
+        <li>Access links are shortest routes on the Vicmap road network (labelled illustrative): not travel times or evacuation advice. Straight-line versions are kept for comparison.</li>
         <li>Unknown required facts must block affected results and be raised for verification by an owner.</li>
       </ul>
     </main>
+    </>
   );
 }

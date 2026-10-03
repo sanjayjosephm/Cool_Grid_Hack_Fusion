@@ -13,6 +13,8 @@ import { ARRANGEMENTS, ARRANGEMENT_LABELS } from "@/lib/planner-config";
 import { recommendArrangement } from "@/lib/planning-tools";
 
 const d = (ms: number) => ({ "--d": `${ms}ms` }) as CSSProperties;
+// Numbered citation linking to the sourced events on the methodology page.
+const Ref = ({ n }: { n: number }) => <sup><a href={`/methodology#ref-${n}`} className="ml-0.5 text-amber no-underline hover:underline">[{n}]</a></sup>;
 const eyebrow = "mb-3 text-xs font-semibold uppercase tracking-[0.16em]";
 const DEMO_CREWS = 3;
 const ALBION = "20021";
@@ -82,6 +84,10 @@ export default function Home() {
             <h1 className="reveal mb-6 text-[clamp(2.3rem,5.2vw,3.9rem)] font-medium leading-[1.05] tracking-tight" style={d(100)}>
               Will your heatwave plan still work when the <span className="shimmer-text">power fails</span> or the <em className="text-[#7FB2DD]">road floods</em>?
             </h1>
+            <p className="reveal -mt-2 mb-5 text-sm text-white/55" style={d(150)}>
+              It has happened: up to 500,000 Victorian homes and businesses lost power in the January 2009 heatwave<Ref n={1} />, and in October 2022 floods
+              hit Melbourne&apos;s Maribyrnong River<Ref n={2} /> and closed the Shepparton–Mooroopna Causeway<Ref n={3} />.
+            </p>
             <p className="reveal max-w-[50ch] text-lg text-white/75" style={d(200)}>
               CoolGrid tests whether the facilities a council relies on still work when the power goes out, a crossing closes or staff
               run short, on real Melbourne data, and shows exactly what to verify next.

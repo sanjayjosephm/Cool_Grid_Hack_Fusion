@@ -1,4 +1,5 @@
 import Link from "next/link";
+import PageHeader from "@/components/PageHeader";
 import { SCENARIO_META } from "@/lib/demo-review";
 import { investmentOptions, PACKAGES } from "@/lib/planning-tools";
 import type { SearchParam } from "@/lib/planner-config";
@@ -22,9 +23,10 @@ export default function InvestmentPage({ searchParams }: { searchParams?: Record
   const label = (id: string) => PACKAGES.find((p) => p.id === id)!.label;
 
   return (
-    <main className="mx-auto max-w-5xl px-6 pb-16 pt-10">
-      <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-muted">Investment Gate</p>
-      <h1 className="text-4xl">Which upgrades are worth checking first?</h1>
+    <>
+    <PageHeader eyebrow="Investment Gate" title="Which upgrades are worth checking first?"
+      stats={[{ value: PACKAGES.length, label: "upgrade packages" }, { value: options.length, label: `affordable combinations within ${money(budget)}` }, { value: options.filter((o) => !o.dominated).length, label: "worth checking" }]} />
+    <main className="mx-auto max-w-5xl px-6 pb-16 pt-8">
       <p className="mt-3 max-w-3xl text-muted">
         Each combination of upgrades is run through the same review engine for the <b>local facilities</b> arrangement. Places gained come from the engine;
         costs are <b>illustrative placeholders</b> to be replaced with assessed quotes. Results stay separate for each scenario and are never added together.
@@ -55,7 +57,7 @@ export default function InvestmentPage({ searchParams }: { searchParams?: Record
           <thead><tr><th className={th}>Combination</th><th className={th}>Cost</th>{SCENARIO_META.map((s) => <th key={s.id} className={th}>{s.title}</th>)}<th className={th}>Verdict</th></tr></thead>
           <tbody>
             {options.map((o) => (
-              <tr key={o.packages.join("+") || "none"} className={o.dominated ? "text-muted" : ""}>
+              <tr key={o.packages.join("+") || "none"} className={o.dominated ? "text-muted" : "bg-[#3E8E6A]/[0.07] font-medium"}>
                 <td className={td}>{o.packages.length ? o.packages.map(label).join(" + ") : "No upgrades"}</td>
                 <td className={`${td} tabular-nums`}>{money(o.cost)}</td>
                 {o.totals.map((t, i) => <td key={i} className={`${td} tabular-nums`}>{t}{t !== base.totals[i] && <span className="text-[#3E8E6A]"> (+{t - base.totals[i]})</span>}</td>)}
@@ -70,5 +72,6 @@ export default function InvestmentPage({ searchParams }: { searchParams?: Record
         This view does not establish value for money: it shows which assessed quotes are worth requesting first.
       </p>
     </main>
+    </>
   );
 }
