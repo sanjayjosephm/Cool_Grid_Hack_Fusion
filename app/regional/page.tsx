@@ -1,4 +1,5 @@
 import Link from "next/link";
+import AutoForm from "@/components/AutoForm";
 import PageHeader from "@/components/PageHeader";
 import ScenarioResults from "@/components/ScenarioResults";
 import type { SearchParam } from "@/lib/planner-config";
@@ -44,7 +45,7 @@ export default function RegionalPage({ searchParams }: { searchParams?: Record<s
         {REGION.facilities.map((f) => <li key={f.id}><b>{f.name}</b> ({f.type}, {REGION_NAMES.area(f.sal ?? "")}){f.floodOverlay.value !== "none" && <span className="text-[#C8402F]"> · inside a {f.floodOverlay.value} flood overlay</span>}. Places and crews are placeholders; backup facts not yet provided.</li>)}
       </ul>
 
-      <form method="get" className="my-6 flex flex-wrap items-end gap-4 rounded-2xl bg-white p-5 ring-1 ring-line">
+      <AutoForm className="my-6 flex flex-wrap items-end gap-4 rounded-2xl bg-white p-5 ring-1 ring-line">
         <fieldset>
           <legend className="mb-1 text-sm font-semibold">Arrangement</legend>
           {REGION_ARRANGEMENTS.map((a) => <label key={a} className="mr-4 inline-flex items-center gap-1.5 text-sm"><input type="radio" name="arrangement" value={a} defaultChecked={a === arrangement} />{ARRANGEMENT_LABELS[a]}</label>)}
@@ -53,7 +54,7 @@ export default function RegionalPage({ searchParams }: { searchParams?: Record<s
           <input name="crews" type="number" min="0" max="20" defaultValue={crews} className="mt-1 block w-24 rounded-lg border border-line px-3 py-2 font-normal" />
         </label>
         <button className="rounded-full bg-ink px-5 py-2.5 font-semibold text-white">Update</button>
-      </form>
+      </AutoForm>
 
       <ScenarioResults result={result} arrangement={arrangement} names={REGION_NAMES} arrangements={REGION_ARRANGEMENTS} />
       <p className="mt-8 border-l-4 border-blue bg-white px-4 py-3 text-sm">

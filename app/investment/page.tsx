@@ -1,4 +1,5 @@
 import Link from "next/link";
+import AutoForm from "@/components/AutoForm";
 import PageHeader from "@/components/PageHeader";
 import { SCENARIO_META } from "@/lib/demo-review";
 import { investmentOptions, PACKAGES } from "@/lib/planning-tools";
@@ -32,7 +33,7 @@ export default function InvestmentPage({ searchParams }: { searchParams?: Record
         costs are <b>illustrative placeholders</b> to be replaced with assessed quotes. Results stay separate for each scenario and are never added together.
       </p>
 
-      <form className="my-6 flex flex-wrap items-end gap-4 rounded-2xl bg-white p-5 ring-1 ring-line" method="get">
+      <AutoForm className="my-6 flex flex-wrap items-end gap-4 rounded-2xl bg-white p-5 ring-1 ring-line">
         <label className="text-sm font-semibold">Budget
           <select name="budget" defaultValue={budget} className="mt-1 block rounded-lg border border-line px-3 py-2 font-normal">
             {BUDGETS.map((b) => <option key={b} value={b}>{money(b)}</option>)}
@@ -42,7 +43,7 @@ export default function InvestmentPage({ searchParams }: { searchParams?: Record
           <input name="crews" type="number" min="1" max="10" defaultValue={crews} className="mt-1 block w-24 rounded-lg border border-line px-3 py-2 font-normal" />
         </label>
         <button className="rounded-full bg-ink px-5 py-2.5 font-semibold text-white">Compare</button>
-      </form>
+      </AutoForm>
 
       <h2 className="mt-8 text-2xl">Upgrade packages</h2>
       <table className="mt-3 w-full border-collapse text-sm">

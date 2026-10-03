@@ -118,9 +118,9 @@
 @keyframes wave { 0%, 100% { transform: translateY(6px); } 50% { transform: translateY(-4px); } }
 @keyframes spin { to { transform: rotate(360deg); } }
 @keyframes blink { 50% { opacity: 0; } }
-@keyframes story-heat { 0%, 30% { opacity: 1; } 36%, 97% { opacity: 0; } 100% { opacity: 1; } }
-@keyframes story-outage { 0%, 30% { opacity: 0; } 36%, 63% { opacity: 1; } 69%, 100% { opacity: 0; } }
-@keyframes story-flood { 0%, 63% { opacity: 0; } 69%, 97% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes story-heat { 0%, 29% { opacity: 1; } 32%, 97% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes story-outage { 0%, 33% { opacity: 0; } 36%, 62% { opacity: 1; } 65%, 100% { opacity: 0; } }
+@keyframes story-flood { 0%, 66% { opacity: 0; } 69%, 95% { opacity: 1; } 98%, 100% { opacity: 0; } }
 @keyframes story-dim { 0%, 30% { opacity: 1; } 36%, 63% { opacity: 0.2; } 69%, 100% { opacity: 1; } }
 @keyframes story-cut { 0%, 63% { stroke: #7FD3A8; opacity: 0.9; } 69%, 97% { stroke: #F08A6B; opacity: 0.35; } 100% { stroke: #7FD3A8; opacity: 0.9; } }
 @keyframes story-close { 0%, 63% { fill: #E0A030; r: 3; } 69%, 97% { fill: #F08A6B; r: 5; } 100% { fill: #E0A030; r: 3; } }

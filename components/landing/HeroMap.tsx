@@ -28,6 +28,7 @@ export default function HeroMap() {
   const pad = 16;
   const scale = (W - 2 * pad) / ((maxX - minX) * k);
   const H = Math.round((maxY - minY) * scale + 2 * pad);
+  const CAPTION = 34; // strip below the map for the phase captions
   const xy = ([x, y]: number[]) => [pad + (x - minX) * k * scale, pad + (maxY - y) * scale] as const;
 
   // Shade by area context score, stretched across the study suburbs: amber (lower need) to deep red (higher need).
@@ -40,7 +41,7 @@ export default function HeroMap() {
   const crossings = CROSSINGS.filter((c) => AREA_GEOJSON.features.some((f) => inRing(c.location.value, f.geometry.coordinates[0])));
 
   return (
-    <svg viewBox={`0 0 ${W} ${H}`} className="h-auto w-full" role="img" aria-label="Animated map of the ten study suburbs, their facilities and flood-exposed road crossings">
+    <svg viewBox={`0 0 ${W} ${H + CAPTION}`} className="h-auto w-full" role="img" aria-label="Animated map of the ten study suburbs, their facilities and flood-exposed road crossings">
       <defs>
         <radialGradient id="glow"><stop offset="0%" stopColor="#E2562F" stopOpacity="0.55" /><stop offset="100%" stopColor="#E2562F" stopOpacity="0" /></radialGradient>
         <radialGradient id="water"><stop offset="0%" stopColor="#2B6CB0" stopOpacity="0.55" /><stop offset="100%" stopColor="#2B6CB0" stopOpacity="0" /></radialGradient>
@@ -86,10 +87,11 @@ export default function HeroMap() {
       })}
 
       {/* Captions, one per phase */}
-      <g fontSize="13" fontWeight="600" fill="#fff">
-        <text className="story-heat" x="16" y={H - 14}>☀ Heat: facilities open, all roads dry</text>
-        <text className="story-outage" x="16" y={H - 14} opacity="0">⚡ Outage: only facilities with working backup stay on</text>
-        <text className="story-flood" x="16" y={H - 14} opacity="0">≈ Flood: crossings close, routes from Albion break</text>
+      <line x1="16" x2={W - 16} y1={H + 4} y2={H + 4} stroke="#fff" strokeOpacity="0.12" />
+      <g fontSize="14" fontWeight="600">
+        <text className="story-heat" x="16" y={H + 26} fill="#F2C46B">☀ Heat: facilities open, all roads dry</text>
+        <text className="story-outage" x="16" y={H + 26} fill="#F2C46B" opacity="0">⚡ Outage: only facilities with working backup stay on</text>
+        <text className="story-flood" x="16" y={H + 26} fill="#7FB2DD" opacity="0">≈ Flood: crossings close, routes from Albion break</text>
       </g>
     </svg>
   );
