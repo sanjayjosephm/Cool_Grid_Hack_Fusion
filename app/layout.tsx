@@ -20,7 +20,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <nav className="flex items-baseline print:hidden gap-5 border-b border-line bg-paper px-6 py-3.5 max-[520px]:flex-wrap max-[520px]:gap-x-4 max-[520px]:gap-y-2">
           <strong className="mr-auto font-serif text-xl">CoolGrid</strong>
           <Link className="text-ink no-underline" href="/">Overview</Link>
-          <Link className="text-ink no-underline" href="/dashboard">Resilience map</Link>
+          <Link className="text-ink no-underline" href="/dashboard">Planning map</Link>
+          <Link className="text-ink no-underline" href="/continuity">Continuity Lab</Link>
+          <Link className="text-ink no-underline" href="/brief">Review brief</Link>
           <Link className="text-ink no-underline" href="/validation">Validation</Link>
           <Link className="text-ink no-underline" href="/methodology">Method and limits</Link>
         </nav>
