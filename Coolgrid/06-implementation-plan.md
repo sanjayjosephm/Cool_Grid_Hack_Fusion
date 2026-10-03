@@ -103,6 +103,25 @@ Start E1–E3 on fictional data immediately; real data plugs in later through th
 
 Merge all branches into `main`; `npm test` and `npm run build` must both pass; deploy to Vercel; click through map → Continuity Lab → review brief → validation once. **No P2 work starts until this passes.**
 
+## P1 status (3 October 2026)
+
+**P1 complete.** All P1 items are built on real data with automated checks (146 tests passing, production build passing).
+
+| Item | Status | Where |
+|---|---|---|
+| D0–D5 data layers | Done | `lib/data/`, `scripts/`, `tests/data.test.ts`, `tests/geo.test.ts`, `tests/access-links.test.ts` |
+| E1 backup check | Done; 9 hand-calculated cases | `lib/backup.ts`, `tests/backup.test.ts` |
+| E2 Continuity engine, golden test | Done (8/0/4 → 8/8/4 → 8/8/8) | `lib/review-*.ts`, `tests/review-*.test.ts` |
+| E2 real-data review | Done; 4 communities, 5 facilities, 3 arrangements × 3 scenarios | `lib/demo-review.ts`, `tests/demo-review.test.ts` |
+| E3 required checks | Done | `tests/review-*.test.ts` |
+| E4 group context | Done as Census shares beside each gap (no per-group counts are invented) | `lib/area-context.ts` |
+| E5 flood rules | Done; no real facility is in an overlay, so a fictional positive control is tested | `lib/area-context.ts`, `tests/area-context.test.ts` |
+| E6 area context score + sensitivity | Done; top 3 stable in 13 of 14 weight changes | `lib/area-context.ts`, `/validation` |
+| U1–U4 screens | Done and connected to the engine | `/dashboard`, `/continuity`, `/brief`, `/validation` |
+| Landing page, resident card, methodology | Rewritten on real data; old sample-data model removed | `/`, `/resident/<SAL>`, `/methodology` |
+
+P2-U5 (resident card) and P2-U6 (landing page) were brought forward and are done.
+
 ## P2 — Strengthen (after the P1 checkpoint)
 
 | ID | Owner | Item | Source / detail | Done when |

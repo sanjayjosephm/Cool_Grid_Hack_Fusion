@@ -1,36 +1,34 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import ResidentCard, { type CardFacts } from "@/components/ResidentCard";
-import { HUB_SPECS, NEIGHBOURHOODS } from "@/lib/data";
-import { applyMeasures, floodLevel, NO_MEASURES, recommendedPackage } from "@/lib/model";
-import type { Upgrade } from "@/lib/resident-text";
+import { AREAS, FLOOD_AREAS } from "@/lib/planning-data";
+import { cardLanguages } from "@/lib/resident-text";
 
-export const generateStaticParams = () => NEIGHBOURHOODS.map((n) => ({ id: n.id }));
+// Route parameter is the ABS suburb (SAL) code, e.g. /resident/20021 for Albion.
+export const generateStaticParams = () => AREAS.map((a) => ({ id: a.sal }));
 export const dynamicParams = false;
 
 export function generateMetadata({ params }: { params: { id: string } }) {
-  const n = NEIGHBOURHOODS.find((x) => x.id === params.id);
-  return { title: n ? `${n.name} resident card · CoolGrid` : "CoolGrid" };
+  const a = AREAS.find((x) => x.sal === params.id);
+  return { title: a ? `${a.name} resident card · CoolGrid` : "CoolGrid" };
 }
 
-// The same model that drives the planner view, translated into what a resident needs to know and do.
 export default function ResidentPage({ params }: { params: { id: string } }) {
-  const n = NEIGHBOURHOODS.find((x) => x.id === params.id);
-  if (!n) notFound();
-  const r = applyMeasures(n, NO_MEASURES);
-  const pkg = recommendedPackage(n);
+  const area = AREAS.find((x) => x.sal === params.id);
+  const flood = FLOOD_AREAS.find((x) => x.sal === params.id);
+  if (!area || !flood) notFound();
+  const topLanguages = (area.topLanguages.value ?? []).map((l) => l.name);
   const facts: CardFacts = {
-    name: n.name,
-    heat: r.category.key,
-    hub: r.hub ? { site: HUB_SPECS[n.id].site, works: r.hub.status === "pass" } : null,
-    flood: floodLevel(n).key,
-    // Home-level upgrades only: network upgrades and new hubs are council decisions, not resident actions.
-    upgrades: ["heatpump", ...(["insulation", "shading", "solar", "battery", "floodproof"] as const).filter((k) => pkg[k])] as Upgrade[],
+    name: area.name,
+    langs: cardLanguages(topLanguages),
+    riverinePct: flood.pctRiverine.value as number,
+    stormwaterPct: flood.pctStormwater.value as number,
+    topLanguages,
   };
 
   return (
     <main className="mx-auto max-w-[720px] px-6 pb-16 pt-8">
-      <Link href="/dashboard" className="mb-4 inline-block text-sm print:hidden">← Back to the planner map</Link>
+      <Link href="/dashboard" className="mb-4 inline-block text-sm print:hidden">← Back to the planning map</Link>
       <ResidentCard f={facts} />
     </main>
   );

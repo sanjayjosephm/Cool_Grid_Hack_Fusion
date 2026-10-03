@@ -343,6 +343,9 @@ export default function PlanningMap() {
                 <p className="text-sm text-muted">No listed facilities in this suburb; nearby-area arrangements require planner review.</p>
               )}
             </div>
+            <Link href={`/resident/${selectedArea.sal}`} className="mt-5 block rounded-lg bg-paper px-3 py-2 text-sm font-semibold no-underline hover:bg-line">
+              Resident card for {selectedArea.name} (plain language, Census languages) →
+            </Link>
           </>
         ) : selectedFacility ? (
           <>

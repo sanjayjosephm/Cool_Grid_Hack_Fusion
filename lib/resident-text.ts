@@ -1,110 +1,103 @@
-// Plain-language resident card text. English is the source; Vietnamese and Arabic are DRAFT translations
-// (two of the most common languages in Brimbank, Maribyrnong and Hume) and must be reviewed by native speakers.
+// Plain-language resident card text. English is the source; Vietnamese and Arabic are DRAFT translations and must be
+// reviewed by native speakers. A suburb's card offers a translation when Census shows that language among its top three.
+// Cards never name a facility as a place to go: availability is decided by council at the time (doc 04, relief-centre guidance).
 
 export type Lang = "en" | "vi" | "ar";
-export type Upgrade = "heatpump" | "insulation" | "shading" | "solar" | "battery" | "floodproof";
+/** ABS Census language names for the translations we have. */
+export const CENSUS_LANGUAGE: Record<Exclude<Lang, "en">, string> = { vi: "Vietnamese", ar: "Arabic" };
+
+/** English plus every available translation that is among the suburb's Census top home languages. */
+export function cardLanguages(topLanguages: string[]): Lang[] {
+  return ["en", ...(Object.keys(CENSUS_LANGUAGE) as Exclude<Lang, "en">[]).filter((l) => topLanguages.includes(CENSUS_LANGUAGE[l]))];
+}
 
 type Text = {
   name: string; title: (area: string) => string; intro: string;
-  heatH: string; levels: Record<"ready" | "support" | "high" | "urgent", string>; heatHigh: string; heatMedium: string; heatLow: string;
-  hubH: string; hubPass: (site: string) => string; hubUnverified: (site: string) => string; hubNone: string;
-  floodH: string; floodHigh: string; floodModerate: string;
-  pkgH: string; upgrades: Record<Upgrade, string>;
-  tipsH: string; tips: string[]; rebates: string; print: string; draft: string;
+  hotH: string; hot: string[];
+  whereH: string; where: string;
+  floodH: string; floodBoth: (riverine: number, storm: number) => string; floodStorm: (storm: number) => string; floodNone: string;
+  equipment: string;
+  switchH: string; switchItems: string[];
+  rebates: string; emergency: string; print: string; draft: string; source: string;
 };
 
 export const TEXT: Record<Lang, Text> = {
   en: {
     name: "English",
-    title: (a) => `Staying safe in the heat: ${a}`,
-    intro: "This card explains, in plain language, what extreme heat means for your area and how switching off gas can keep your home safe.",
-    heatH: "Heat risk in your area",
-    levels: { ready: "Lower", support: "Medium", high: "High", urgent: "Very high" },
-    heatHigh: "Your area gets very hot, and many homes trap heat or lose cool air quickly. Take hot days seriously.",
-    heatMedium: "Your area gets hot on some days, and some homes need upgrades to stay cool.",
-    heatLow: "Your area is less exposed than most nearby, but very hot days are still dangerous.",
-    hubH: "Where to go on very hot days",
-    hubPass: (s) => `${s} has backup power and should stay cool for at least 6 hours, even in a blackout.`,
-    hubUnverified: (s) => `${s} is a cooling space, but its backup power has not been confirmed to work in a blackout. Check before you go.`,
-    hubNone: "There is no cooling space with backup power in your area yet. Plan ahead: a library, shopping centre or friend's home with air-conditioning.",
+    title: (a) => `Staying safe in heat and floods: ${a}`,
+    intro: "Plain-language advice for your area, based on public data about flooding and on how switching homes from gas to electricity affects safety in heatwaves and blackouts.",
+    hotH: "On very hot days",
+    hot: ["Drink water often, even if you are not thirsty.", "Close curtains and blinds early in the day.", "Check on older neighbours and anyone living alone.", "Plan where you can go to cool down before a heatwave starts."],
+    whereH: "Where to go to cool down",
+    where: "During a heatwave, ask your council which cool places are open and whether they have backup power if the electricity goes out. Do not assume a building is open: arrangements change with each emergency.",
     floodH: "Floods",
-    floodHigh: "Parts of your area can flood. If you get a heat pump, battery or new switchboard, ask the installer to mount it above flood level.",
-    floodModerate: "Some streets can flood. Ask your installer whether equipment should be mounted higher.",
-    pkgH: "Upgrades to ask about when you switch off gas",
-    upgrades: {
-      heatpump: "Heat pump (reverse-cycle air-conditioning and hot water): replaces gas heating and also cools",
-      insulation: "Insulation and draught sealing: keeps heat out in summer and in during winter",
-      shading: "Shade or a cool roof: keeps sun off windows and walls",
-      solar: "Rooftop solar: cheaper power on sunny days",
-      battery: "A home battery: keeps essentials running in a blackout",
-      floodproof: "Equipment mounted up high: protects it from floods",
-    },
-    tipsH: "On very hot days",
-    tips: ["Drink water often, even if you are not thirsty.", "Close curtains and blinds early in the day.", "Check on older neighbours and anyone living alone.", "In an emergency, call 000."],
+    floodBoth: (r, s) => `About ${r}% of your area is land that can flood from rivers or creeks, and ${s}% can flood from heavy rain and overflowing drains.`,
+    floodStorm: (s) => `About ${s}% of your area can flood from heavy rain and overflowing drains.`,
+    floodNone: "Public planning maps show no mapped flood land in your area, but heavy rain can still cause local flooding.",
+    equipment: "If your home is on flood-prone land and you get a heat pump, battery or new switchboard, ask the installer to mount it above flood level.",
+    switchH: "When you switch off gas",
+    switchItems: [
+      "A heat pump (reverse-cycle air-conditioning and hot water) replaces gas heating and can also cool your home.",
+      "Insulation and draught sealing keep heat out in summer and in during winter.",
+      "Shade over windows and walls helps your home stay cool.",
+      "If you depend on powered equipment, ask about a home battery for blackouts.",
+    ],
     rebates: "Ask your council about current rebates for these upgrades.",
+    emergency: "In an emergency, call 000.",
     print: "Print this card",
-    draft: "Prototype with sample data. Translations are drafts and need review by native speakers.",
+    draft: "Prototype. Flood figures are from Vicmap planning overlays and languages from the ABS Census 2021. Translations are drafts and need review by native speakers.",
+    source: "Source",
   },
   vi: {
     name: "Tiếng Việt",
-    title: (a) => `An toàn trong nắng nóng: ${a}`,
-    intro: "Thẻ này giải thích bằng ngôn ngữ đơn giản nắng nóng cực độ có ý nghĩa gì đối với khu vực của bạn, và việc chuyển từ gas sang điện có thể giúp ngôi nhà của bạn an toàn như thế nào.",
-    heatH: "Mức độ rủi ro nắng nóng tại khu vực của bạn",
-    levels: { ready: "Thấp hơn", support: "Trung bình", high: "Cao", urgent: "Rất cao" },
-    heatHigh: "Khu vực của bạn rất nóng, và nhiều ngôi nhà bị hầm nóng hoặc nhanh mất hơi mát. Hãy cẩn trọng vào những ngày nóng.",
-    heatMedium: "Khu vực của bạn có những ngày nóng, và một số ngôi nhà cần nâng cấp để luôn mát mẻ.",
-    heatLow: "Khu vực của bạn ít bị ảnh hưởng hơn hầu hết các khu lân cận, nhưng những ngày rất nóng vẫn nguy hiểm.",
-    hubH: "Nơi để đến vào những ngày rất nóng",
-    hubPass: (s) => `${s} có nguồn điện dự phòng và sẽ mát ít nhất 6 giờ, kể cả khi mất điện.`,
-    hubUnverified: (s) => `${s} là nơi tránh nóng, nhưng nguồn điện dự phòng chưa được xác nhận là hoạt động khi mất điện. Hãy kiểm tra trước khi đến.`,
-    hubNone: "Khu vực của bạn chưa có nơi tránh nóng có điện dự phòng. Hãy lên kế hoạch trước: thư viện, trung tâm mua sắm hoặc nhà người quen có máy lạnh.",
+    title: (a) => `An toàn trong nắng nóng và lũ lụt: ${a}`,
+    intro: "Lời khuyên bằng ngôn ngữ đơn giản cho khu vực của bạn, dựa trên dữ liệu công khai về lũ lụt và cách việc chuyển nhà từ gas sang điện ảnh hưởng đến an toàn khi nắng nóng và mất điện.",
+    hotH: "Vào những ngày rất nóng",
+    hot: ["Uống nước thường xuyên, kể cả khi không khát.", "Kéo rèm và đóng mành từ sáng sớm.", "Hỏi thăm hàng xóm lớn tuổi và những người sống một mình.", "Lên kế hoạch nơi bạn có thể đến để làm mát trước khi đợt nắng nóng bắt đầu."],
+    whereH: "Nơi để làm mát",
+    where: "Khi có đợt nắng nóng, hãy hỏi hội đồng thành phố những nơi mát mẻ nào đang mở cửa và có điện dự phòng khi mất điện hay không. Đừng cho rằng một tòa nhà luôn mở cửa: việc sắp xếp thay đổi theo từng trường hợp khẩn cấp.",
     floodH: "Lũ lụt",
-    floodHigh: "Một số nơi trong khu vực của bạn có thể bị ngập. Nếu bạn lắp máy bơm nhiệt, pin lưu trữ hoặc tủ điện mới, hãy yêu cầu thợ lắp đặt chúng cao hơn mức nước lũ.",
-    floodModerate: "Một số con đường có thể bị ngập. Hãy hỏi thợ lắp đặt xem có nên đặt thiết bị cao hơn không.",
-    pkgH: "Những nâng cấp nên hỏi khi chuyển từ gas sang điện",
-    upgrades: {
-      heatpump: "Máy bơm nhiệt (máy lạnh hai chiều và máy nước nóng): thay thế hệ thống sưởi bằng gas và cũng làm mát",
-      insulation: "Cách nhiệt và bịt kín khe hở: giữ hơi nóng bên ngoài vào mùa hè và giữ ấm vào mùa đông",
-      shading: "Mái che hoặc mái phản nhiệt: che nắng cho cửa sổ và tường",
-      solar: "Pin mặt trời trên mái: điện rẻ hơn vào những ngày nắng",
-      battery: "Pin lưu trữ tại nhà: duy trì các thiết bị thiết yếu khi mất điện",
-      floodproof: "Lắp thiết bị ở vị trí cao: bảo vệ thiết bị khỏi lũ lụt",
-    },
-    tipsH: "Vào những ngày rất nóng",
-    tips: ["Uống nước thường xuyên, kể cả khi không khát.", "Kéo rèm và đóng mành từ sáng sớm.", "Hỏi thăm hàng xóm lớn tuổi và những người sống một mình.", "Trong trường hợp khẩn cấp, hãy gọi 000."],
+    floodBoth: (r, s) => `Khoảng ${r}% khu vực của bạn là đất có thể bị ngập do sông hoặc lạch, và ${s}% có thể bị ngập do mưa lớn và cống tràn.`,
+    floodStorm: (s) => `Khoảng ${s}% khu vực của bạn có thể bị ngập do mưa lớn và cống tràn.`,
+    floodNone: "Bản đồ quy hoạch công khai không cho thấy đất ngập lụt trong khu vực của bạn, nhưng mưa lớn vẫn có thể gây ngập cục bộ.",
+    equipment: "Nếu nhà bạn nằm trên đất dễ ngập và bạn lắp máy bơm nhiệt, pin lưu trữ hoặc tủ điện mới, hãy yêu cầu thợ lắp đặt chúng cao hơn mức nước lũ.",
+    switchH: "Khi bạn chuyển từ gas sang điện",
+    switchItems: [
+      "Máy bơm nhiệt (máy lạnh hai chiều và máy nước nóng) thay thế hệ thống sưởi bằng gas và cũng có thể làm mát nhà bạn.",
+      "Cách nhiệt và bịt kín khe hở giữ hơi nóng bên ngoài vào mùa hè và giữ ấm vào mùa đông.",
+      "Che nắng cho cửa sổ và tường giúp ngôi nhà luôn mát mẻ.",
+      "Nếu bạn phụ thuộc vào thiết bị dùng điện, hãy hỏi về pin lưu trữ tại nhà khi mất điện.",
+    ],
     rebates: "Hãy hỏi hội đồng thành phố về các khoản hỗ trợ hiện có cho những nâng cấp này.",
+    emergency: "Trong trường hợp khẩn cấp, hãy gọi 000.",
     print: "In thẻ này",
-    draft: "Bản thử nghiệm với dữ liệu mẫu. Bản dịch là bản nháp và cần người bản ngữ kiểm tra.",
+    draft: "Bản thử nghiệm. Số liệu lũ lụt lấy từ bản đồ quy hoạch Vicmap và ngôn ngữ từ Điều tra Dân số ABS 2021. Bản dịch là bản nháp và cần người bản ngữ kiểm tra.",
+    source: "Nguồn",
   },
   ar: {
     name: "العربية",
-    title: (a) => `البقاء آمنًا في الحر: ${a}`,
-    intro: "توضح هذه البطاقة بلغة بسيطة ما تعنيه الحرارة الشديدة لمنطقتك، وكيف يمكن أن يساعد التحول من الغاز إلى الكهرباء في الحفاظ على سلامة منزلك.",
-    heatH: "مستوى خطر الحر في منطقتك",
-    levels: { ready: "أقل", support: "متوسط", high: "مرتفع", urgent: "مرتفع جدًا" },
-    heatHigh: "منطقتك تصبح حارة جدًا، والعديد من المنازل تحبس الحرارة أو تفقد البرودة بسرعة. خذ الأيام الحارة على محمل الجد.",
-    heatMedium: "تصبح منطقتك حارة في بعض الأيام، وتحتاج بعض المنازل إلى تحسينات لتبقى باردة.",
-    heatLow: "منطقتك أقل تعرضًا من معظم المناطق المجاورة، لكن الأيام شديدة الحرارة تبقى خطيرة.",
-    hubH: "إلى أين تذهب في الأيام شديدة الحرارة",
-    hubPass: (s) => `${s} لديه طاقة احتياطية ويجب أن يبقى باردًا لمدة 6 ساعات على الأقل، حتى أثناء انقطاع الكهرباء.`,
-    hubUnverified: (s) => `${s} مكان للتبريد، لكن لم يتم التأكد من أن طاقته الاحتياطية تعمل أثناء انقطاع الكهرباء. تحقق قبل الذهاب.`,
-    hubNone: "لا يوجد بعد مكان للتبريد مزود بطاقة احتياطية في منطقتك. خطط مسبقًا: مكتبة أو مركز تسوق أو منزل صديق مزود بمكيف هواء.",
+    title: (a) => `البقاء آمنًا في الحر والفيضانات: ${a}`,
+    intro: "نصائح بلغة بسيطة لمنطقتك، تستند إلى بيانات عامة عن الفيضانات وإلى كيفية تأثير تحويل المنازل من الغاز إلى الكهرباء على السلامة أثناء موجات الحر وانقطاع الكهرباء.",
+    hotH: "في الأيام شديدة الحرارة",
+    hot: ["اشرب الماء بانتظام حتى لو لم تشعر بالعطش.", "أغلق الستائر في وقت مبكر من اليوم.", "اطمئن على جيرانك كبار السن ومن يعيشون بمفردهم.", "خطط مسبقًا للمكان الذي يمكنك الذهاب إليه للتبريد قبل بدء موجة الحر."],
+    whereH: "أين تذهب للتبريد",
+    where: "أثناء موجة الحر، اسأل المجلس المحلي عن الأماكن الباردة المفتوحة وما إذا كانت لديها طاقة احتياطية عند انقطاع الكهرباء. لا تفترض أن المبنى مفتوح: الترتيبات تتغير مع كل حالة طوارئ.",
     floodH: "الفيضانات",
-    floodHigh: "قد تغمر المياه أجزاء من منطقتك. إذا قمت بتركيب مضخة حرارية أو بطارية أو لوحة كهرباء جديدة، فاطلب من الفني تركيبها فوق مستوى الفيضان.",
-    floodModerate: "قد تغمر المياه بعض الشوارع. اسأل الفني عما إذا كان يجب تركيب المعدات في مكان أعلى.",
-    pkgH: "تحسينات اسأل عنها عند التحول من الغاز",
-    upgrades: {
-      heatpump: "مضخة حرارية (مكيف هواء للتدفئة والتبريد وسخان مياه): تحل محل التدفئة بالغاز وتوفر التبريد أيضًا",
-      insulation: "العزل وسد الفتحات: يبقي الحرارة خارج المنزل صيفًا وداخله شتاءً",
-      shading: "مظلات أو سقف عاكس للحرارة: يحمي النوافذ والجدران من الشمس",
-      solar: "ألواح شمسية على السطح: كهرباء أرخص في الأيام المشمسة",
-      battery: "بطارية منزلية: تبقي الأجهزة الأساسية تعمل أثناء انقطاع الكهرباء",
-      floodproof: "تركيب المعدات في مكان مرتفع: يحميها من الفيضانات",
-    },
-    tipsH: "في الأيام شديدة الحرارة",
-    tips: ["اشرب الماء بانتظام حتى لو لم تشعر بالعطش.", "أغلق الستائر في وقت مبكر من اليوم.", "اطمئن على جيرانك كبار السن ومن يعيشون بمفردهم.", "في حالات الطوارئ، اتصل بالرقم 000."],
+    floodBoth: (r, s) => `حوالي ${r}% من منطقتك أرض يمكن أن تغمرها مياه الأنهار أو الجداول، و${s}% يمكن أن تغمرها مياه الأمطار الغزيرة وفيضان المصارف.`,
+    floodStorm: (s) => `حوالي ${s}% من منطقتك يمكن أن تغمرها مياه الأمطار الغزيرة وفيضان المصارف.`,
+    floodNone: "لا تُظهر خرائط التخطيط العامة أراضي معرضة للفيضان في منطقتك، لكن الأمطار الغزيرة قد تسبب فيضانات محلية.",
+    equipment: "إذا كان منزلك على أرض معرضة للفيضان وقمت بتركيب مضخة حرارية أو بطارية أو لوحة كهرباء جديدة، فاطلب من الفني تركيبها فوق مستوى الفيضان.",
+    switchH: "عند التحول من الغاز",
+    switchItems: [
+      "المضخة الحرارية (مكيف هواء للتدفئة والتبريد وسخان مياه) تحل محل التدفئة بالغاز ويمكنها أيضًا تبريد منزلك.",
+      "العزل وسد الفتحات يبقيان الحرارة خارج المنزل صيفًا وداخله شتاءً.",
+      "تظليل النوافذ والجدران يساعد على إبقاء منزلك باردًا.",
+      "إذا كنت تعتمد على أجهزة تعمل بالكهرباء، فاسأل عن بطارية منزلية لحالات انقطاع الكهرباء.",
+    ],
     rebates: "اسأل المجلس المحلي عن الدعم المالي المتاح حاليًا لهذه التحسينات.",
+    emergency: "في حالات الطوارئ، اتصل بالرقم 000.",
     print: "اطبع هذه البطاقة",
-    draft: "نموذج أولي ببيانات تجريبية. الترجمات مسودات وتحتاج إلى مراجعة من متحدثين أصليين.",
+    draft: "نموذج أولي. أرقام الفيضانات من خرائط التخطيط Vicmap واللغات من تعداد ABS لعام 2021. الترجمات مسودات وتحتاج إلى مراجعة من متحدثين أصليين.",
+    source: "المصدر",
   },
 };
