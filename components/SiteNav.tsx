@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const LINKS = [
   ["/", "Overview"], ["/dashboard", "Planning map"], ["/continuity", "Continuity Lab"], ["/brief", "Review brief"],
-  ["/investment", "Investment"], ["/regional", "Regional"], ["/validation", "Validation"], ["/methodology", "Method"],
+  ["/investment", "Investment"], ["/regional", "Regional"], ["/resident", "Residents"], ["/validation", "Validation"], ["/methodology", "Method"],
 ] as const;
 
 export function Logo() {
@@ -32,7 +32,7 @@ export default function SiteNav() {
         <Link href="/" className="mr-auto flex items-center gap-2 text-ink no-underline">
           <Logo /><span className="font-serif text-xl font-semibold tracking-tight">CoolGrid</span>
         </Link>
-        <div className="hidden items-center gap-1 lg:flex">
+        <div className="hidden items-center gap-1 xl:flex">
           {LINKS.map(([href, label]) => (
             <Link key={href} href={href} aria-current={active(href) ? "page" : undefined}
               className={`rounded-full px-3 py-1.5 text-sm no-underline transition-colors ${active(href) ? "bg-ink text-white" : "text-ink hover:bg-ink/5"}`}>
@@ -40,12 +40,12 @@ export default function SiteNav() {
             </Link>
           ))}
         </div>
-        <button className="rounded-lg p-2 lg:hidden" aria-label="Menu" aria-expanded={open} onClick={() => setOpen((o) => !o)}>
+        <button className="rounded-lg p-2 xl:hidden" aria-label="Menu" aria-expanded={open} onClick={() => setOpen((o) => !o)}>
           <svg viewBox="0 0 24 24" className="h-6 w-6" aria-hidden="true"><path d={open ? "M6 6l12 12M18 6L6 18" : "M4 7h16M4 12h16M4 17h16"} stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>
         </button>
       </div>
       {open && (
-        <div className="border-b border-line bg-paper px-4 pb-3 lg:hidden">
+        <div className="border-b border-line bg-paper px-4 pb-3 xl:hidden">
           {LINKS.map(([href, label]) => (
             <Link key={href} href={href} onClick={() => setOpen(false)} className={`block rounded-lg px-3 py-2 no-underline ${active(href) ? "bg-ink text-white" : "text-ink"}`}>{label}</Link>
           ))}

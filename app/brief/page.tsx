@@ -1,4 +1,5 @@
 import Link from "next/link";
+import PageHeader from "@/components/PageHeader";
 import PrintButton from "@/components/PrintButton";
 import ScenarioResults, { causes } from "@/components/ScenarioResults";
 import { facilityName, runDemoReview, SCENARIO_META } from "@/lib/demo-review";
@@ -28,10 +29,15 @@ export default function BriefPage({ searchParams }: { searchParams?: Record<stri
     .sort((a, b) => b.gap - a.gap)[0];
 
   return (
-    <main className="mx-auto max-w-4xl px-6 pb-16 pt-10 print:max-w-none print:px-0 print:py-0">
+    <>
+    <PageHeader art="brief" eyebrow="Review brief" title="What to verify, who owns it, and what to exercise next.">
+      Generated from the engine for the arrangement, crews and inputs you chose in the Continuity Lab. Print it or download the full engine brief.
+    </PageHeader>
+    <main data-reveal className="mx-auto max-w-4xl px-6 pb-16 pt-8 print:max-w-none print:px-0 print:py-0">
       <div className="mb-6 flex flex-wrap items-start justify-between gap-4 print:mb-4">
-        <div>
-          <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-muted print:text-black">P1 · Council planning</p>
+        {/* The dark header covers this on screen; this title is what prints. */}
+        <div className="hidden print:block">
+          <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-muted print:text-black">Council planning</p>
           <h1 className="text-4xl print:text-3xl">Review brief</h1>
           <p className="mt-2 text-sm text-muted print:text-black">CoolGrid planning output · based on the selected arrangement and current labelled inputs</p>
         </div>
@@ -116,5 +122,6 @@ export default function BriefPage({ searchParams }: { searchParams?: Record<stri
         This brief reflects the inputs in its URL. Facility planning values may be illustrative or unknown; verify them with the named data owner before relying on an assessment.
       </p>
     </main>
+    </>
   );
 }

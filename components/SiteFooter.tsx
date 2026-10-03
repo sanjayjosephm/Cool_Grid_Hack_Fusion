@@ -12,7 +12,7 @@ export default function SiteFooter() {
         <div>
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.16em] text-amber">Explore</p>
           <ul className="space-y-1.5 text-sm">
-            {[["/continuity", "Continuity Lab"], ["/dashboard", "Planning map"], ["/investment", "Investment Gate"], ["/regional", "Greater Shepparton"], ["/validation", "Validation"], ["/methodology", "Method and limits"]].map(([h, l]) => (
+            {[["/continuity", "Continuity Lab"], ["/dashboard", "Planning map"], ["/investment", "Investment Gate"], ["/regional", "Greater Shepparton"], ["/resident", "Resident cards (Vietnamese, Arabic)"], ["/validation", "Validation"], ["/methodology", "Method and limits"]].map(([h, l]) => (
               <li key={h}><Link href={h} className="text-white/70 no-underline hover:text-white">{l}</Link></li>
             ))}
           </ul>

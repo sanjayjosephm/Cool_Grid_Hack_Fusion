@@ -2,6 +2,7 @@ import "./globals.css";
 import "maplibre-gl/dist/maplibre-gl.css";
 import SiteFooter from "@/components/SiteFooter";
 import SiteNav from "@/components/SiteNav";
+import Reveal from "@/components/landing/Reveal";
 import { Fraunces, Inter } from "next/font/google";
 import type { ReactNode } from "react";
 
@@ -19,6 +20,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       </head>
       <body>
         <SiteNav />
+        <Reveal />
         {children}
         <SiteFooter />
       </body>

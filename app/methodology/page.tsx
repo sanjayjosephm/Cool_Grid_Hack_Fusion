@@ -12,8 +12,8 @@ const P = "my-3";
 export default function Methodology() {
   return (
     <>
-    <PageHeader eyebrow="Method and limits" title="How CoolGrid works, and what it does not claim." />
-    <main className="mx-auto max-w-[760px] px-6 pb-16 pt-8">
+    <PageHeader art="method" eyebrow="Method and limits" title="How CoolGrid works, and what it does not claim.">From public data to a review brief, with every assumption labelled and every limit stated.</PageHeader>
+    <main data-reveal className="mx-auto max-w-[760px] px-6 pb-16 pt-8">
       <p className={P}>
         CoolGrid helps a council emergency or relief planning officer check whether a service arrangement still works when heat,
         a power outage or flood-related access loss disrupts facilities, and what to verify or exercise next.

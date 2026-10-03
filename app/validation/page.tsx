@@ -59,11 +59,11 @@ export default function Validation() {
 
   return (
     <>
-    <PageHeader eyebrow="Validation" title="Every number checked, every time the site is built."
+    <PageHeader art="validation" eyebrow="Validation" title="Every number checked, every time the site is built."
       stats={[{ value: `${passed}/${checks.length}`, label: "data checks pass" }, { value: `${golden.filter((g) => g.ok).length}/${golden.length}`, label: "golden comparisons match" }, { value: `${backupCases.filter((c) => c.ok).length}/${backupCases.length}`, label: "backup hand checks match" }, { value: `${invariants.filter((i) => i.ok).length}/${invariants.length}`, label: "review invariants hold" }]}>
       Computed from the same data and code the app runs. Passing these checks does not establish that planning assumptions or real-world operations are correct.
     </PageHeader>
-    <main className="mx-auto max-w-6xl px-6 pb-16 pt-8">
+    <main data-reveal className="mx-auto max-w-6xl px-6 pb-16 pt-8">
 
       <div className="my-8 grid gap-3 sm:grid-cols-3">
         <div className="rounded-xl bg-white p-4 ring-1 ring-line">

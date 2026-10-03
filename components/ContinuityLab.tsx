@@ -67,12 +67,12 @@ export default function ContinuityLab({ initialConfig, initialOverrides = {}, in
 
   return (
     <>
-    <PageHeader eyebrow="Continuity Lab" title="Test the arrangement against three failures."
+    <PageHeader art="continuity" eyebrow="Continuity Lab" title="Test the arrangement against three failures."
       stats={[{ value: 4, label: "communities" }, { value: DEMO_FACILITIES.length, label: "real facilities" }, { value: 3, label: "arrangements" }, { value: 3, label: "separate scenarios" }]}>
       Pick an arrangement and a crew count, then see what still works in a heatwave, a power outage and a flood, why gaps appear, and who should verify what.
       Facility inputs are labelled placeholders you can replace; this screen does not designate public destinations or routes.
     </PageHeader>
-    <main className="mx-auto max-w-6xl px-6 pb-16 pt-8">
+    <main data-reveal className="mx-auto max-w-6xl px-6 pb-16 pt-8">
       {config.errors.map((error) => <p key={error} role="alert" className="mt-4 rounded-lg border border-red-300 bg-red-50 px-4 py-3 text-sm text-red-900">{error}</p>)}
 
       <section className="my-8 grid gap-6 rounded-2xl bg-white p-6 ring-1 ring-line md:grid-cols-[1fr_240px]">

@@ -21,9 +21,9 @@ export default function RegionalPage({ searchParams }: { searchParams?: Record<s
 
   return (
     <>
-    <PageHeader eyebrow="Regional review" title={<>{REGION.region}: same tool, regional council.</>}
+    <PageHeader art="regional" eyebrow="Regional review" title={<>{REGION.region}: same tool, regional council.</>}
       stats={[{ value: REGION.areas.reduce((t, a) => t + (a.population.value ?? 0), 0).toLocaleString("en-AU"), label: "residents" }, { value: `${Math.round(Math.min(...REGION.areas.map((a) => a.pctRiverine.value ?? 0)))}–${Math.round(Math.max(...REGION.areas.map((a) => a.pctRiverine.value ?? 0)))}%`, label: "of each suburb in a river flood overlay" }, { value: REGION.crossings.length, label: "flood-exposed roads on routes" }]} />
-    <main className="mx-auto max-w-6xl px-6 pb-16 pt-8">
+    <main data-reveal className="mx-auto max-w-6xl px-6 pb-16 pt-8">
       <p className="mt-3 max-w-3xl text-muted">
         The same public-data pipeline (ABS Census and SEIFA, Vicmap flood overlays, facilities and roads), engine and rules, applied to a regional city on the Goulburn River.
         In the October 2022 flood, the Causeway between Shepparton and Mooroopna closed and cut Mooroopna off from Shepparton&apos;s services. The flood scenario below tests that kind of dependency.

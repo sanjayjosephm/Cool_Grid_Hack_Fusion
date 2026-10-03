@@ -25,9 +25,9 @@ export default function InvestmentPage({ searchParams }: { searchParams?: Record
 
   return (
     <>
-    <PageHeader eyebrow="Investment Gate" title="Which upgrades are worth checking first?"
+    <PageHeader art="investment" eyebrow="Investment Gate" title="Which upgrades are worth checking first?"
       stats={[{ value: PACKAGES.length, label: "upgrade packages" }, { value: options.length, label: `affordable combinations within ${money(budget)}` }, { value: options.filter((o) => !o.dominated).length, label: "worth checking" }]} />
-    <main className="mx-auto max-w-5xl px-6 pb-16 pt-8">
+    <main data-reveal className="mx-auto max-w-5xl px-6 pb-16 pt-8">
       <p className="mt-3 max-w-3xl text-muted">
         Each combination of upgrades is run through the same review engine for the <b>local facilities</b> arrangement. Places gained come from the engine;
         costs are <b>illustrative placeholders</b> to be replaced with assessed quotes. Results stay separate for each scenario and are never added together.

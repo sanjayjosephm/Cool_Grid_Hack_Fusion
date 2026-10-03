@@ -2,7 +2,6 @@ import Link from "next/link";
 import type { CSSProperties } from "react";
 import CountUp from "@/components/landing/CountUp";
 import HeroMap from "@/components/landing/HeroMap";
-import Reveal from "@/components/landing/Reveal";
 import ScenarioStory, { type StoryScenario } from "@/components/landing/ScenarioStory";
 import energyData from "@/lib/data/energy.json";
 import heatData from "@/lib/data/heat.json";
@@ -73,7 +72,6 @@ export default function Home() {
 
   return (
     <main>
-      <Reveal />
 
       {/* Hero */}
       <section className="heat-bg relative overflow-hidden text-white">
