@@ -1,0 +1,7 @@
+# Not needed by the deployed site: Vercel installs packages and builds itself.
+node_modules
+.next
+.next-build
+.next-dev
+data/raw
+*.tsbuildinfo
