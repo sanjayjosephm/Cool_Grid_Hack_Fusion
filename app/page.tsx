@@ -119,7 +119,7 @@ export default function Home() {
       </section>
 
       {/* Data wall */}
-      <section className="bg-white">
+      <section className="bg-white/55">
         <div className="mx-auto max-w-6xl px-6 py-20">
           <p className={`reveal ${eyebrow} text-blue`}>Built on real data</p>
           <h2 className="reveal max-w-[22ch] text-[clamp(1.9rem,4vw,2.8rem)] font-medium" style={d(100)}>Not a mock-up. Every number has a source.</h2>
@@ -156,7 +156,7 @@ export default function Home() {
       </section>
 
       {/* How it works */}
-      <section className="bg-white">
+      <section className="bg-white/55">
         <div className="mx-auto max-w-6xl px-6 py-24">
           <p className={`reveal ${eyebrow} text-blue`}>How it works</p>
           <h2 className="reveal text-[clamp(1.9rem,4vw,2.8rem)] font-medium" style={d(100)}>From public data to the next thing to verify.</h2>

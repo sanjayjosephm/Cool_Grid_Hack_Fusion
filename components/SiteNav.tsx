@@ -38,11 +38,22 @@ export default function SiteNav() {
   const moreActive = MORE.some(([h]) => isActive(h));
 
   // Slide the highlight to the hovered link, else the active one (or "More" when a More page is open).
+  // Positions are measured against the bar itself (not offsetParent, which differs for the nested "More" button) and
+  // re-measured when web fonts finish loading or the bar resizes, so the highlight always matches the text.
+  const key = hover ?? MAIN.find(([h]) => isActive(h))?.[0] ?? (moreActive ? "more" : null);
   useLayoutEffect(() => {
-    const key = hover ?? MAIN.find(([h]) => isActive(h))?.[0] ?? (moreActive ? "more" : null);
-    const el = key ? bar.current?.querySelector<HTMLElement>(`[data-key="${key}"]`) : null;
-    setPill(el ? { left: el.offsetLeft, width: el.offsetWidth } : null);
-  }, [hover, path]); // eslint-disable-line react-hooks/exhaustive-deps
+    const measure = () => {
+      const root = bar.current, el = key ? root?.querySelector<HTMLElement>(`[data-key="${key}"]`) : null;
+      if (!root || !el) return setPill(null);
+      const r = root.getBoundingClientRect(), e = el.getBoundingClientRect();
+      setPill({ left: e.left - r.left, width: e.width });
+    };
+    measure();
+    document.fonts?.ready.then(measure);
+    const ro = new ResizeObserver(measure);
+    if (bar.current) ro.observe(bar.current);
+    return () => ro.disconnect();
+  }, [key]);
 
   useEffect(() => {
     const onScroll = () => { const max = document.documentElement.scrollHeight - innerHeight; setProgress(max > 0 ? scrollY / max : 0); };

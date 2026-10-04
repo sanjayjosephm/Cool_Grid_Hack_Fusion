@@ -1,6 +1,7 @@
 import "./globals.css";
 import "maplibre-gl/dist/maplibre-gl.css";
 import SiteFooter from "@/components/SiteFooter";
+import MovingBackground from "@/components/MovingBackground";
 import SiteNav from "@/components/SiteNav";
 import Reveal from "@/components/landing/Reveal";
 import { Fraunces, Inter } from "next/font/google";
@@ -19,6 +20,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />
       </head>
       <body>
+        <MovingBackground />
         <SiteNav />
         <Reveal />
         {children}
