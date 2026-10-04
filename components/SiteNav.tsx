@@ -113,7 +113,8 @@ export default function SiteNav() {
           </div>
         </div>
 
-        <Link href="/continuity?arrangement=existing&crews=3"
+        {/* The CTA opens the Continuity Lab, so hovering it moves the highlight there rather than back to the current page. */}
+        <Link href="/continuity?arrangement=existing&crews=3" onMouseEnter={() => setHover("/continuity")} onMouseLeave={() => setHover(null)}
           className="nav-cta ml-2 hidden rounded-full bg-white px-4 py-1.5 text-sm font-semibold text-ink no-underline transition hover:-translate-y-px md:inline-block">
           Open the Lab →
         </Link>
