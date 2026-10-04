@@ -155,7 +155,8 @@ export default function PlanningMap() {
           id: "area-labels",
           type: "symbol",
           source: "study-areas",
-          layout: { "text-field": ["get", "name"], "text-size": 12, "text-allow-overlap": false },
+          // OpenFreeMap only serves Noto Sans glyphs; the MapLibre default font 404s and drops the whole source.
+          layout: { "text-field": ["get", "name"], "text-font": ["Noto Sans Regular"], "text-size": 12, "text-allow-overlap": false },
           paint: { "text-color": "#1B2430", "text-halo-color": "#fff", "text-halo-width": 1.5 },
         });
         map.addSource("crossings", { type: "geojson", data: CROSSING_GEOJSON });
@@ -318,7 +319,7 @@ export default function PlanningMap() {
               <div className="flex justify-between text-muted"><span>0%</span><span>1%</span><span>4%</span><span>10%+</span></div>
             </>
           )}
-          <p className="mt-2"><span className="mr-1 inline-block h-2.5 w-2.5 rounded-full bg-blue-700 align-middle" /> Facility location</p>
+          <p className="mt-2"><span className="mr-1 inline-block h-2.5 w-2.5 rounded-full align-middle" style={{ background: "#1d4ed8" }} /> Facility location</p>
           <p className="mt-1"><span className="mr-1 inline-block h-2 w-2 rounded-full border border-[#7a4f00] bg-[#E0A030] align-middle" /> Road crossing in a flood overlay ({CROSSINGS.length})</p>
         </div>
       </section>
